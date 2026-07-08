@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #04040b;
+  /* surface = background lifted ~10% toward white so cards read as a distinct layer */
+  --color-surface: #1d1f4a;
+  --color-accent: #6830fe;
+  --color-accent-secondary: #451284;
+  --color-text-primary: #bcbbbd;
+  --color-text-muted: #78787b;
+  --color-highlight: #cb6cfe;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
