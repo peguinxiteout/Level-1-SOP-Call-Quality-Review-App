@@ -69,7 +69,7 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
                 <th
                   key={column.key}
                   onClick={() => toggleSort(column)}
-                  className={`whitespace-nowrap px-3 py-2 font-medium text-text-muted ${
+                  className={`whitespace-nowrap border-r border-b border-white/30 px-3 py-2 font-medium text-text-muted ${
                     column.accessor ? 'cursor-pointer select-none hover:text-text-primary' : ''
                   }`}
                 >
@@ -88,9 +88,9 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
         </thead>
         <tbody>
           {sortedRows.map((row, index) => (
-            <tr key={rowKey(row, index)} className="border-t border-accent-secondary/20 bg-surface even:bg-accent-secondary/10">
+            <tr key={rowKey(row, index)} className="bg-background">
               {columns.map((column) => (
-                <td key={column.key} className="whitespace-normal break-words px-3 py-2 align-top text-text-primary">
+                <td key={column.key} className="whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary">
                   {column.render(row)}
                 </td>
               ))}
