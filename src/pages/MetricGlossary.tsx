@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
 import PageContainer from '../layout/PageContainer';
+import DataTable, { type DataTableColumn } from '../components/executive-story/DataTable';
+import TableCard from '../components/executive-story/TableCard';
 
 interface GlossaryRow {
   section: string;
@@ -263,6 +265,19 @@ function ReferenceCell({ value }: { value: string }) {
   );
 }
 
+const glossaryColumns: DataTableColumn<GlossaryRow>[] = [
+  { key: 'section', header: 'Section', accessor: (row) => row.section, render: (row) => row.section },
+  { key: 'metric_name', header: 'Metric', accessor: (row) => row.metric_name, render: (row) => row.metric_name },
+  { key: 'definition', header: 'Definition', accessor: (row) => row.definition, render: (row) => row.definition },
+  { key: 'calculation', header: 'Calculation', accessor: (row) => row.calculation, render: (row) => row.calculation },
+  {
+    key: 'research_reference',
+    header: 'Research Reference',
+    accessor: (row) => row.research_reference,
+    render: (row) => <ReferenceCell value={row.research_reference} />,
+  },
+];
+
 export default function MetricGlossary() {
   const [selectedSection, setSelectedSection] = useState('All');
   const [searchText, setSearchText] = useState('');
@@ -325,60 +340,14 @@ export default function MetricGlossary() {
           </div>
         </div>
 
-        {filteredRows.length ? (
-          <div className="max-h-[620px] overflow-auto rounded-xl border border-accent-secondary/40 bg-background">
-            <table className="min-w-full table-fixed border-collapse text-left text-sm">
-              <thead className="sticky top-0 z-10 bg-surface text-text-primary">
-                <tr>
-                  <th className="w-[13%] border border-accent-secondary/30 px-3 py-3 align-top">
-                    Section
-                  </th>
-                  <th className="w-[17%] border border-accent-secondary/30 px-3 py-3 align-top">
-                    Metric
-                  </th>
-                  <th className="w-[27%] border border-accent-secondary/30 px-3 py-3 align-top">
-                    Definition
-                  </th>
-                  <th className="w-[28%] border border-accent-secondary/30 px-3 py-3 align-top">
-                    Calculation
-                  </th>
-                  <th className="w-[15%] border border-accent-secondary/30 px-3 py-3 align-top">
-                    Research Reference
-                  </th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {filteredRows.map((row, index) => (
-                  <tr
-                    key={`${row.section}-${row.metric_name}`}
-                    className={index % 2 === 0 ? 'bg-background' : 'bg-white/[0.025]'}
-                  >
-                    <td className="break-words border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
-                      {row.section}
-                    </td>
-                    <td className="break-words border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
-                      {row.metric_name}
-                    </td>
-                    <td className="break-words border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
-                      {row.definition}
-                    </td>
-                    <td className="break-words border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
-                      {row.calculation}
-                    </td>
-                    <td className="break-words border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
-                      <ReferenceCell value={row.research_reference} />
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
-            No glossary rows match the current filter.
-          </div>
-        )}
+        <TableCard>
+          <DataTable
+            columns={glossaryColumns}
+            rows={filteredRows}
+            rowKey={(row) => `${row.section}-${row.metric_name}`}
+            emptyMessage="No glossary rows match the current filter."
+          />
+        </TableCard>
       </div>
     </PageContainer>
   );

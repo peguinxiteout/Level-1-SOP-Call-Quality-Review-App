@@ -1,7 +1,12 @@
+import type { StatusTone } from '../../lib/ui/status';
+import StatusPill from './StatusPill';
+
 export interface StatTile {
   kind: 'stat';
   label: string;
   value: string;
+  /** Optional band badge shown next to the label (e.g. Good/Watch/Review). */
+  status?: { tone: StatusTone; label: string };
 }
 
 export interface InsightTile {
@@ -22,7 +27,10 @@ export default function TileGrid({ tiles }: { tiles: Tile[] }) {
       {tiles.map((tile) =>
         tile.kind === 'stat' ? (
           <div key={tile.label} className={CARD_SHELL}>
-            <p className="text-xs font-medium text-text-muted">{tile.label}</p>
+            <div className="flex items-start justify-between gap-3">
+              <p className="text-xs font-medium text-text-muted">{tile.label}</p>
+              {tile.status && <StatusPill tone={tile.status.tone} label={tile.status.label} />}
+            </div>
             <p className="mt-1 text-2xl font-semibold text-text-primary">{tile.value}</p>
           </div>
         ) : (

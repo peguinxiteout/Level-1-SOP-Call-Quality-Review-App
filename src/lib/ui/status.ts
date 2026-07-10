@@ -5,6 +5,7 @@ const BAND_TONE: Record<string, StatusTone> = {
   Good: 'good',
   Watch: 'warning',
   Review: 'critical',
+  'Needs Check': 'critical',
   'Not Available': 'neutral',
 };
 

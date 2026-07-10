@@ -60,7 +60,7 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
 
   return (
     <div className="overflow-x-auto rounded-lg border border-accent-secondary/30">
-      <table className="w-full min-w-max border-collapse text-left text-sm">
+      <table className="w-full border-collapse text-left text-sm">
         <thead>
           <tr className="bg-accent-secondary/20">
             {columns.map((column) => {
@@ -90,7 +90,10 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
           {sortedRows.map((row, index) => (
             <tr key={rowKey(row, index)} className="bg-background">
               {columns.map((column) => (
-                <td key={column.key} className="whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary">
+                <td
+                  key={column.key}
+                  className="max-w-[26rem] whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary"
+                >
                   {column.render(row)}
                 </td>
               ))}
