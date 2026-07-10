@@ -28,11 +28,8 @@ export default function TileGrid({ tiles }: { tiles: Tile[] }) {
         ) : (
           <div key={tile.label} className={CARD_SHELL}>
             <p className="text-xs font-medium text-text-muted">{tile.label}</p>
-            <p className="mt-1 flex flex-wrap items-baseline gap-2">
-              <span className="text-lg font-normal text-text-primary" title={tile.name}>
-                {tile.name}
-              </span>
-              <span className="rounded-full bg-accent-secondary/30 px-2 py-0.5 text-xs font-medium text-text-muted">{tile.pct}</span>
+            <p className="mt-1 text-lg font-normal text-text-primary" title={tile.name}>
+              {tile.name} <span className="text-text-muted">({tile.pct})</span>
             </p>
           </div>
         ),

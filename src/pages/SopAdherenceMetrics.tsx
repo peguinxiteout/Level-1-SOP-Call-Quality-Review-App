@@ -10,6 +10,7 @@ import RecurringNonAdherenceTable from '../components/sop-adherence/RecurringNon
 import SequenceAdherenceTable from '../components/sop-adherence/SequenceAdherenceTable';
 import SopDrilldownTable from '../components/executive-story/SopDrilldownTable';
 import Accordion from '../components/executive-story/Accordion';
+import TableCard from '../components/executive-story/TableCard';
 import CallSelector from '../components/executive-story/CallSelector';
 import CallDetailInspector from '../components/executive-story/CallDetailInspector';
 
@@ -37,7 +38,9 @@ export default function SopAdherenceMetrics() {
           <Section title="Call-Level SOP Adherence Summary">
             <div className="flex flex-col gap-4">
               <RowsToShowSelect value={rowsToShow} onChange={setRowsToShow} />
-              <SopDrilldownTable rows={visibleCallLevelSummary} columns={SOP_CALL_LEVEL_SUMMARY_COLUMNS} />
+              <TableCard>
+                <SopDrilldownTable rows={visibleCallLevelSummary} columns={SOP_CALL_LEVEL_SUMMARY_COLUMNS} />
+              </TableCard>
             </div>
           </Section>
 

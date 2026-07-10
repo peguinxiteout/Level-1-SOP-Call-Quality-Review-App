@@ -8,6 +8,7 @@ import SignalsTable from '../components/executive-story/SignalsTable';
 import SopDrilldownTable from '../components/executive-story/SopDrilldownTable';
 import AgentDrilldownTable from '../components/executive-story/AgentDrilldownTable';
 import Accordion from '../components/executive-story/Accordion';
+import TableCard from '../components/executive-story/TableCard';
 import CallSelector from '../components/executive-story/CallSelector';
 import CallDetailInspector from '../components/executive-story/CallDetailInspector';
 
@@ -37,14 +38,18 @@ export default function ExecutiveStory() {
           </Section>
 
           <Section title="Executive Signals">
-            <SignalsTable rows={data.signals} />
+            <TableCard>
+              <SignalsTable rows={data.signals} />
+            </TableCard>
           </Section>
 
           <Section
             title="Top 5 Calls With Lowest Adherence"
             caption="Ranked by a composite attention score based on SOP misses, coverage gaps, and quality review flags — not a literal lowest-to-highest sort."
           >
-            <PriorityCallsTable rows={data.priorityCalls} />
+            <TableCard>
+              <PriorityCallsTable rows={data.priorityCalls} />
+            </TableCard>
           </Section>
 
           <Section title="Detailed Check">

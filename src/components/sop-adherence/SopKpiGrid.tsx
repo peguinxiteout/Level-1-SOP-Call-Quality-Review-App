@@ -25,7 +25,7 @@ function buildTiles({ callsProcessed, kpi }: SopKpiGridProps): Tile[] {
       kind: 'insight',
       label: 'Most Frequent Missed SOP',
       name: kpi.mostFrequentMissedSopLabel === 'NA' ? '—' : kpi.mostFrequentMissedSopLabel,
-      pct: formatKpiPercent(kpi.mostFrequentMissedSopCallPct),
+      pct: `${formatKpiPercent(kpi.mostFrequentMissedSopCallPct)} calls`,
     },
   ];
 }
