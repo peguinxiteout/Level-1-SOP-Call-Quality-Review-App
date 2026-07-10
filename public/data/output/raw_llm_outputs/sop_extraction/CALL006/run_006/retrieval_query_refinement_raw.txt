@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "item_id": "SOP001",
+      "retrieval_query": "greet customer politely, say hello, good morning, good afternoon"
+    },
+    {
+      "item_id": "SOP002",
+      "retrieval_query": "introduce yourself and your team, say who you are and your team"
+    },
+    {
+      "item_id": "SOP003",
+      "retrieval_query": "explain survey purpose, mention feedback, call duration, confidentiality"
+    },
+    {
+      "item_id": "SOP004",
+      "retrieval_query": "ask for basic info like age, profession, family size, vehicle ownership"
+    },
+    {
+      "item_id": "SOP005",
+      "retrieval_query": "ask how customer first heard about the adventure event"
+    },
+    {
+      "item_id": "SOP006",
+      "retrieval_query": "ask what initially interested you in the event"
+    },
+    {
+      "item_id": "SOP007",
+      "retrieval_query": "ask what stopped you from subscribing to the event"
+    },
+    {
+      "item_id": "SOP008",
+      "retrieval_query": "ask if you were looking for other outdoor experiences"
+    },
+    {
+      "item_id": "SOP009",
+      "retrieval_query": "ask which other outdoor experiences you considered"
+    },
+    {
+      "item_id": "SOP010",
+      "retrieval_query": "ask where you heard about those other outdoor experiences"
+    },
+    {
+      "item_id": "SOP011",
+      "retrieval_query": "ask what one thing we could improve to make you subscribe"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.5,
+  "reason": "Agent asked 'Are you seeing any outdoor experience for the event?' which is ambiguous and does not clearly match the expected intent of asking if the customer was looking for any other outdoor experiences."
+}

@@ -1,0 +1,2 @@
+﻿batch_output_version,batch_output_generated_at,item_id,category,sub_category,item_text,missed_count,review_suggested_count,non_adherence_count,affected_call_count,affected_call_pct
+run_002,2026-07-02T17:28:33,SOP001,Opening,Greeting,Greet the customer politely,1,0,1,1,100.0

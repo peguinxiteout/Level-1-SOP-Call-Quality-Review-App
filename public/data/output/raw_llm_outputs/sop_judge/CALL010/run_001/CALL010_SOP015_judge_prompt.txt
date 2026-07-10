@@ -1,0 +1,117 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask what one thing could be improved to make the customer consider subscribing
+Expected agent utterance: What is the one thing we could improve that would make you consider subscribing in the future?
+Expected intent: ask_improvement_suggestion
+Agent action: ask_question
+Category: Survey
+Sub-category: Future Expectations
+
+Retrieval query used:
+What is the one thing we could improve that would make you consider subscribing in the future?
+
+Agent text used for retrieval:
+If you subscribe in the future, what do you think about it?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.5694
+Retrieval score: 0.6996
+Key match score: 0.3277
+Agent text: If you subscribe in the future, what do you think about it?
+Nearby context:
+[259.33 - 262.3] Customer: If he doesn't go, how will he tell us? He should be the one to prove it.
+[264.97 - 271.77] Agent: If you subscribe in the future, what do you think about it?
+[270.4 - 277.56] Customer: So what do you think now? People stay at home during festival time. Family and all.
+[278.32 - 283.09] Customer: Yes
+[288.93 - 290.79] Agent: So, you don't have any such question of improvement, right?
+[291.92 - 292.81] Customer: Thank you.
+[293.4 - 313.37] Agent: Okay. Sir, Anurag ji, when we inform you, what do you think, when should we do it, should we inform you before a week, according to you, should we inform you before a week, in one or two weeks, or in one or two months, or in two months?
+
+Evidence window rank 2
+Combined score: 0.4023
+Retrieval score: 0.4804
+Key match score: 0.2574
+Agent text: What do you think should be improved in this?
+Nearby context:
+[249.63 - 253.07] Agent: So, as you can see,
+[253.92 - 257.49] Agent: What do you think should be improved in this?
+[259.33 - 262.3] Customer: If he doesn't go, how will he tell us? He should be the one to prove it.
+[264.97 - 271.77] Agent: If you subscribe in the future, what do you think about it?
+[270.4 - 277.56] Customer: So what do you think now? People stay at home during festival time. Family and all.
+[278.32 - 283.09] Customer: Yes
+[288.93 - 290.79] Agent: So, you don't have any such question of improvement, right?
+
+Evidence window rank 3
+Combined score: 0.3943
+Retrieval score: 0.4644
+Key match score: 0.264
+Agent text: So what was the reason why you didn't subscribe to this event?
+Nearby context:
+[157.31 - 158.32] Agent: At what time, father?
+[166.18 - 170.42] Agent: So what was the reason why you didn't subscribe to this event?
+[171.62 - 173.74] Customer: They're class 18. I'm not listening.
+[175.08 - 176.21] Agent: because of date
+[176.86 - 177.66] Customer: Thank you.
+[180.56 - 187.44] Agent: Sir, have you had any other outdoor experience related to this?
+[188.73 - 191.88] Agent: Can you see the outdoor experience?
+
+Evidence window rank 4
+Combined score: 0.342
+Retrieval score: 0.423
+Key match score: 0.1917
+Agent text: And sir, for what reason you didn't subscribe this event?
+Nearby context:
+[142.84 - 144.08] Agent: Kajirao Gaume, OK.
+[145.75 - 150.08] Agent: And sir, for what reason you didn't subscribe this event?
+[152.68 - 154.54] Customer: So this must get an equation.
+[157.31 - 158.32] Agent: At what time, father?
+[166.18 - 170.42] Agent: So what was the reason why you didn't subscribe to this event?
+[171.62 - 173.74] Customer: They're class 18. I'm not listening.
+[175.08 - 176.21] Agent: because of date
+
+Retrieval score: 0.6996
+Key match score: 0.3277

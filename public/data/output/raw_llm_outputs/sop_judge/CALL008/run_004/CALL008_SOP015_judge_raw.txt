@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not ask what one thing could be improved to make the customer consider subscribing; agent only asked for general feedback and reasons for rejection."
+}

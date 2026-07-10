@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked if the customer checked out any other outdoor experiences before booking Mahindra Adventure, matching the expected intent and practical meaning."
+}

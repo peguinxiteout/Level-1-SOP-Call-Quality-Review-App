@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked when the customer last participated in the Mahindra Adventure Activity and followed up by asking about the location or name of the event, covering both parts of the SOP checklist item."
+}

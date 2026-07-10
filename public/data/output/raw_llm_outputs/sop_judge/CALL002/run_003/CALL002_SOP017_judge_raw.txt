@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked about the timing of the last subscription by confirming 'Okay, it takes a month or two months, right?', which practically covers determining how long ago the customer last subscribed."
+}

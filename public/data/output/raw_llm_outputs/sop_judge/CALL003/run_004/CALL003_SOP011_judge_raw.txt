@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked what made the customer interested in subscribing and booking the adventure event, closely matching the expected intent to collect interest reasons."
+}

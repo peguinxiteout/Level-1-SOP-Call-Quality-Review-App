@@ -1,0 +1,14 @@
+﻿batch_output_version,batch_output_generated_at,item_id,category,sub_category,item_text,missed_count,review_suggested_count,non_adherence_count,affected_call_count,affected_call_pct
+run_001,2026-07-02T16:44:50,SOP003,Opening,Purpose Explanation,Explain the purpose and duration of the call,5,1,6,6,60.0
+run_001,2026-07-02T16:44:50,SOP001,Opening,Greeting,Greet the customer politely,3,0,3,3,30.0
+run_001,2026-07-02T16:44:50,SOP017,Closure,Subscription Timing,Ask how long ago the customer last subscribed,3,0,3,3,30.0
+run_001,2026-07-02T16:44:50,SOP004,Opening,Consent,Inform confidentiality and usage of responses,2,0,2,2,20.0
+run_001,2026-07-02T16:44:50,SOP005,Survey,Basic Information,Ask the customer's age,2,0,2,2,20.0
+run_001,2026-07-02T16:44:50,SOP009,Survey,Initial Interest,Ask what part of the event caught the customer's interest initially,2,0,2,2,20.0
+run_001,2026-07-02T16:44:50,SOP015,Closure,Future Expectations,Ask what one thing could be improved to make customer consider subscribing,1,1,2,2,20.0
+run_001,2026-07-02T16:44:50,SOP008,Survey,Awareness,Ask how the customer first came across the event,1,0,1,1,10.0
+run_001,2026-07-02T16:44:50,SOP010,Survey,Reasons for Not Subscribing,Ask what stopped the customer from subscribing to the event,1,0,1,1,10.0
+run_001,2026-07-02T16:44:50,SOP011,Survey,Other Outdoor Experiences,Ask if the customer was also looking for other outdoor experiences,1,0,1,1,10.0
+run_001,2026-07-02T16:44:50,SOP012,Survey,Awareness and Interest,Ask if the customer checked out other outdoor experiences before booking,1,0,1,1,10.0
+run_001,2026-07-02T16:44:50,SOP016,Survey,Future Expectations,Ask how early the customer expects to be informed before an adventure event,1,0,1,1,10.0
+run_001,2026-07-02T16:44:50,SOP018,Closure,Subscription Motivation,Ask what would make the customer more likely to subscribe again,1,0,1,1,10.0

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked where the customer first saw the Mahindra Adventure event, mentioning platforms like Instagram and Facebook, which matches the SOP intent to ask how the customer first came across the event."
+}

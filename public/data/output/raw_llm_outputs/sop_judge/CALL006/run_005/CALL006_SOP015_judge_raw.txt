@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked 'Is there anything else we can improve in our adventure events?' which matches the practical intent of asking what could be improved to consider subscribing."
+}

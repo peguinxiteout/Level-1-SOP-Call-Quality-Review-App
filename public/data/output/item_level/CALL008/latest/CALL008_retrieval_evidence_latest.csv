@@ -1,0 +1,655 @@
+﻿output_version,output_generated_at,sop_call_type,agent_id,agent_name,agent_name_confidence,agent_identity_source,call_id,item_id,rank,candidate_id,turn_ids,agent_turn_id,candidate_type,retrieval_query,agent_text_for_retrieval,candidate_text,context_text_for_evaluation,key_match_score,retrieval_score,combined_score,retrieval_method,retrieval_error
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP001,1,AW0024,"46,47,48,49",47,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.","[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.","[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.",0.258,0.4477,0.3813,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP001,2,AW0025,"48,49",49,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","You're welcome, sir.","[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.","[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.",0.1399,0.434,0.3311,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP001,3,AW0001,"1,2,3,4,5,6,7",2,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?","[7.7 - 8.3] Customer: Hello.
+[9.9 - 16.8] Agent: Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?
+[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.","[7.7 - 8.3] Customer: Hello.
+[9.9 - 16.8] Agent: Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?
+[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.",0.0714,0.342,0.2473,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP001,4,AW0005,"9,10,11,12,13,14,15",10,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Okay, it's a business. And how many members are there in your family, sir?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?",0.1337,0.2867,0.2332,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP002,1,AW0008,"14,15,16,17,18,19,20",15,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.",0.3767,0.5786,0.5079,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP002,2,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.4314,0.5127,0.4842,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP002,3,AW0001,"1,2,3,4,5,6,7",2,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?","[7.7 - 8.3] Customer: Hello.
+[9.9 - 16.8] Agent: Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?
+[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.","[7.7 - 8.3] Customer: Hello.
+[9.9 - 16.8] Agent: Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal Roy ji?
+[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.",0.5192,0.4376,0.4662,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP002,4,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.2877,0.4956,0.4228,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP003,1,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.226,0.5765,0.4538,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP003,2,AW0020,"38,39,40,41,42,43,44",39,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?",0.0958,0.4338,0.3155,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP003,3,AW0016,"30,31,32,33,34,35,36",31,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay, so currently, are you looking for any outdoor experiences again for the event?","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.",0.1392,0.3873,0.3005,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP003,4,AW0024,"46,47,48,49",47,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.","[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.","[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.
+[215.0 - 215.9] Agent: You're welcome, sir.",0.1919,0.34,0.2882,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP004,1,AW0003,"5,6,7,8,9,10,11",6,agent_anchored_window,May I know your age?,"Okay. So, for profile purposes, can I know, Kunal ji, what is your age?","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.",0.7071,0.5649,0.6147,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP004,2,AW0009,"17,18,19,20,21,22,23",18,agent_anchored_window,May I know your age?,"Instagram? Okay, on Instagram. For which location did you see it? If I may know.","[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?","[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?",0.4926,0.3244,0.3833,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP004,3,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,May I know your age?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.4801,0.2789,0.3493,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP004,4,AW0013,"24,25,26,27,28,29,30",25,agent_anchored_window,May I know your age?,"According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.",0.3489,0.2889,0.3099,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP005,1,AW0003,"5,6,7,8,9,10,11",6,agent_anchored_window,What is your profession?,"Okay. So, for profile purposes, can I know, Kunal ji, what is your age?","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.",0.642,0.31,0.4262,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP005,2,AW0004,"7,8,9,10,11,12,13",8,agent_anchored_window,What is your profession?,"And do you have a job, or do you run a business?","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.",0.087,0.4855,0.346,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP005,3,AW0005,"9,10,11,12,13,14,15",10,agent_anchored_window,What is your profession?,"Okay, it's a business. And how many members are there in your family, sir?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?",0.2628,0.3246,0.303,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP005,4,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,What is your profession?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.2459,0.2429,0.244,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP006,1,AW0005,"9,10,11,12,13,14,15",10,agent_anchored_window,How many people are there in your family?,"Okay, it's a business. And how many members are there in your family, sir?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?",0.8199,0.5721,0.6588,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP006,2,AW0006,"11,12,13,14,15,16,17",12,agent_anchored_window,How many people are there in your family?,There are four members. Can you tell me which car you have as a four-wheeler?,"[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.","[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.",0.2745,0.3343,0.3134,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP006,3,AW0003,"5,6,7,8,9,10,11",6,agent_anchored_window,How many people are there in your family?,"Okay. So, for profile purposes, can I know, Kunal ji, what is your age?","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.","[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.",0.1747,0.2473,0.2219,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP006,4,AW0004,"7,8,9,10,11,12,13",8,agent_anchored_window,How many people are there in your family?,"And do you have a job, or do you run a business?","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.",0.0698,0.2783,0.2053,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP007,1,AW0006,"11,12,13,14,15,16,17",12,agent_anchored_window,Which vehicle or vehicles do you own?,There are four members. Can you tell me which car you have as a four-wheeler?,"[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.","[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.
+[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.",0.2819,0.5509,0.4567,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP007,2,AW0004,"7,8,9,10,11,12,13",8,agent_anchored_window,Which vehicle or vehicles do you own?,"And do you have a job, or do you run a business?","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.","[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.
+[52.0 - 55.2] Agent: Okay, it's a business. And how many members are there in your family, sir?
+[57.2 - 58.0] Customer: Four people.
+[58.6 - 63.6] Agent: There are four members. Can you tell me which car you have as a four-wheeler?
+[64.9 - 67.5] Customer: It's a Brezza, and it's a Fortuner.",0.3824,0.3684,0.3733,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP007,3,AW0008,"14,15,16,17,18,19,20",15,agent_anchored_window,Which vehicle or vehicles do you own?,"Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.",0.1593,0.3558,0.287,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP007,4,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,Which vehicle or vehicles do you own?,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.1729,0.2672,0.2342,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP008,1,AW0008,"14,15,16,17,18,19,20",15,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.",0.5716,0.7038,0.6575,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP008,2,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.3939,0.608,0.5331,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP008,3,AW0019,"36,37,38,39,40,41,42",37,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Okay, so it seems like there should be some improvement in Mahindra's adventure event.","[159.9 - 160.4] Customer: No, no.
+[160.8 - 166.3] Agent: Okay, so it seems like there should be some improvement in Mahindra's adventure event.
+[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.","[159.9 - 160.4] Customer: No, no.
+[160.8 - 166.3] Agent: Okay, so it seems like there should be some improvement in Mahindra's adventure event.
+[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.",0.3588,0.5591,0.489,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP008,4,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.3819,0.5358,0.4819,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP009,1,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,What part of the event caught your interest initially?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.3488,0.5823,0.5006,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP009,2,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,What part of the event caught your interest initially?,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.3021,0.4344,0.3881,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP009,3,AW0016,"30,31,32,33,34,35,36",31,agent_anchored_window,What part of the event caught your interest initially?,"Okay, so currently, are you looking for any outdoor experiences again for the event?","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.",0.2338,0.4196,0.3546,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP009,4,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,What part of the event caught your interest initially?,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.264,0.3933,0.348,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP010,1,AW0013,"24,25,26,27,28,29,30",25,agent_anchored_window,What stopped you from finally subscribing to the event?,"According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.",0.3869,0.4454,0.4249,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP010,2,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,What stopped you from finally subscribing to the event?,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.3044,0.452,0.4003,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP010,3,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,What stopped you from finally subscribing to the event?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.3452,0.3517,0.3494,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP010,4,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,What stopped you from finally subscribing to the event?,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.3403,0.3262,0.3311,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP011,1,AW0016,"30,31,32,33,34,35,36",31,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Okay, so currently, are you looking for any outdoor experiences again for the event?","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.","[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.
+[148.4 - 150.1] Agent: So, you are not considering anything right now.
+[150.1 - 156.1] Customer: For  example,  the  one  from  Gwalior  was  also  a  thousand  kilometers  away  from  my  house,  so  I  had canceled that as well.
+[156.8 - 159.9] Agent: Okay, so for now, you are not looking at it, right?
+[159.9 - 160.4] Customer: No, no.",0.5428,0.7153,0.6549,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP011,2,AW0014,"26,27,28,29,30,31,32",27,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.","[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.
+[139.5 - 145.8] Agent: Okay, so currently, are you looking for any outdoor experiences again for the event?
+[146.0 - 148.2] Customer: If there's something nearby, we'll take a walk.",0.1985,0.4049,0.3327,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP011,3,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.1983,0.3808,0.3169,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP011,4,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.1156,0.4158,0.3107,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP014,1,AW0020,"38,39,40,41,42,43,44",39,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?",0.4131,0.7111,0.6068,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP014,2,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.3271,0.4919,0.4342,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP014,3,AW0022,"42,43,44,45,46,47,48",43,agent_anchored_window,"According to you, how early should we inform you before an adventure event?",We can tell you by when we can inform you about this.,"[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?
+[200.2 - 203.2] Agent: Meaning, one week or one to two weeks in advance.
+[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.","[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?
+[200.2 - 203.2] Agent: Meaning, one week or one to two weeks in advance.
+[203.8 - 204.4] Customer: Hmm.
+[204.9 - 212.8] Agent: Okay. Thank you, sir. Almost all your feedback has been captured, and you took out your precious time to give feedback. Thank you very much for that, and have a good day.
+[214.1 - 214.8] Customer: Thank you.",0.3115,0.4889,0.4268,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP014,4,AW0008,"14,15,16,17,18,19,20",15,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[67.5 - 68.3] Agent: Yes, it's great.
+[70.2 - 80.3] Agent: Thar, Fortuner, and Brezza, right? So, can I know, for the first time, where did you get information about Mahindra's adventure events?
+[72.5 - 72.8] Customer: And...
+[81.0 - 82.7] Customer: Add it too.
+[82.5 - 86.8] Agent: Instagram? Okay, on Instagram. For which location did you see it? If I may know.
+[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.",0.225,0.4041,0.3414,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP015,1,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.","[17.4 - 18.4] Customer: Yes, congratulations.
+[18.6 - 37.8] Agent: Kunal Roy ji, as you showed interest in Mahindra's adventure skill or event but, due to some reason, you rejected it, here's a small feedback call so that we can improve our adventure team event even more. So, without taking much time, can I know if this is the right time to talk to you for hardly five minutes?
+[38.4 - 39.6] Customer: Yes, sir, please speak.
+[40.2 - 45.2] Agent: Okay. So, for profile purposes, can I know, Kunal ji, what is your age?
+[46.0 - 46.9] Customer: Twenty-seven.
+[47.4 - 49.3] Agent: And do you have a job, or do you run a business?
+[49.8 - 51.7] Customer: Sales employee business.",0.3395,0.3224,0.3284,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP015,2,AW0013,"24,25,26,27,28,29,30",25,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.","[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?
+[118.1 - 119.2] Customer: What?
+[119.9 - 130.9] Agent: You had shown interest in the Thar—sorry, Mahindra event for adventures—but you rejected it. So, can I know the reason why you rejected it, sir?
+[130.6 - 134.8] Customer: Sir, I think it was for ten to twelve days, so I couldn't make it for that long.
+[135.4 - 137.8] Agent: Okay. It was a time issue, right?
+[138.5 - 139.0] Customer: Hmm.",0.2493,0.3704,0.328,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP015,3,AW0010,"19,20,21,22,23,24,25",20,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?","[87.5 - 89.4] Customer: At that time, it was probably from Nagaland.
+[89.9 - 96.5] Agent: Nagaland. So, what kind of thing did you find interesting there that made you interested in that event? If I may know.
+[99.4 - 101.0] Agent: As per the location.
+[100.0 - 102.2] Customer: According to the location.
+[103.1 - 105.4] Agent: So, did you like it based on the location?
+[106.0 - 106.8] Customer: Hmm.
+[107.5 - 116.4] Agent: According to the location. So, finally, you mean that the subscription you did was rejected. Can I know the reason, sir?",0.3551,0.234,0.2764,azure_openai,
+run_004,2026-07-03T12:27:21,Other,A006,Dheeraj,Medium,registry_name_match,CALL008,SOP015,4,AW0020,"38,39,40,41,42,43,44",39,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?","[167.5 - 170.3] Customer: No, no, sir, there is no such issue. I had my own issue.
+[170.6 - 185.2] Agent: Okay, so if we need to inform you about the adventurous event, how long in advance can we inform you? Less than one week, within one to two weeks, within two to three weeks, within one to two months, or more than two months?
+[185.9 - 187.3] Customer: About the exam, sir.
+[188.6 - 189.6] Agent: Today?
+[188.9 - 193.9] Customer: Today, you can notify me. Whether I want to go or not, that's my wish. You can take it.
+[193.6 - 197.1] Agent: We can tell you by when we can inform you about this.
+[197.4 - 199.7] Customer: When should we start from next month?",0.2425,0.2857,0.2706,azure_openai,

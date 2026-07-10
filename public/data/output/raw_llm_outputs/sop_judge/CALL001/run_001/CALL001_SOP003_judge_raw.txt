@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly explained the purpose of the call as a short feedback exercise to understand customer preferences for adventure experiences and mentioned it will help improve future events. Agent also stated that responses will be kept confidential and used only for analysis purposes. Although the exact call duration was not mentioned, the main purpose and confidentiality were explained, covering the core of the SOP item."
+}

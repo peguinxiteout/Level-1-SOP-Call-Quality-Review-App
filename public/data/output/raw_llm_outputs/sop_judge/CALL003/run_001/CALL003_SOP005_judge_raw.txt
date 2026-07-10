@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asks 'what is your profession' and provides examples, clearly covering the SOP checklist item."
+}

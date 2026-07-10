@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Who influenced your decision the most? Was it you, your spouse, kids, friends or someone else?' which matches the SOP intent and expected utterance."
+}

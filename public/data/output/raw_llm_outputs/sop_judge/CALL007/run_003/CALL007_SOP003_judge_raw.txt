@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent mentioned the call is a small feedback call to understand preferences but did not explain the purpose in detail, the duration of the call, confidentiality, or use of responses as required by the SOP."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked 'how many cars are available in four-wheelers?' which inquires about quantity, not which vehicle or vehicles the customer owns."
+}

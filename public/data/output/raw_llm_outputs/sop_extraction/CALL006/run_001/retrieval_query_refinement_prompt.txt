@@ -1,0 +1,166 @@
+You are creating transcript retrieval queries for SOP adherence checking.
+
+The retrieval engine searches AGENT utterances only. For each SOP checklist item,
+write one concise query that will find whether the agent asked or covered it.
+
+Return ONLY valid JSON. No markdown. No explanation.
+
+Rules:
+1. Preserve every item_id exactly.
+2. retrieval_query should be short, spoken-call friendly, and intent-focused.
+3. Include common paraphrases an agent may actually say.
+4. Remove capture notes, examples, probe instructions, bracket guidance, Q numbers, and checklist wording.
+5. Avoid brand/product/model names unless the SOP item is specifically to confirm exact identity, exact product, or exact variant.
+6. Keep useful domain terms such as vehicle, EV, booking, variant, delivery, service, rating, recommendation.
+7. Do not change item_text, expected_agent_utterance, or any SOP checklist meaning.
+8. Each retrieval_query should normally be 8 to 24 words.
+
+SOP CHECKLIST ITEMS:
+[
+  {
+    "item_id": "SOP001",
+    "category": "Opening",
+    "sub_category": "Greeting",
+    "agent_action": "greet",
+    "item_text": "Greet the customer politely",
+    "expected_agent_utterance": "Hi Sir/Madam, Gm/Ga/Ge",
+    "expected_intent": "greeting"
+  },
+  {
+    "item_id": "SOP002",
+    "category": "Opening",
+    "sub_category": "Identity Confirmation",
+    "agent_action": "confirm_identity",
+    "item_text": "Introduce yourself and your team",
+    "expected_agent_utterance": "I am _____ from adventure team on Mahindra & Mahindra",
+    "expected_intent": "introduce_agent"
+  },
+  {
+    "item_id": "SOP003",
+    "category": "Opening",
+    "sub_category": "Purpose Explanation",
+    "agent_action": "explain_purpose",
+    "item_text": "Explain the purpose and duration of the call",
+    "expected_agent_utterance": "We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.",
+    "expected_intent": "explain_survey_purpose"
+  },
+  {
+    "item_id": "SOP004",
+    "category": "Survey",
+    "sub_category": "Basic Information",
+    "agent_action": "ask_question",
+    "item_text": "Ask for customer's age",
+    "expected_agent_utterance": "May I know your age?",
+    "expected_intent": "ask_age"
+  },
+  {
+    "item_id": "SOP005",
+    "category": "Survey",
+    "sub_category": "Basic Information",
+    "agent_action": "ask_question",
+    "item_text": "Ask for customer's profession",
+    "expected_agent_utterance": "What is your profession?",
+    "expected_intent": "ask_profession"
+  },
+  {
+    "item_id": "SOP006",
+    "category": "Survey",
+    "sub_category": "Basic Information",
+    "agent_action": "ask_question",
+    "item_text": "Ask how many people are in the customer's family",
+    "expected_agent_utterance": "How many people are there in your family?",
+    "expected_intent": "ask_family_size"
+  },
+  {
+    "item_id": "SOP007",
+    "category": "Survey",
+    "sub_category": "Basic Information",
+    "agent_action": "ask_question",
+    "item_text": "Ask which vehicle or vehicles the customer owns",
+    "expected_agent_utterance": "Which vehicle or vehicles do you own?",
+    "expected_intent": "ask_vehicle_ownership"
+  },
+  {
+    "item_id": "SOP008",
+    "category": "Survey",
+    "sub_category": "Awareness",
+    "agent_action": "ask_question",
+    "item_text": "Ask how the customer first came across the event",
+    "expected_agent_utterance": "How did you first come across the Mahindra Adventure event?",
+    "expected_intent": "ask_event_discovery"
+  },
+  {
+    "item_id": "SOP009",
+    "category": "Survey",
+    "sub_category": "Initial Interest",
+    "agent_action": "ask_question",
+    "item_text": "Ask what part of the event caught the customer's interest initially",
+    "expected_agent_utterance": "What part of the event caught your interest initially?",
+    "expected_intent": "ask_initial_interest"
+  },
+  {
+    "item_id": "SOP010",
+    "category": "Survey",
+    "sub_category": "Reasons for Not Subscribing",
+    "agent_action": "ask_question",
+    "item_text": "Ask what stopped the customer from subscribing to the event",
+    "expected_agent_utterance": "What stopped you from finally subscribing to the event?",
+    "expected_intent": "ask_reason_not_subscribe"
+  },
+  {
+    "item_id": "SOP011",
+    "category": "Survey",
+    "sub_category": "Other Outdoor Experiences",
+    "agent_action": "ask_question",
+    "item_text": "Ask if the customer was looking for any other outdoor experiences",
+    "expected_agent_utterance": "Were you also looking for any other outdoor experiences? Yes or No?",
+    "expected_intent": "ask_other_outdoor_experiences"
+  },
+  {
+    "item_id": "SOP012",
+    "category": "Survey",
+    "sub_category": "Other Outdoor Experiences",
+    "agent_action": "ask_question",
+    "item_text": "If yes, ask which other outdoor experiences the customer looked at",
+    "expected_agent_utterance": "If yes, which ones did you look at?",
+    "expected_intent": "ask_which_other_experiences"
+  },
+  {
+    "item_id": "SOP013",
+    "category": "Survey",
+    "sub_category": "Other Outdoor Experiences",
+    "agent_action": "ask_question",
+    "item_text": "If yes, ask where the customer heard about these other outdoor experiences",
+    "expected_agent_utterance": "And where did you hear about these other outdoor experiences?",
+    "expected_intent": "ask_source_other_experiences"
+  },
+  {
+    "item_id": "SOP014",
+    "category": "Survey",
+    "sub_category": "Future Expectations",
+    "agent_action": "ask_question",
+    "item_text": "Ask how early the customer expects to be informed before an event",
+    "expected_agent_utterance": "According to you, how early should we inform you before an adventure event?",
+    "expected_intent": "ask_notification_timing"
+  },
+  {
+    "item_id": "SOP015",
+    "category": "Survey",
+    "sub_category": "Future Expectations",
+    "agent_action": "ask_question",
+    "item_text": "Ask what one thing could be improved to make the customer consider subscribing",
+    "expected_agent_utterance": "What is the one thing we could improve that would make you consider subscribing in the future?",
+    "expected_intent": "ask_improvement_suggestion"
+  }
+]
+
+Return exactly this JSON:
+
+{
+  "items": [
+    {
+      "item_id": "",
+      "retrieval_query": ""
+    }
+  ]
+}

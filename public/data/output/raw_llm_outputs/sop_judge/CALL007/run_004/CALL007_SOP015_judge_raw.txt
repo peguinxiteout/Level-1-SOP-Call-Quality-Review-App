@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked what should be improved to enable future subscription, closely matching the SOP intent and expected utterance."
+}

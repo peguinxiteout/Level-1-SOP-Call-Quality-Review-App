@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent asked how much notice the customer would prefer before an adventurous event, which matches the SOP intent to ask how early the customer expects to be informed."
+}

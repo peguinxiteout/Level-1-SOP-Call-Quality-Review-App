@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not explicitly probe subscription timing with the expected time range options; agent only repeated 'Two months' without asking the clarifying question."
+}

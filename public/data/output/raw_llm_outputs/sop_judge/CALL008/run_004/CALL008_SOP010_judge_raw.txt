@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked 'Can I know the reason, sir?' and 'So, can I know the reason why you rejected it, sir?' which directly covers asking what stopped the customer from subscribing to the event."
+}

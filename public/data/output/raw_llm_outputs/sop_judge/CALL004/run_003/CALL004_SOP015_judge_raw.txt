@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked if the decision to participate was totally the customer's own decision, which practically covers who influenced the decision the most."
+}

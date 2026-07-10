@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly informed that feedback will be kept confidential and used only for analysis purposes."
+}

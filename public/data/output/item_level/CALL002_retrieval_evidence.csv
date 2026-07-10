@@ -1,0 +1,573 @@
+﻿sop_call_type,agent_id,agent_name,agent_name_confidence,agent_identity_source,call_id,item_id,rank,candidate_id,turn_ids,agent_turn_id,candidate_type,retrieval_query,agent_text_for_retrieval,candidate_text,context_text_for_evaluation,key_match_score,retrieval_score,combined_score,retrieval_method,retrieval_error
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP001,1,AW0001,"1,2,3,4,5,6,7",2,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge I am from adventure team on Mahindra & Mahindra.",Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?,"[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.","[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.",0.4433,0.6458,0.5749,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP001,2,AW0015,"30,31,32,33,34,35,36",31,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge I am from adventure team on Mahindra & Mahindra.","Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.",0.2672,0.5642,0.4603,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP001,3,AW0008,"17,18,19,20,21,22,23",18,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge I am from adventure team on Mahindra & Mahindra.","Okay, and when was the last time you took part in Mahindra's adventure activity?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?",0.1981,0.5827,0.4481,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP001,4,AW0007,"15,16,17,18,19,20,21",16,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge I am from adventure team on Mahindra & Mahindra.","Mahindra's Thar vehicle, right?","[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?","[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?",0.1254,0.4601,0.343,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP002,1,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.",0.9045,0.8624,0.8771,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP002,2,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.1895,0.4907,0.3853,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP002,3,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.134,0.48,0.3589,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP002,4,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.1345,0.408,0.3123,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP003,1,AW0003,"7,8,9,10,11,12,13",8,agent_anchored_window,"Sir/Mam, we would start with your basic info, Age Profession How many people are there in your family Which vehicle/vehicles do you own?","Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?","[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.
+[42.6 - 49.0] Agent: Okay,  and  ma'am,  if  you  don't  mind,  may  I  know  your  profession?  Are  you  a  businesswoman, self-employed, or salaried?
+[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.","[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.
+[42.6 - 49.0] Agent: Okay,  and  ma'am,  if  you  don't  mind,  may  I  know  your  profession?  Are  you  a  businesswoman, self-employed, or salaried?
+[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.",0.3682,0.5386,0.479,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP003,2,AW0005,"11,12,13,14,15,16,17",12,agent_anchored_window,"Sir/Mam, we would start with your basic info, Age Profession How many people are there in your family Which vehicle/vehicles do you own?","Business, okay. And how many people are there in your immediate family?","[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.","[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.",0.3719,0.4769,0.4402,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP003,3,AW0006,"13,14,15,16,17,18,19",14,agent_anchored_window,"Sir/Mam, we would start with your basic info, Age Profession How many people are there in your family Which vehicle/vehicles do you own?","Okay, and which vehicle do you own?","[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...","[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.
+[61.8 - 63.6] Agent: Mahindra's Thar vehicle, right?
+[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...",0.2466,0.5048,0.4144,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP003,4,AW0004,"9,10,11,12,13,14,15",10,agent_anchored_window,"Sir/Mam, we would start with your basic info, Age Profession How many people are there in your family Which vehicle/vehicles do you own?","Okay,  and  ma'am,  if  you  don't  mind,  may  I  know  your  profession?  Are  you  a  businesswoman, self-employed, or salaried?","[41.4 - 42.0] Customer: Twenty-six.
+[42.6 - 49.0] Agent: Okay,  and  ma'am,  if  you  don't  mind,  may  I  know  your  profession?  Are  you  a  businesswoman, self-employed, or salaried?
+[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.","[41.4 - 42.0] Customer: Twenty-six.
+[42.6 - 49.0] Agent: Okay,  and  ma'am,  if  you  don't  mind,  may  I  know  your  profession?  Are  you  a  businesswoman, self-employed, or salaried?
+[49.1 - 50.2] Customer: Business.
+[50.6 - 54.3] Agent: Business, okay. And how many people are there in your immediate family?
+[55.3 - 56.5] Customer: Five.
+[57.1 - 59.5] Agent: Okay, and which vehicle do you own?
+[60.6 - 61.3] Customer: Thar.",0.2076,0.4817,0.3858,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP004,1,AW0008,"17,18,19,20,21,22,23",18,agent_anchored_window,When was the last time you took part in a Mahindra Adventure activity? And which event was it?,"Okay, and when was the last time you took part in Mahindra's adventure activity?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?",0.7706,0.9194,0.8673,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP004,2,AW0015,"30,31,32,33,34,35,36",31,agent_anchored_window,When was the last time you took part in a Mahindra Adventure activity? And which event was it?,"Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.",0.2784,0.7031,0.5545,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP004,3,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,When was the last time you took part in a Mahindra Adventure activity? And which event was it?,And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.3274,0.4752,0.4235,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP004,4,AW0001,"1,2,3,4,5,6,7",2,agent_anchored_window,When was the last time you took part in a Mahindra Adventure activity? And which event was it?,Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?,"[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.","[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.",0.2324,0.5079,0.4115,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP005,1,AW0011,"24,25,26,27,28,29,30",25,agent_anchored_window,How did you first hear about this event?,"Okay, it's alright. And how did you first hear about this event?","[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.","[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.",0.945,0.7699,0.8312,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP005,2,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,How did you first hear about this event?,"Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.3996,0.5,0.4649,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP005,3,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,How did you first hear about this event?,"And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.3718,0.4257,0.4068,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP005,4,AW0010,"22,23,24,25,26,27,28",23,agent_anchored_window,How did you first hear about this event?,"Okay, and which event was it?","[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?
+[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.","[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?
+[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.",0.1847,0.517,0.4007,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP006,1,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,What made you feel interested enough to subscribe/book this Adventure event?,"Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.9746,0.8962,0.9236,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP006,2,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,What made you feel interested enough to subscribe/book this Adventure event?,And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.4395,0.6831,0.5978,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP006,3,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,What made you feel interested enough to subscribe/book this Adventure event?,"And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.3586,0.4459,0.4153,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP006,4,AW0011,"24,25,26,27,28,29,30",25,agent_anchored_window,What made you feel interested enough to subscribe/book this Adventure event?,"Okay, it's alright. And how did you first hear about this event?","[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.","[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.",0.3015,0.4194,0.3781,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP007,1,AW0015,"30,31,32,33,34,35,36",31,agent_anchored_window,"Before booking Mahindra Adventure, did you check out any other outdoor experiences?","Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.","[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.
+[131.5 - 133.2] Agent: Okay, so you didn't, right?
+[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.",0.9525,0.9011,0.9191,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP007,2,AW0008,"17,18,19,20,21,22,23",18,agent_anchored_window,"Before booking Mahindra Adventure, did you check out any other outdoor experiences?","Okay, and when was the last time you took part in Mahindra's adventure activity?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?",0.2818,0.69,0.5471,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP007,3,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,"Before booking Mahindra Adventure, did you check out any other outdoor experiences?","Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.2001,0.486,0.3859,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP007,4,AW0001,"1,2,3,4,5,6,7",2,agent_anchored_window,"Before booking Mahindra Adventure, did you check out any other outdoor experiences?",Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?,"[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.","[5.1 - 5.7] Customer: Hello.
+[7.0 - 13.6] Agent: Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti Ruparaj?
+[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.",0.288,0.4269,0.3783,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP009,1,AW0017,"34,35,36,37,38,39,40",35,agent_anchored_window,"While you were exploring and deciding, who influenced your decision the most? Was it you, your spouse, kids, friends, or someone else?","And while you were exploring and deciding, who influenced your decision the most?","[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.
+[144.2 - 146.4] Agent: Okay, like was it your
+[146.4 - 149.0] Agent: spouse, friends, or someone else?
+[149.2 - 150.3] Customer: No, no, no.
+[150.7 - 152.6] Agent: Okay, so it was you only, right?","[133.2 - 133.5] Customer: Hmm.
+[133.3 - 138.8] Agent: And while you were exploring and deciding, who influenced your decision the most?
+[140.0 - 146.4] Customer: Um, no one in particular. It could be that we were, we are like 40 years old.
+[144.2 - 146.4] Agent: Okay, like was it your
+[146.4 - 149.0] Agent: spouse, friends, or someone else?
+[149.2 - 150.3] Customer: No, no, no.
+[150.7 - 152.6] Agent: Okay, so it was you only, right?",0.632,0.8629,0.7821,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP009,2,AW0019,"37,38,39,40,41,42,43",38,agent_anchored_window,"While you were exploring and deciding, who influenced your decision the most? Was it you, your spouse, kids, friends, or someone else?","spouse, friends, or someone else?","[144.2 - 146.4] Agent: Okay, like was it your
+[146.4 - 149.0] Agent: spouse, friends, or someone else?
+[149.2 - 150.3] Customer: No, no, no.
+[150.7 - 152.6] Agent: Okay, so it was you only, right?
+[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.","[144.2 - 146.4] Agent: Okay, like was it your
+[146.4 - 149.0] Agent: spouse, friends, or someone else?
+[149.2 - 150.3] Customer: No, no, no.
+[150.7 - 152.6] Agent: Okay, so it was you only, right?
+[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.",0.283,0.5304,0.4438,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP009,3,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,"While you were exploring and deciding, who influenced your decision the most? Was it you, your spouse, kids, friends, or someone else?","Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.149,0.4026,0.3138,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP009,4,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,"While you were exploring and deciding, who influenced your decision the most? Was it you, your spouse, kids, friends, or someone else?",And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.1768,0.3347,0.2794,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP010,1,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.9933,0.9769,0.9826,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP010,2,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,"According to you, how early should we inform you before an adventure event?",And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.2784,0.4981,0.4212,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP010,3,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.",0.2741,0.4889,0.4137,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP010,4,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.3621,0.4288,0.4055,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP011,1,AW0022,"43,44,45,46,47,48,49",44,agent_anchored_window,"Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months ago?","Okay, it takes a month or two months, right?","[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.","[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.",0.2557,0.515,0.4242,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP011,2,AW0010,"22,23,24,25,26,27,28",23,agent_anchored_window,"Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months ago?","Okay, and which event was it?","[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?
+[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.","[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?
+[88.6 - 91.4] Customer: I don't remember because it's almost been 6 to 8 months.
+[92.1 - 95.8] Agent: Okay, it's alright. And how did you first hear about this event?
+[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.",0.1434,0.3022,0.2466,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP011,3,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,"Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months ago?","And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.0828,0.2896,0.2172,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP011,4,AW0008,"17,18,19,20,21,22,23",18,agent_anchored_window,"Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months ago?","Okay, and when was the last time you took part in Mahindra's adventure activity?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?","[63.6 - 64.1] Customer: Yeah.
+[64.5 - 68.8] Agent: Okay, and when was the last time you took part in Mahindra's adventure activity?
+[69.3 - 73.0] Customer: I think last, last...
+[74.2 - 81.2] Customer: Whatever happened in, um, I don't remember the place, but I've been to Igatpuri and the following one.
+[82.3 - 84.4] Agent: Okay, Igatpuri. You went to Igatpuri?
+[84.8 - 85.2] Customer: Yes.
+[85.5 - 87.8] Agent: Okay, and which event was it?",0.1147,0.2676,0.2141,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP012,1,AW0023,"45,46,47,48,49,50,51",46,agent_anchored_window,What is the one thing that would make you more likely to subscribe to our adventure events in the future again?,And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.","[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.
+[176.7 - 181.8] Agent: I'm so sorry, ma'am, I couldn't get you. I didn't hear your voice properly. Can you please repeat that once?
+[182.4 - 189.9] Customer: I said you guys are already doing a really great job. I don't think I would want to have you change anything.
+[190.1 - 203.1] Agent: Okay,  okay,  ma'am.  Glad  to  hear  that  you  had  such  a  great  experience,  and  thank  you  so  much, ma'am, for the appreciation. So, Miss Drishti, I have updated your feedback here. Thank you so much, ma'am, for your valuable time and your valuable feedback. Have a great day ahead.
+[195.6 - 196.2] Customer: Thank you.",0.9955,0.9822,0.9869,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP012,2,AW0012,"26,27,28,29,30,31,32",27,agent_anchored_window,What is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.","[96.5 - 101.4] Customer: My elder brother found it. He is the one who is always on the lookout for such events. That's why.
+[101.2 - 107.5] Agent: Okay, okay. And what made you feel interested enough to subscribe or book this adventure event?
+[107.5 - 122.5] Customer: Of course, we saw so many videos and all of that. The feedback was also really nice. So, we thought we'd go ahead since we own a vehicle that we don't usually try off-roading with and all of that. So, under the guidance of you guys, of course.
+[114.2 - 114.7] Agent: Okay.
+[120.5 - 121.1] Agent: Okay.
+[123.1 - 129.9] Agent: Okay, ma'am, and before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too?
+[130.4 - 131.1] Customer: Hmm hmm.",0.3162,0.6554,0.5367,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP012,3,AW0021,"41,42,43,44,45,46,47",42,agent_anchored_window,What is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"And according to you, how early should we inform you before an adventure event?","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.","[152.7 - 153.1] Customer: Right.
+[153.5 - 157.6] Agent: And according to you, how early should we inform you before an adventure event?
+[158.3 - 161.7] Customer: Probably like a month ago, or a month or two.
+[162.1 - 164.7] Agent: Okay, it takes a month or two months, right?
+[164.4 - 164.8] Customer: Yes.
+[164.8 - 171.0] Agent: And what is the one thing that would make you more likely to subscribe to our adventure events in the future again?
+[172.2 - 176.9] Customer: I feel you guys are holding it really well. There's no change that I would like to see.",0.2307,0.4968,0.4037,azure_openai,
+Booking,A002,Sakshi,Medium,registry_name_match,CALL002,SOP012,4,AW0002,"3,4,5,6,7,8,9",4,agent_anchored_window,What is the one thing that would make you more likely to subscribe to our adventure events in the future again?,"Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.","[13.9 - 15.2] Customer: Yeah, Drishti, yes.
+[15.7 - 32.8] Agent: Yes,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences. This will help us improve our future events. It will take about 8 to 10 minutes. Your responses will be kept confidential and used for analysis purposes only. So, is this a convenient time to speak with you now, ma'am?
+[21.7 - 22.0] Customer: Right.
+[30.8 - 31.0] Customer: Okay.
+[33.4 - 34.9] Customer: Yeah, yeah, please tell me. Okay.
+[34.5 - 40.5] Agent: Okay,  thank  you  so  much,  ma'am,  for  your  valuable  time.  We  would  like  to  start  with  your  basic information. So, may I know your age?
+[41.4 - 42.0] Customer: Twenty-six.",0.2926,0.4227,0.3772,azure_openai,

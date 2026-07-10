@@ -1,0 +1,12 @@
+{
+  "transcript_path": "C:\\Users\\naikm\\Downloads\\POC\\level1_streamlit_app_v4_adventure\\input\\transcripts\\Transcription_Rejector_Adventure Activity_Adventure_53156_Rej.pdf",
+  "transcript_mtime": 1782977195.7825,
+  "transcript_size": 19902,
+  "experience_classifier_enabled": true,
+  "experience_classifier_provider": "azure_openai",
+  "classify_all_customer_turns": false,
+  "candidate_vader_threshold": -0.05,
+  "max_classifier_turns": 40,
+  "azure_chat_deployment_name": "gpt-4.1-mini",
+  "customer_experience_classifier_version": "2026-06-12-v3"
+}

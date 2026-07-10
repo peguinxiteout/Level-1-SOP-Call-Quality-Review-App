@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent text 'Okay, so currently I'm looking any mode outdoor experience' is unclear and does not explicitly ask if the customer was looking for any other outdoor experiences as a question. No direct question or clear inquiry about other outdoor experiences is present."
+}

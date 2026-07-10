@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly states this is a small feedback call to improve the adventure experience, explaining the purpose of the call."
+}

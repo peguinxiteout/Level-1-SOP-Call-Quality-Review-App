@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked about the number of cars owned and specifically about four-wheelers, which practically covers asking which vehicle or vehicles the customer owns."
+}

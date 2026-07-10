@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not inform the customer that responses will be kept confidential and used only for analysis purposes; no equivalent statement found in agent text."
+}

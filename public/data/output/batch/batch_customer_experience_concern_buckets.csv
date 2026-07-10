@@ -1,0 +1,4 @@
+﻿bucket_id,bucket_name,calls_affected_pct,concern_turns_pct,example_pointer
+CEB001,Service Execution Errors,10.0,33.33,Train routing mistake
+CEB002,Unrelated Personal Concerns,10.0,33.33,Customer mentions having an issue unrelated to the event
+CEB003,Reimbursement Processing Delay,10.0,33.33,Reimbursement not processed and unsatisfactory grade

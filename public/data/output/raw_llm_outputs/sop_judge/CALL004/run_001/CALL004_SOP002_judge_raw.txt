@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly introduced himself as Farad Nia from Mahindra Adventure Activity and mentioned the Adventure Activity Team, covering the introduction of self and team as per SOP."
+}

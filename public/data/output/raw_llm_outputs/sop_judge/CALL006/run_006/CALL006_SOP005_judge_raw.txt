@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'from where did you hear about the Mahindra Adventures event?' which matches the SOP intent to identify source of awareness."
+}

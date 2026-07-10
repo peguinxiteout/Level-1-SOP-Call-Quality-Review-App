@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'So, may I know your age?' which matches the SOP checklist item to ask the customer's age."
+}

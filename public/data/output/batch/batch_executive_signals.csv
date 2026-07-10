@@ -1,0 +1,3 @@
+﻿signal_order,area,insight,source,executive_signal_version,signature,generated_at
+1,SOP Adherence,"Avg non-adherence observed across all calls is 11%. Top 3 non-adherence areas are: Closure - Subscription Timing (20%), Survey - Initial Interest (20%), Closure - Future Expectations (20%).",deterministic,2026-07-02-v15,7f6eaf88b992cf9f7aec5bd2ae36680d1490b6cdf8994ea756694e3782bc0747,2026-07-06T17:32:27
+2,Agent Performance,Agent performance is strongest in Agent Talktime. Areas needing attention are: Agent Talk-over (40% of calls).,deterministic,2026-07-02-v15,7f6eaf88b992cf9f7aec5bd2ae36680d1490b6cdf8994ea756694e3782bc0747,2026-07-06T17:32:27

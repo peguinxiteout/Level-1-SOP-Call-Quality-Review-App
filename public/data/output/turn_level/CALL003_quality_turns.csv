@@ -1,0 +1,154 @@
+﻿sop_call_type,agent_id,agent_name,agent_name_confidence,agent_identity_source,call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role,word_count,duration_min,wpm,gap_from_previous_sec,agent_response_gap_from_customer_sec,overlap_with_previous_sec,agent_talkover_with_previous_customer_sec,customer_talkover_with_previous_agent_sec,is_long_agent_turn
+Booking,A003,Shashikant,High,registry_name_match,CALL003,1,SPEAKER_1,8.0,9.7,1.7,"Hi, Madam. Good afternoon.",Agent,4,0.028333333333333332,141.18,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,2,SPEAKER_2,10.2,10.6,0.4,Speak.,Customer,1,0.006666666666666667,150.0,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,3,SPEAKER_1,11.0,17.7,6.7,"I  am  Shashikant,  calling  from  the  Mahindra  and  Mahindra  Adventure  team.  Am  I  speaking  with  Miss Priyanka Patil?",Agent,18,0.11166666666666666,161.19,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,4,SPEAKER_0,18.3,18.6,0.3,Yes.,Unknown,1,0.005,200.0,0.6,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,5,SPEAKER_1,19.7,30.8,11.1,"Yes,  Miss  Priyanka  Patil.  We  are  conducting  a  short  feedback  exercise  to  understand  our  customers’ experiences with our adventure events. This will help us improve our future events. Shall we start?",Agent,31,0.185,167.57,1.1,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,6,SPEAKER_1,30.9,40.3,9.4,It will take hardly eight to ten minutes. Your feedback will be kept confidential and used only for analysis purposes. Shall we begin?,Agent,23,0.15666666666666668,146.81,0.1,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,7,SPEAKER_2,41.5,42.3,0.8,What is it?,Customer,3,0.013333333333333334,225.0,1.2,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,8,SPEAKER_1,42.8,45.7,2.9,"Yes, Miss Priyanka, can you confirm your age group?",Agent,9,0.04833333333333333,186.21,0.5,0.5,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,9,SPEAKER_2,46.9,48.3,1.4,Forty-two.,Customer,2,0.02333333333333333,85.71,1.2,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,10,SPEAKER_1,48.7,53.2,4.5,Forty-two. And what is your profession? Are you salaried or self-employed?,Agent,13,0.075,173.33,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,11,SPEAKER_1,56.0,57.3,1.3,"Okay, self-employed, right?",Agent,4,0.021666666666666667,184.62,2.8,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,12,SPEAKER_1,58.3,62.2,3.9,You are a doctor. How many people are there in your family?,Agent,12,0.065,184.62,1.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,13,SPEAKER_2,62.9,63.2,0.3,Three.,Customer,1,0.005,200.0,0.7,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,14,SPEAKER_1,64.0,66.6,2.6,Three. And which vehicle do you own?,Agent,7,0.043333333333333335,161.54,0.8,0.8,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,15,SPEAKER_2,68.3,69.2,0.9,Mahindra Thar.,Customer,2,0.015000000000000001,133.33,1.7,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,16,SPEAKER_1,70.2,77.5,7.3,"Mahindra Thar, right? When was the last time you participated in a Mahindra adventure activity?",Agent,15,0.12166666666666666,123.29,1.0,1.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,17,SPEAKER_2,78.9,83.8,4.9,"I think, yes, yes, this monsoon.",Customer,6,0.08166666666666668,73.47,1.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,18,SPEAKER_1,84.7,85.9,1.2,"Okay, which month was it?",Agent,5,0.02,250.0,0.9,0.9,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,19,SPEAKER_2,85.0,86.0,1.0,Which month?,Customer,2,0.016666666666666666,120.0,0.0,0.0,0.9,0.0,0.9,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,20,SPEAKER_2,87.4,89.0,1.6,Red Square was also in Pune at that time.,Customer,9,0.02666666666666667,337.5,1.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,21,SPEAKER_1,90.2,92.8,2.6,You mean...,Agent,2,0.043333333333333335,46.15,1.2,1.2,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,22,SPEAKER_2,91.6,92.4,0.8,Opium.,Customer,1,0.013333333333333334,75.0,0.0,0.0,1.2,0.0,1.2,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,23,SPEAKER_1,93.0,95.8,2.8,When was it? Hello?,Agent,4,0.04666666666666666,85.71,0.2,0.2,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,24,SPEAKER_2,95.4,98.3,2.9,"Hello, when was the escape to Pune? There was a Great Escape to Pune, right?",Customer,15,0.04833333333333333,310.34,0.0,0.0,0.4,0.0,0.4,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,25,SPEAKER_1,98.7,104.1,5.4,"You went to Pune for a Great Escape, right? Do you remember the month or anything?",Agent,16,0.09000000000000001,177.78,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,26,SPEAKER_2,105.2,108.7,3.5,"It's August, August or September.",Customer,6,0.058333333333333334,102.86,1.1,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,27,SPEAKER_1,109.1,110.8,1.7,"It was August, right?",Agent,4,0.028333333333333332,141.18,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,28,SPEAKER_2,111.4,112.0,0.6,Hmm.,Customer,1,0.01,100.0,0.6,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,29,SPEAKER_1,112.0,114.8,2.8,Okay. Where did you hear about this event?,Agent,8,0.04666666666666666,171.43,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,30,SPEAKER_2,116.3,120.5,4.2,"I heard it from Mahindra people. Was it on the internet, on Instagram?",Customer,13,0.07,185.71,1.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,31,SPEAKER_1,121.0,122.8,1.8,"You saw it on Instagram, right?",Agent,6,0.030000000000000002,200.0,0.5,0.5,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,32,SPEAKER_2,123.2,123.6,0.4,Hmm.,Customer,1,0.006666666666666667,150.0,0.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,33,SPEAKER_1,123.8,134.1,10.3,"Okay. So, you were interested in this. I mean, for the booking, right? What approach did you take to become interested in this booking? What was the reason?",Agent,28,0.1716666666666667,163.11,0.2,0.2,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,34,SPEAKER_2,134.1,148.4,14.3,"Actually, what happened was, we had an event. I think it was a trail hunt in Nashik. Yes, yes, in Igatpuri. It was in April, but we couldn't attend that event.",Customer,32,0.23833333333333334,134.27,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,35,SPEAKER_1,141.1,141.6,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.0,0.0,7.3,7.3,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,36,SPEAKER_1,142.4,143.6,1.2,"Yes, yes, in Igatpuri.",Agent,4,0.02,200.0,0.0,0.0,6.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,37,SPEAKER_1,146.3,146.8,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.0,0.0,2.1,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,38,SPEAKER_1,149.2,149.7,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.8,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,39,SPEAKER_2,149.7,158.1,8.4,"We were told it would be reimbursed. If you conduct any Mahindra event in the future, your money will be reimbursed.",Customer,21,0.14,150.0,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,40,SPEAKER_1,156.3,156.7,0.4,Hmm.,Agent,1,0.006666666666666667,150.0,0.0,0.0,1.8,1.8,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,41,SPEAKER_1,158.6,159.2,0.6,Okay.,Agent,1,0.01,100.0,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,42,SPEAKER_2,159.3,167.7,8.4,"We were told we had to attend a safety course for our daughter's rifle, but we couldn't attend because he started attending it.",Customer,25,0.14,178.57,0.1,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,43,SPEAKER_1,168.2,169.4,1.2,"Okay, yes, correct.",Agent,3,0.02,150.0,0.5,0.5,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,44,SPEAKER_2,168.3,174.4,6.1,"Yes, that's right. They said your reimbursement would happen. Then we went to the trail and the Great Escape.",Customer,20,0.10166666666666666,196.72,0.0,0.0,1.1,0.0,1.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,45,SPEAKER_1,174.7,175.2,0.5,Hmm hmm.,Agent,2,0.008333333333333333,240.0,0.3,0.3,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,46,SPEAKER_2,174.7,184.8,10.1,"Nothing happened. Our reimbursement didn't happen, and the grade wasn't very good either. We also gave a review, my husband.",Customer,22,0.16833333333333333,130.69,0.0,0.0,0.5,0.0,0.5,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,47,SPEAKER_1,179.3,179.8,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.0,0.0,5.5,5.5,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,48,SPEAKER_1,182.3,183.0,0.7,Okay.,Agent,1,0.011666666666666665,85.71,0.0,0.0,2.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,49,SPEAKER_1,183.7,184.2,0.5,Yes.,Agent,1,0.008333333333333333,120.0,0.0,0.0,1.1,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,50,SPEAKER_1,185.3,187.0,1.7,"Okay, yes.",Agent,2,0.028333333333333332,70.59,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,51,SPEAKER_2,186.2,201.4,15.2,"No, I didn't face that many obstacles. Instead, the in-house event you did in Igatpuri was much, much better. Though there were only four tracks, it was a very good event.",Customer,33,0.2533333333333333,130.26,0.0,0.0,0.8,0.0,0.8,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,52,SPEAKER_1,192.8,195.0,2.2,"Yes, yes, yes. It is quite different from that.",Agent,9,0.03666666666666667,245.45,0.0,0.0,8.6,8.6,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,53,SPEAKER_1,196.4,197.0,0.6,Hmm.,Agent,1,0.01,100.0,0.0,0.0,5.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,54,SPEAKER_1,197.9,198.4,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.0,0.0,3.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,55,SPEAKER_1,199.5,199.8,0.3,Hmm.,Agent,1,0.005,200.0,0.0,0.0,1.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,56,SPEAKER_1,200.4,200.8,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,1.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,57,SPEAKER_2,202.0,205.5,3.5,"We had to pay, no doubt, but it was very good. The car was also fine.",Customer,16,0.058333333333333334,274.29,0.6,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,58,SPEAKER_1,202.2,202.7,0.5,Okay.,Agent,1,0.008333333333333333,120.0,0.0,0.0,3.3,3.3,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,59,SPEAKER_1,206.0,207.6,1.6,"Yes, exactly. Okay.",Agent,3,0.02666666666666667,112.5,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,60,SPEAKER_2,206.7,236.7,30.0,"We were given a rock there. We both attended it. That was much, much better. No, you were calling all the way to Pune, and we didn't feel it was that special. Later, we didn't do anything ourselves. You had two groups—one headed by Mr.  Abbas  and  another  by  someone  else.  They  said  Abbas  had  arranged  it,  so  you  won't  get  that  reimbursement  because  you attended another group. Hey, we are attending from Mahindra. How do we know if it's from Abbas or someone else?",Customer,90,0.5,180.0,0.0,0.0,0.9,0.0,0.9,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,62,SPEAKER_1,209.3,210.0,0.7,Okay.,Agent,1,0.011666666666666665,85.71,0.0,0.0,27.4,27.4,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,63,SPEAKER_1,211.6,212.6,1.0,"Okay, correct.",Agent,2,0.016666666666666666,120.0,0.0,0.0,25.1,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,64,SPEAKER_1,215.5,215.8,0.3,Yes.,Agent,1,0.005,200.0,0.0,0.0,21.2,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,65,SPEAKER_1,222.7,223.0,0.3,Yes.,Agent,1,0.005,200.0,0.0,0.0,14.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,66,SPEAKER_1,224.8,225.3,0.5,Yes.,Agent,1,0.008333333333333333,120.0,0.0,0.0,11.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,67,SPEAKER_1,230.4,231.2,0.8,"Okay, yes.",Agent,2,0.013333333333333334,150.0,0.0,0.0,6.3,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,68,SPEAKER_1,234.2,235.9,1.7,"Yes, definitely.",Agent,2,0.028333333333333332,70.59,0.0,0.0,2.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,61,SPEAKER_2,236.7,243.3,6.6,"Yes, that's right. We didn't attend the events. Later, their Konkan Great Escape also happened, but we didn't do anything.",Customer,23,0.11,209.09,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,69,SPEAKER_1,238.0,239.0,1.0,"Yes, correct.",Agent,2,0.016666666666666666,120.0,0.0,0.0,5.3,5.3,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,70,SPEAKER_1,244.0,255.2,11.2,"Okay. I want to ask, you became interested in subscribing and booking, right? What was the reason you became interested in adventure?",Agent,22,0.18666666666666665,117.86,0.7,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,71,SPEAKER_2,250.9,251.2,0.3,What?,Customer,1,0.005,200.0,0.0,0.0,4.3,0.0,4.3,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,72,SPEAKER_2,252.7,273.6,20.9,"We attended Igatpuri on our own. They did a trail hunt in Nashik. They also told us the trail hunt was good. They did another trail hunt in Saputara, but we didn't have time then. They were also telling us to come along, but we didn't go.",Customer,49,0.34833333333333333,140.67,0.0,0.0,2.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,73,SPEAKER_1,256.1,256.4,0.3,Yes.,Agent,1,0.005,200.0,0.0,0.0,17.5,17.5,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,74,SPEAKER_1,258.2,259.7,1.5,"Okay, it was done by myself.",Agent,6,0.025,240.0,0.0,0.0,15.4,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,75,SPEAKER_1,261.7,263.0,1.3,"Okay, yes, yes.",Agent,3,0.021666666666666667,138.46,0.0,0.0,11.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,76,SPEAKER_1,264.0,264.6,0.6,Okay.,Agent,1,0.01,100.0,0.0,0.0,9.6,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,77,SPEAKER_1,265.1,265.8,0.7,Okay.,Agent,1,0.011666666666666665,85.71,0.0,0.0,8.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,78,SPEAKER_1,266.1,266.7,0.6,Exactly.,Agent,1,0.01,100.0,0.0,0.0,7.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,79,SPEAKER_1,268.9,269.4,0.5,Hmm.,Agent,1,0.008333333333333333,120.0,0.0,0.0,4.7,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,80,SPEAKER_1,272.8,272.9,0.1,Okay.,Agent,1,0.0016666666666666668,600.0,0.0,0.0,0.8,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,81,SPEAKER_1,274.1,282.9,8.8,"Regarding the booking you made for Mahindra's Adventure, did you check any outdoor experiences before that?",Agent,17,0.14666666666666667,115.91,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,82,SPEAKER_2,283.1,284.0,0.9,"No, no, no.",Customer,3,0.015000000000000001,200.0,0.2,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,83,SPEAKER_1,284.7,287.9,3.2,"So, you didn't check any outdoor experiences, right?",Agent,9,0.05333333333333334,168.75,0.7,0.7,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,84,SPEAKER_2,288.3,288.8,0.5,No.,Customer,1,0.008333333333333333,120.0,0.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,85,SPEAKER_1,289.2,301.7,12.5,"Okay.  The  experience  you  had,  right?  The  plan  you  made  for  the  adventure—who  influenced  that decision?",Agent,17,0.20833333333333334,81.6,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,86,SPEAKER_2,304.1,305.4,1.3,"For that decision, influence...",Customer,4,0.021666666666666667,184.62,2.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,87,SPEAKER_1,304.3,307.1,2.8,Who influenced that decision?,Agent,4,0.04666666666666666,85.71,0.0,0.0,1.1,1.1,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,88,SPEAKER_2,307.9,310.1,2.2,Is it someone from your side or someone from our side?,Customer,11,0.03666666666666667,300.0,0.8,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,89,SPEAKER_1,310.4,316.4,6.0,"No, no. Among your family, did anyone influence you the most for this decision?",Agent,14,0.1,140.0,0.3,0.3,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,90,SPEAKER_2,315.8,334.2,18.4,"Both of us—my husband and I—we are adventure lovers. We like it. I personally do bike rides too. We are very fond of it. My husband also goes on treks, etc. Though we don't have much time, we make time for it.",Customer,45,0.30666666666666664,146.74,0.0,0.0,0.6,0.0,0.6,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,91,SPEAKER_1,321.9,322.8,0.9,"Yes, yes, yes.",Agent,3,0.015000000000000001,200.0,0.0,0.0,12.3,12.3,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,92,SPEAKER_1,324.7,325.6,0.9,Okay.,Agent,1,0.015000000000000001,66.67,0.0,0.0,9.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,93,SPEAKER_1,326.0,326.4,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,8.2,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,94,SPEAKER_1,327.3,328.0,0.7,Okay.,Agent,1,0.011666666666666665,85.71,0.0,0.0,6.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,95,SPEAKER_1,329.6,330.2,0.6,Okay.,Agent,1,0.01,100.0,0.0,0.0,4.6,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,96,SPEAKER_1,331.7,332.1,0.4,Time.,Agent,1,0.006666666666666667,150.0,0.0,0.0,2.5,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,97,SPEAKER_1,333.1,338.5,5.4,"Yes, okay. So, you mean you took this decision because of your husband's influence.",Agent,15,0.09000000000000001,166.67,0.0,0.0,1.1,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,98,SPEAKER_2,334.4,334.6,0.2,Okay.,Customer,1,0.0033333333333333335,300.0,0.0,0.0,4.1,0.0,4.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,99,SPEAKER_2,337.6,341.4,3.8,"Yes, but I was driving a Royal Enfield myself.",Customer,9,0.06333333333333332,142.11,0.0,0.0,0.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,100,SPEAKER_1,340.9,342.9,2.0,"Okay, it was good to hear.",Agent,6,0.03333333333333333,180.0,0.0,0.0,0.5,0.5,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,101,SPEAKER_2,341.8,346.9,5.1,It felt very good. We are still riding three hundred kilometers.,Customer,11,0.08499999999999999,129.41,0.0,0.0,1.1,0.0,1.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,102,SPEAKER_1,343.3,343.7,0.4,Okay.,Agent,1,0.006666666666666667,150.0,0.0,0.0,3.6,3.6,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,103,SPEAKER_1,345.5,348.8,3.3,"Okay, okay, very good.",Agent,4,0.055,72.73,0.0,0.0,1.4,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,104,SPEAKER_2,347.3,351.6,4.3,"Four years ago, we really liked doing all this.",Customer,9,0.07166666666666667,125.58,0.0,0.0,1.5,0.0,1.5,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,105,SPEAKER_1,350.2,350.6,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,1.4,1.4,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,106,SPEAKER_1,352.0,364.7,12.7,"Oh no, it felt good to hear that, Miss Priyanka. Regarding these events, how many days in advance should we inform you?",Agent,22,0.21166666666666664,103.94,0.4,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,107,SPEAKER_2,365.2,367.8,2.6,It is enough if you inform us about a month in advance.,Customer,12,0.043333333333333335,276.92,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,108,SPEAKER_1,368.3,369.4,1.1,A month in advance.,Agent,4,0.018333333333333333,218.18,0.5,0.5,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,109,SPEAKER_2,368.4,387.1,18.7,"Yes, maintain transparency. For example, if you are getting fifty cars for an event, let us know how many will attend. That way, we will know how many people and cars there will be, and you can plan a large enough track.",Customer,42,0.31166666666666665,134.76,0.0,0.0,1.0,0.0,1.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,110,SPEAKER_1,371.1,371.6,0.5,Yes.,Agent,1,0.008333333333333333,120.0,0.0,0.0,16.0,16.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,111,SPEAKER_1,378.3,378.9,0.6,Yes.,Agent,1,0.01,100.0,0.0,0.0,8.8,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,112,SPEAKER_1,387.1,387.9,0.8,"Oh, exactly.",Agent,2,0.013333333333333334,150.0,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,113,SPEAKER_2,387.3,398.0,10.7,"Correct. Half the time, I spend lining up when there are so many people. At least limit the number of cars. If you want to do such a big event, that's fine, but at least have two different tracks.",Customer,40,0.17833333333333332,224.3,0.0,0.0,0.6,0.0,0.6,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,114,SPEAKER_1,393.0,393.4,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,5.0,5.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,115,SPEAKER_2,398.1,405.9,7.8,"I'll tell you my personal experience. When I'm taking fifty vehicles on a single track, it takes a lot of time to line them up.",Customer,27,0.13,207.69,0.1,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,116,SPEAKER_1,398.3,399.2,0.9,"Yes, correct.",Agent,2,0.015000000000000001,133.33,0.0,0.0,7.6,7.6,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,117,SPEAKER_1,399.6,400.1,0.5,Hmm.,Agent,1,0.008333333333333333,120.0,0.0,0.0,6.3,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,118,SPEAKER_1,401.2,402.3,1.1,"Yes, exactly.",Agent,2,0.018333333333333333,109.09,0.0,0.0,4.7,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,119,SPEAKER_1,406.5,410.4,3.9,"Oh, exactly, exactly. That's how it is.",Agent,8,0.065,123.08,0.6,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,120,SPEAKER_2,407.1,426.9,19.8,"Yes, that's right. If you're keeping it for two days, send one group to one track and another group to another track. Maybe exchange the tracks the next day. Keep the same spot for coordination. Yes, coordination is needed. We take a break and come back until then.",Customer,50,0.33,151.52,0.0,0.0,3.3,0.0,3.3,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,121,SPEAKER_1,418.8,419.6,0.8,"Okay, correct.",Agent,2,0.013333333333333334,150.0,0.0,0.0,8.1,8.1,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,122,SPEAKER_1,422.6,424.6,2.0,"Yes, coordination is needed. Yes, exactly.",Agent,6,0.03333333333333333,180.0,0.0,0.0,4.3,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,123,SPEAKER_1,426.9,427.8,0.9,"Yes, correct.",Agent,2,0.015000000000000001,133.33,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,124,SPEAKER_2,427.3,431.9,4.6,"Exactly. Then the fun is lost. Half the time, our last event was spent lining up.",Customer,16,0.07666666666666666,208.7,0.0,0.0,0.5,0.0,0.5,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,125,SPEAKER_1,432.4,434.0,1.6,"Oh, exactly.",Agent,2,0.02666666666666667,75.0,0.5,0.5,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,126,SPEAKER_2,433.0,436.0,3.0,The train went there by mistake. That's what happened.,Customer,10,0.05,200.0,0.0,0.0,1.0,0.0,1.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,127,SPEAKER_1,435.7,439.4,3.7,"Yes, I understand, Ma'am.",Agent,5,0.06166666666666667,81.08,0.0,0.0,0.3,0.3,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,128,SPEAKER_2,438.1,446.4,8.3,"Yes, you can understand. At least have two different tracks or limit the number of cars.",Customer,16,0.13833333333333334,115.66,0.0,0.0,1.3,0.0,1.3,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,129,SPEAKER_1,439.8,440.1,0.3,Yes.,Agent,1,0.005,200.0,0.0,0.0,6.6,6.6,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,130,SPEAKER_1,441.8,442.3,0.5,Yes.,Agent,1,0.008333333333333333,120.0,0.0,0.0,4.6,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,131,SPEAKER_1,444.2,444.8,0.6,"Yes, definitely.",Agent,2,0.01,200.0,0.0,0.0,2.2,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,132,SPEAKER_1,446.9,460.6,13.7,"Yes, definitely. My last question is, what can we do to encourage you to subscribe to future adventure events?",Agent,19,0.22833333333333333,83.21,0.5,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,133,SPEAKER_1,461.8,463.7,1.9,What do you feel?,Agent,4,0.03166666666666666,126.32,1.2,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,134,SPEAKER_2,462.6,467.7,5.1,You should increase the number of tracks or obstacle training a bit.,Customer,12,0.08499999999999999,141.18,0.0,0.0,1.1,0.0,1.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,135,SPEAKER_1,468.1,468.7,0.6,Okay.,Agent,1,0.01,100.0,0.4,0.4,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,136,SPEAKER_2,468.6,498.6,30.0,"It would feel good. The adventurous part is important. I saw you are also organizing events in Ladakh, etc. Not everyone can manage that. People will come to you for closer events. For example, Igatpuri was feasible for us. Even in Mumbai, there were people that day. Single-day or Saturday-Sunday events are better for us.",Customer,57,0.5,114.0,0.0,0.0,0.1,0.0,0.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,138,SPEAKER_1,471.1,472.2,1.1,"Okay, okay.",Agent,2,0.018333333333333333,109.09,0.0,0.0,27.5,27.5,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,139,SPEAKER_1,473.0,473.4,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,25.6,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,140,SPEAKER_1,478.3,478.8,0.5,Oh.,Agent,1,0.008333333333333333,120.0,0.0,0.0,20.3,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,141,SPEAKER_1,480.3,481.2,0.9,"Yes, not that far.",Agent,4,0.015000000000000001,266.67,0.0,0.0,18.3,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,142,SPEAKER_1,482.8,483.2,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,15.8,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,143,SPEAKER_1,486.4,486.7,0.3,Hmm.,Agent,1,0.005,200.0,0.0,0.0,12.2,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,144,SPEAKER_1,487.8,488.8,1.0,"Yes, definitely.",Agent,2,0.016666666666666666,120.0,0.0,0.0,10.8,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,145,SPEAKER_1,492.6,493.0,0.4,Yes.,Agent,1,0.006666666666666667,150.0,0.0,0.0,6.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,146,SPEAKER_1,497.9,498.7,0.8,"Yes, nearby.",Agent,2,0.013333333333333334,150.0,0.0,0.0,0.7,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,137,SPEAKER_2,498.6,499.9,1.3,It is good.,Customer,3,0.021666666666666667,138.46,0.0,0.0,0.1,0.0,0.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,147,SPEAKER_1,499.9,503.2,3.3,"Yes, exactly. I will mention it here.",Agent,7,0.055,127.27,0.0,0.0,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,148,SPEAKER_2,502.1,512.3,10.2,"Yes, it was there too. Yes, definitely.",Customer,7,0.16999999999999998,41.18,0.0,0.0,1.1,0.0,1.1,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,149,SPEAKER_1,505.6,509.2,3.6,"Yes, it was there too. It's perfectly fine.",Agent,9,0.060000000000000005,150.0,0.0,0.0,6.7,6.7,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,150,SPEAKER_1,511.4,515.9,4.5,"Yes, definitely. It is available for us in Igatpuri.",Agent,9,0.075,120.0,0.0,0.0,0.9,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,151,SPEAKER_2,513.6,518.0,4.4,"Pune is very easy for us, and there are plenty of offbeat places.",Customer,13,0.07333333333333333,177.27,0.0,0.0,2.3,0.0,2.3,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,152,SPEAKER_1,518.6,537.0,18.4,"Yes, definitely, Ma'am. Miss Priyanka, your feedback has been completed. Thank you very much for taking the time to provide your valuable feedback. It was nice talking to you. Have a nice day. Goodbye.",Agent,35,0.30666666666666664,114.13,0.6,0.6,0.0,0.0,0.0,False
+Booking,A003,Shashikant,High,registry_name_match,CALL003,153,SPEAKER_2,519.6,519.8,0.2,Yes.,Customer,1,0.0033333333333333335,300.0,0.0,0.0,17.4,0.0,17.4,False

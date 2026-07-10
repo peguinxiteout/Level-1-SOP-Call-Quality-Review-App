@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly introduced himself as 'Dheeraj speaking from Mahindra Adventures Event' which matches the practical intent of introducing self and team."
+}

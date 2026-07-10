@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked when the customer last participated in a Mahindra adventure activity and followed up by asking which event it was."
+}

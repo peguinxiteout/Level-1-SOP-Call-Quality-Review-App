@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked for the customer's age with the question, 'can I know, Kunal ji, what is your age?' which matches the expected intent to ask for age."
+}

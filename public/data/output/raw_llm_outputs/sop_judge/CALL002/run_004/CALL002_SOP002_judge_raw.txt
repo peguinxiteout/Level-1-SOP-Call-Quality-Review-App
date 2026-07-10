@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly identifies herself as Sakshi from Mahindra's Adventure team in the opening greeting."
+}

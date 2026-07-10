@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent asked, 'So, are you currently looking for any more outdoor experiences?' which matches the SOP intent to ask if the customer was also looking for other outdoor experiences."
+}

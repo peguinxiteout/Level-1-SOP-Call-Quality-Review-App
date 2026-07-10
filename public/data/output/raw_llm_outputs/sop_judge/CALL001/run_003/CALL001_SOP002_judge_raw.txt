@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly identifies himself and his team by saying, 'This is Nagesh calling from the Mahindra and Mahindra Adventure team.'"
+}

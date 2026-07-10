@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Sir, may I know your age?' which matches the SOP expected utterance and intent to collect age."
+}

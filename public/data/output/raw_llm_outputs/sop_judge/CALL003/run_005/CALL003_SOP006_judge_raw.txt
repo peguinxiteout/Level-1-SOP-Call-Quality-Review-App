@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked what was the reason the customer became interested in subscribing and booking the adventure event, matching the practical intent of asking interest reasons."
+}

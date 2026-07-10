@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent greeted the customer politely by saying 'Hi, Madam. Good afternoon.' and introduced himself as calling from the Mahindra and Mahindra Adventure team."
+}

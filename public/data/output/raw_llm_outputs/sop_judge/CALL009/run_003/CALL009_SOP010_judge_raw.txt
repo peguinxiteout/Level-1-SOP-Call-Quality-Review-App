@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked 'So, what was the reason you showed interest in the event but couldn’t attend?', which practically matches asking what stopped the customer from subscribing to the event."
+}

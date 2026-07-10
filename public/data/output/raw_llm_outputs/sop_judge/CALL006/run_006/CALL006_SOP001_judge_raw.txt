@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent greeted the customer politely with 'Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Mr. Nath?' which is a polite greeting to start the call."
+}

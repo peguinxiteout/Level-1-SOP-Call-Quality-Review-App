@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "item_id": "SOP001",
+      "retrieval_query": "greet customer politely, say hello or good morning"
+    },
+    {
+      "item_id": "SOP002",
+      "retrieval_query": "introduce yourself and your team"
+    },
+    {
+      "item_id": "SOP003",
+      "retrieval_query": "explain call purpose and expected duration"
+    },
+    {
+      "item_id": "SOP004",
+      "retrieval_query": "inform customer about confidentiality and data use"
+    },
+    {
+      "item_id": "SOP005",
+      "retrieval_query": "ask customer their age"
+    },
+    {
+      "item_id": "SOP006",
+      "retrieval_query": "ask customer about their profession or job"
+    },
+    {
+      "item_id": "SOP007",
+      "retrieval_query": "ask how many people are in your family"
+    },
+    {
+      "item_id": "SOP008",
+      "retrieval_query": "ask which vehicle or vehicles you own"
+    },
+    {
+      "item_id": "SOP009",
+      "retrieval_query": "ask when last participated in adventure and which event"
+    },
+    {
+      "item_id": "SOP010",
+      "retrieval_query": "ask how you first heard about this event"
+    },
+    {
+      "item_id": "SOP011",
+      "retrieval_query": "ask what made you interested to book or subscribe"
+    },
+    {
+      "item_id": "SOP012",
+      "retrieval_query": "ask if you checked other outdoor experiences before booking"
+    },
+    {
+      "item_id": "SOP013",
+      "retrieval_query": "ask which other outdoor experiences you looked at"
+    },
+    {
+      "item_id": "SOP014",
+      "retrieval_query": "ask where you heard about other outdoor events"
+    },
+    {
+      "item_id": "SOP015",
+      "retrieval_query": "ask who influenced your decision most while deciding"
+    },
+    {
+      "item_id": "SOP016",
+      "retrieval_query": "ask how early you expect to be informed before event"
+    },
+    {
+      "item_id": "SOP017",
+      "retrieval_query": "ask how long ago you last subscribed to adventure"
+    },
+    {
+      "item_id": "SOP018",
+      "retrieval_query": "ask what would make you more likely to subscribe again"
+    }
+  ]
+}

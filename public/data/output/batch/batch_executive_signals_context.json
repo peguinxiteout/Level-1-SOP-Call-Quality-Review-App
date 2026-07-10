@@ -1,0 +1,147 @@
+{
+  "executive_signal_version": "2026-07-02-v15",
+  "signature": "7f6eaf88b992cf9f7aec5bd2ae36680d1490b6cdf8994ea756694e3782bc0747",
+  "source": "deterministic",
+  "generated_at": "2026-07-06T17:32:27",
+  "facts": {
+    "call_count": 10,
+    "sop_lens": {
+      "avg_confirmed_pct": 89.0,
+      "avg_review_pct": 2.0,
+      "avg_missed_pct": 10.0,
+      "avg_coverage_incl_review_pct": 90.0
+    },
+    "agent_behavior_lens": {
+      "avg_agent_talk_pct": 52.0,
+      "agent_talk_ratio_review_call_pct": 0.0,
+      "agent_talk_ratio_contrast": {
+        "review_call_pct": 0.0,
+        "review_avg": "NA",
+        "normal_avg": 52.46
+      },
+      "avg_conversation_gap_pct": 7.0,
+      "conversation_gap_review_call_pct": 0.0,
+      "conversation_gap_contrast": {
+        "review_call_pct": 0.0,
+        "review_avg": "NA",
+        "normal_avg": 7.06
+      },
+      "avg_agent_talkover_pct": 6.0,
+      "agent_talkover_review_call_pct": 40.0,
+      "agent_talkover_contrast": {
+        "review_call_pct": 40.0,
+        "review_avg": 13.2,
+        "normal_avg": 0.49
+      },
+      "avg_agent_wpm": 160.0
+    },
+    "customer_experience_lens": {
+      "confirmed_customer_concern_call_pct": 20.0,
+      "top_concern_bucket": "Service Execution Errors",
+      "top_concern_bucket_call_pct": "10.0",
+      "top_concern_bucket_turn_pct": "33.33",
+      "concern_bucket_count": 3,
+      "top_3_concern_buckets_by_turn_share": [
+        {
+          "bucket_name": "Service Execution Errors",
+          "concern_turns_pct": 33.33,
+          "calls_affected_pct": 10.0
+        },
+        {
+          "bucket_name": "Unrelated Personal Concerns",
+          "concern_turns_pct": 33.33,
+          "calls_affected_pct": 10.0
+        },
+        {
+          "bucket_name": "Reimbursement Processing Delay",
+          "concern_turns_pct": 33.33,
+          "calls_affected_pct": 10.0
+        }
+      ],
+      "top_3_concern_buckets_text": "Service Execution Errors (10% of calls); Unrelated Personal Concerns (10% of calls); Reimbursement Processing Delay (10% of calls)"
+    },
+    "call_type_process_lens": {
+      "highest_sop_risk_call_type": "Other",
+      "highest_sop_risk_call_count": 5,
+      "highest_sop_risk_avg_missed_pct": 12.3,
+      "highest_sop_risk_avg_coverage_pct": 87.69
+    },
+    "priority_overlap_lens": {
+      "sop_miss_and_customer_concern_call_count": 2,
+      "sop_miss_and_customer_concern_call_pct": 20.0,
+      "sop_miss_and_quality_review_call_count": 4,
+      "sop_miss_and_quality_review_call_pct": 40.0
+    },
+    "sop_pattern_lens": {
+      "problem_checklist_rows": 13,
+      "missed_checklist_rows": 10,
+      "affected_call_count": 7,
+      "affected_call_pct": 70.0,
+      "avg_problem_rows_per_affected_call": 1.86,
+      "max_problem_call": "CALL008",
+      "max_problem_call_problem_count": 3,
+      "min_problem_call_problem_count": 1,
+      "top3_problem_area_share_pct": 53.85,
+      "top3_problem_area_names": [
+        "Closure - Future Expectations",
+        "Closure - Subscription Timing",
+        "Survey - Initial Interest"
+      ],
+      "top3_problem_area_rows": [
+        {
+          "area": "Closure - Future Expectations",
+          "issue_row_pct": 23.08
+        },
+        {
+          "area": "Closure - Subscription Timing",
+          "issue_row_pct": 15.38
+        },
+        {
+          "area": "Survey - Initial Interest",
+          "issue_row_pct": 15.38
+        }
+      ],
+      "top3_problem_area_text": "Closure - Future Expectations (23% issue rows); Closure - Subscription Timing (15% issue rows); Survey - Initial Interest (15% issue rows)",
+      "top3_missed_area_rows": [
+        {
+          "area": "Closure - Subscription Timing",
+          "non_adherence_share_pct": 20.0
+        },
+        {
+          "area": "Survey - Initial Interest",
+          "non_adherence_share_pct": 20.0
+        },
+        {
+          "area": "Closure - Future Expectations",
+          "non_adherence_share_pct": 20.0
+        }
+      ],
+      "top3_missed_area_text": "Closure - Subscription Timing (20%), Survey - Initial Interest (20%), Closure - Future Expectations (20%)",
+      "top3_non_adherence_area_rows": [
+        {
+          "area": "Closure - Subscription Timing",
+          "non_adherence_share_pct": 20.0
+        },
+        {
+          "area": "Survey - Initial Interest",
+          "non_adherence_share_pct": 20.0
+        },
+        {
+          "area": "Closure - Future Expectations",
+          "non_adherence_share_pct": 20.0
+        }
+      ],
+      "top3_non_adherence_area_text": "Closure - Subscription Timing (20%), Survey - Initial Interest (20%), Closure - Future Expectations (20%)",
+      "review_suggested_share_of_problem_rows_pct": 23.08,
+      "opening_coverage_pct": 92.0,
+      "closure_coverage_pct": 73.68,
+      "survey_coverage_pct": 95.83,
+      "avg_missed_pct_per_call": 11.44,
+      "avg_non_adherence_pct_per_call": 11.44,
+      "max_missed_pct_in_single_call": 15.38,
+      "max_missed_call": "CALL004",
+      "avg_problem_pct_per_affected_call": 11.44,
+      "max_problem_pct_in_single_call": 23.07
+    }
+  }
+}

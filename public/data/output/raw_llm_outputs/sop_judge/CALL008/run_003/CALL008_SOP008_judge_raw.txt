@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not ask how the customer first came across the Mahindra Adventure event; instead, agent referenced prior interest and rejection without asking about the initial source of awareness."
+}

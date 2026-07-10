@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked 'Okay, which month was it?' which does not practically determine how long ago the customer last subscribed as per the SOP requirement."
+}

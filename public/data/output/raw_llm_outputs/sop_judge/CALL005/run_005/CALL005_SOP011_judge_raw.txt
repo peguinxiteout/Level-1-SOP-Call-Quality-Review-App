@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly probes subscription timing by confirming 'At least three months before, right, sir?' which aligns with clarifying subscription timing as per SOP."
+}

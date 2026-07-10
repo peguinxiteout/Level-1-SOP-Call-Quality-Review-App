@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'according to you how early should we inform you before an adventure event?' which matches the SOP checklist item intent to collect notification timing."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked how early the customer expects to be informed before the event, offering specific time frames such as one week, one or two weeks, one or two months, or two months."
+}

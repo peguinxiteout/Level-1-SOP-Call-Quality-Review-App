@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked if the customer has taken any outdoor experience before booking, which is about prior experience, not whether the customer checked out other outdoor experiences before booking. The agent did not ask about checking out or considering other outdoor experiences prior to booking Mahindra Adventure."
+}

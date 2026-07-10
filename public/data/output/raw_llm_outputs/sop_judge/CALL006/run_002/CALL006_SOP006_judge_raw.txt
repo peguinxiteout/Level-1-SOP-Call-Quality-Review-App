@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked about the number of family members with the question 'So in the family member, how many members are there?' and confirmed the total count."
+}

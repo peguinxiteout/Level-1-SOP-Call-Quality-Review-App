@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked multiple variations of the question about other outdoor experiences, including 'You were watching—which other outdoor experience?' and 'Okay, so besides Mahindra, were you also looking at other adventures?', which matches the practical intent of asking if the customer was also looking for other outdoor experiences."
+}

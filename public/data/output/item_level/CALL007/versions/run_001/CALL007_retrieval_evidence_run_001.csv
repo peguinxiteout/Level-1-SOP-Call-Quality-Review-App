@@ -1,0 +1,657 @@
+﻿output_version,output_generated_at,sop_call_type,agent_id,agent_name,agent_name_confidence,agent_identity_source,call_id,item_id,rank,candidate_id,turn_ids,agent_turn_id,candidate_type,retrieval_query,agent_text_for_retrieval,candidate_text,context_text_for_evaluation,key_match_score,retrieval_score,combined_score,retrieval_method,retrieval_error
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP001,1,AW0007,"7,8,9,10,11,12,13",8,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge","Sir, your profession?","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!",0.2,0.4797,0.3818,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP001,2,AW0006,"6,7,8,9,10,11,12",7,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge","Sir, I would like to take your basic details so that I can know your age.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.",0.1957,0.4429,0.3564,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP001,3,AW0014,"19,20,21,22,23,24,25",20,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge",For which location sir?,"[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.
+[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?","[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.
+[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?",0.1948,0.442,0.3555,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP001,4,AW0009,"10,11,12,13,14,15,16",11,agent_anchored_window,"Hi Sir/Madam, Gm/Ga/Ge","Sir, which vehicle do you have in 4-wheeler?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?",0.1964,0.3705,0.3096,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP002,1,AW0002,"1,2,3,4,5,6,7",2,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Good morning, Sneha. This is Mahindra from Mahindra Adventure Team.","[4.38 - 7.57] Agent: Hey, Rocky, Rocky, Rocky, Rocky, Rocky, Rocky.
+[11.02 - 14.75] Agent: Good morning, Sneha. This is Mahindra from Mahindra Adventure Team.
+[15.72 - 16.53] Customer: Thank you, Polina.
+[18.1 - 20.1] Agent: I am talking to Patil Sharma
+[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.","[4.38 - 7.57] Agent: Hey, Rocky, Rocky, Rocky, Rocky, Rocky, Rocky.
+[11.02 - 14.75] Agent: Good morning, Sneha. This is Mahindra from Mahindra Adventure Team.
+[15.72 - 16.53] Customer: Thank you, Polina.
+[18.1 - 20.1] Agent: I am talking to Patil Sharma
+[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.",0.5387,0.6387,0.6037,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP002,2,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.2996,0.5841,0.4845,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP002,3,AW0018,"28,29,30,31,32,33,34",29,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.,"[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?","[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?",0.4196,0.5003,0.4721,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP002,4,AW0013,"17,18,19,20,21,22,23",18,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.",0.2948,0.5359,0.4515,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP003,1,AW0005,"5,6,7,8,9,10,11",6,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?",0.355,0.6707,0.5602,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP003,2,AW0022,"36,37,38,39,40,41,42",37,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?",0.1335,0.4804,0.359,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP003,3,AW0020,"31,32,33,34,35,36,37",32,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,Can you tell me the name of this adventure?,"[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?",0.0974,0.4062,0.2981,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP003,4,AW0028,"48,49",49,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.","[268.77 - 273.0] Agent: So, in your opinion, the management should be proper, right?
+[277.35 - 285.62] Agent: Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.","[268.77 - 273.0] Agent: So, in your opinion, the management should be proper, right?
+[277.35 - 285.62] Agent: Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.",0.166,0.3242,0.2688,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP004,1,AW0006,"6,7,8,9,10,11,12",7,agent_anchored_window,May I know your age?,"Sir, I would like to take your basic details so that I can know your age.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.",0.6889,0.6426,0.6588,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP004,2,AW0007,"7,8,9,10,11,12,13",8,agent_anchored_window,May I know your age?,"Sir, your profession?","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!",0.2553,0.3887,0.342,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP004,3,AW0008,"9,10,11,12,13,14,15",10,agent_anchored_window,May I know your age?,How many members are there in your family?,"[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.","[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.",0.2583,0.3267,0.3028,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP004,4,AW0028,"48,49",49,agent_anchored_window,May I know your age?,"Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.","[268.77 - 273.0] Agent: So, in your opinion, the management should be proper, right?
+[277.35 - 285.62] Agent: Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.","[268.77 - 273.0] Agent: So, in your opinion, the management should be proper, right?
+[277.35 - 285.62] Agent: Ok Sharma ji, I will mention your feedback here. Thank you very much for your valuable time. Have a nice day.",0.3605,0.214,0.2653,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP005,1,AW0007,"7,8,9,10,11,12,13",8,agent_anchored_window,What is your profession?,"Sir, your profession?","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!","[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!",0.5774,0.759,0.6954,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP005,2,AW0017,"26,27,28,29,30,31,32",27,agent_anchored_window,What is your profession?,What is the location?,"[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?","[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?",0.5145,0.2607,0.3495,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP005,3,AW0006,"6,7,8,9,10,11,12",7,agent_anchored_window,What is your profession?,"Sir, I would like to take your basic details so that I can know your age.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.",0.2513,0.3133,0.2916,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP005,4,AW0008,"9,10,11,12,13,14,15",10,agent_anchored_window,What is your profession?,How many members are there in your family?,"[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.","[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.",0.2812,0.2552,0.2643,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP006,1,AW0008,"9,10,11,12,13,14,15",10,agent_anchored_window,How many people are there in your family?,How many members are there in your family?,"[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.","[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.",0.8785,0.8814,0.8804,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP006,2,AW0009,"10,11,12,13,14,15,16",11,agent_anchored_window,How many people are there in your family?,"Sir, which vehicle do you have in 4-wheeler?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?",0.173,0.2602,0.2297,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP006,3,AW0024,"39,40,41,42,43,44,45",40,agent_anchored_window,How many people are there in your family?,What are the things that should be improved so that you can move forward in the future?,"[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...","[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...",0.2589,0.208,0.2258,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP006,4,AW0006,"6,7,8,9,10,11,12",7,agent_anchored_window,How many people are there in your family?,"Sir, I would like to take your basic details so that I can know your age.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.","[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.",0.1703,0.2553,0.2256,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP007,1,AW0009,"10,11,12,13,14,15,16",11,agent_anchored_window,Which vehicle or vehicles do you own?,"Sir, which vehicle do you have in 4-wheeler?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?",0.5696,0.5581,0.5621,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP007,2,AW0008,"9,10,11,12,13,14,15",10,agent_anchored_window,Which vehicle or vehicles do you own?,How many members are there in your family?,"[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.","[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?
+[62.67 - 64.39] Customer: I have been waiting for you for a long time.
+[65.12 - 65.93] Agent: See you tomorrow!
+[68.07 - 69.76] Agent: Okay, hot rocks
+[71.07 - 72.41] Customer: No, this is awesome. It's free to order.",0.0844,0.3162,0.2351,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP007,3,AW0014,"19,20,21,22,23,24,25",20,agent_anchored_window,Which vehicle or vehicles do you own?,For which location sir?,"[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.
+[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?","[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.
+[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?",0.1847,0.2362,0.2182,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP007,4,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,Which vehicle or vehicles do you own?,"Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.1613,0.2476,0.2174,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP008,1,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.6694,0.793,0.7497,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP008,2,AW0018,"28,29,30,31,32,33,34",29,agent_anchored_window,How did you first come across the Mahindra Adventure event?,It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.,"[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?","[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.
+[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?",0.4606,0.6665,0.5944,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP008,3,AW0013,"17,18,19,20,21,22,23",18,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.",0.4412,0.6341,0.5666,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP008,4,AW0020,"31,32,33,34,35,36,37",32,agent_anchored_window,How did you first come across the Mahindra Adventure event?,Can you tell me the name of this adventure?,"[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?",0.36,0.4881,0.4433,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP009,1,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,What part of the event caught your interest initially?,"Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.2579,0.4344,0.3726,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP009,2,AW0016,"24,25,26,27,28,29,30",25,agent_anchored_window,What part of the event caught your interest initially?,"So, that's why you didn't subscribe, right? So, which event were you watching at that time?","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.",0.1805,0.4549,0.3589,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP009,3,AW0021,"34,35,36,37,38,39,40",35,agent_anchored_window,What part of the event caught your interest initially?,"Sir, when you cancelled your plan, were you watching any other outdoor event at that time?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?",0.2595,0.3904,0.3446,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP009,4,AW0022,"36,37,38,39,40,41,42",37,agent_anchored_window,What part of the event caught your interest initially?,"Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?",0.3233,0.302,0.3095,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP010,1,AW0016,"24,25,26,27,28,29,30",25,agent_anchored_window,What stopped you from finally subscribing to the event?,"So, that's why you didn't subscribe, right? So, which event were you watching at that time?","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.",0.281,0.6541,0.5235,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP010,2,AW0013,"17,18,19,20,21,22,23",18,agent_anchored_window,What stopped you from finally subscribing to the event?,"Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.","[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.
+[110.97 - 118.41] Agent: Actually sir, you have inquired about this call, but for some reason you did not subscribe, so regarding that you have been called.
+[118.09 - 122.07] Customer: That became a short plan regarding my weekend, so I couldn't do it.",0.3602,0.4983,0.45,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP010,3,AW0021,"34,35,36,37,38,39,40",35,agent_anchored_window,What stopped you from finally subscribing to the event?,"Sir, when you cancelled your plan, were you watching any other outdoor event at that time?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?",0.2695,0.4555,0.3904,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP010,4,AW0022,"36,37,38,39,40,41,42",37,agent_anchored_window,What stopped you from finally subscribing to the event?,"Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?",0.4786,0.263,0.3385,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP011,1,AW0021,"34,35,36,37,38,39,40",35,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Sir, when you cancelled your plan, were you watching any other outdoor event at that time?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?","[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?",0.4309,0.5068,0.4802,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP011,2,AW0020,"31,32,33,34,35,36,37",32,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,Can you tell me the name of this adventure?,"[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[154.13 - 157.59] Agent: Okay, I saw it on my Instagram.
+[159.16 - 162.13] Agent: Can you tell me the name of this adventure?
+[163.35 - 164.63] Customer: I don't remember the name.
+[165.41 - 168.11] Customer: Now let's check in our calendar, what does this guy do?
+[169.14 - 179.87] Agent: Sir, when you cancelled your plan, were you watching any other outdoor event at that time?
+[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?",0.1466,0.3607,0.2858,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP011,3,AW0005,"5,6,7,8,9,10,11",6,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?",0.1269,0.3575,0.2768,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP011,4,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.1263,0.3393,0.2647,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP014,1,AW0022,"36,37,38,39,40,41,42",37,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?","[180.46 - 182.45] Customer: No, I don't think so.
+[182.74 - 196.96] Agent: Sir, what do you think, how long should we inform if the adventure event is going on? So, before we inform, how long should we inform? Like, less than one week or one to two weeks?
+[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?",0.6625,0.7772,0.7371,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP014,2,AW0023,"38,39,40,41,42,43,44",39,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Right, so you should inform us 4 weeks back, right?","[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.","[197.97 - 211.49] Customer: What about 2 to 4 weeks? After 4 weeks, you have to inform the headmaster that something like this is going to happen. If it doesn't happen at the last moment, then people won't be able to plan accordingly. If it happens at the last moment, then some other plan will also come out.
+[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.",0.3073,0.5068,0.437,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP014,3,AW0012,"15,16,17,18,19,20,21",16,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.","[71.07 - 72.41] Customer: No, this is awesome. It's free to order.
+[72.41 - 79.5] Agent: Sir, where did you see the Mahindra Adventure event first, like Instagram, Facebook etc?
+[80.2 - 82.4] Customer: I would not have been able to do it, but I went to the event 2-3 times.
+[87.16 - 94.65] Agent: Sir, you had not subscribed to Mahindra's Adventure Event, right? So, you had...
+[93.86 - 96.0] Customer: I participated in Mahendra's event.
+[99.27 - 100.56] Agent: For which location sir?
+[101.55 - 107.32] Customer: I have been to your academy as well and I have been to your normal events as well.",0.2862,0.4255,0.3767,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP014,4,AW0005,"5,6,7,8,9,10,11",6,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?",0.213,0.4577,0.3721,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP015,1,AW0024,"39,40,41,42,43,44,45",40,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,What are the things that should be improved so that you can move forward in the future?,"[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...","[212.05 - 215.93] Agent: Right, so you should inform us 4 weeks back, right?
+[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...",0.4377,0.4117,0.4208,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP015,2,AW0005,"5,6,7,8,9,10,11",6,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?","[22.41 - 23.89] Agent: Thank you for confirming
+[24.67 - 35.99] Agent: So, sir, this call is a small feedback call so that we can understand our customer preference and make our adventure experience even better for future events. Okay?
+[38.74 - 42.2] Agent: Sir, I would like to take your basic details so that I can know your age.
+[44.63 - 46.96] Agent: Sir, your profession?
+[48.46 - 50.96] Customer: Yes, I am in the telecom industry.
+[52.61 - 55.25] Agent: How many members are there in your family?
+[58.65 - 61.95] Agent: Sir, which vehicle do you have in 4-wheeler?",0.3194,0.3849,0.362,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP015,3,AW0016,"24,25,26,27,28,29,30",25,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"So, that's why you didn't subscribe, right? So, which event were you watching at that time?","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.","[122.83 - 125.24] Customer: But if there's any other work that's coming up, I won't be able to tell you.
+[128.28 - 133.12] Agent: So, that's why you didn't subscribe, right? So, which event were you watching at that time?
+[134.04 - 140.43] Customer: Ma'am, I don't remember that, but there was an event on 22nd February. Which location?
+[139.32 - 140.6] Agent: What is the location?
+[141.68 - 143.32] Customer: Yes, I went to Mumbai.
+[143.94 - 152.38] Agent: It was in Mumbai. Where did you see Mahendra's first adventure event? I followed her on Instagram. I followed her on Instagram.
+[151.23 - 154.74] Customer: I follow you on Instagram, keep coming to me.",0.1859,0.4352,0.3479,azure_openai,
+run_001,2026-06-17T17:21:56,Other,A011,Unknown Agent CALL007,Not Found,unknown_agent_new,CALL007,SOP015,4,AW0025,"40,41,42,43,44,45,46",41,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,Subscribe to our channel,"[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...
+[254.76 - 258.88] Customer: Like if a car is getting stuck in the front, then in the back it is completely...","[216.74 - 221.53] Agent: What are the things that should be improved so that you can move forward in the future?
+[222.41 - 223.3] Agent: Subscribe to our channel
+[225.16 - 229.72] Customer: Ma'am, your outdoor events like the escape from Pune, right?
+[231.22 - 249.6] Customer: I don't think Mahindra did it directly, I don't know who organized it with you, I don't remember the name, but the car was so heavy that it used to come to every spot and the car would just stand for 45 minutes.
+[250.44 - 252.26] Customer: That was a major turn-off for us.
+[253.98 - 254.96] Agent: Ok, so...
+[254.76 - 258.88] Customer: Like if a car is getting stuck in the front, then in the back it is completely...",0.0598,0.4211,0.2946,azure_openai,

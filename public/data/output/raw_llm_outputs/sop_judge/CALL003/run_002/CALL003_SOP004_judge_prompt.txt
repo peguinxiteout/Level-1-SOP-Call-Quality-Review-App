@@ -1,0 +1,112 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Inform confidentiality and usage of responses
+Expected agent utterance: Your responses will be kept confidential and used only for analysis purposes.
+Expected intent: inform_confidentiality
+Agent action: get_consent
+Category: Opening
+Sub-category: Consent
+
+Retrieval query used:
+Your responses will be kept confidential and used only for analysis purposes.
+
+Agent text used for retrieval:
+So, it will take hardly 8 to 10 minutes. So, your experience will be kept confidential and used only for NLS purpose. So, shall we start?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.553
+Retrieval score: 0.4621
+Key match score: 0.7219
+Agent text: So, it will take hardly 8 to 10 minutes. So, your experience will be kept confidential and used only for NLS purpose. So, shall we start?
+Nearby context:
+[19.72 - 30.17] Agent: Yes, Ms. Priyanka Patil, we are conducting a short feedback exercise to understand our customer experience for adventure experience. This will help us to improve our future event, right?
+[31.15 - 40.16] Agent: So, it will take hardly 8 to 10 minutes. So, your experience will be kept confidential and used only for NLS purpose. So, shall we start?
+[41.46 - 42.25] Customer: Thank you.
+[42.81 - 45.63] Agent: Yeah. Miss Priyanka, can you confirm your age group?
+[48.78 - 53.12] Agent: 42 and what is your profession means you are a cellar ride or a business person
+[56.04 - 57.17] Agent: Okay, self-employed, right?
+[58.35 - 62.15] Agent: You are a doctor and how many people are there in your family?
+
+Evidence window rank 2
+Combined score: 0.2592
+Retrieval score: 0.3052
+Key match score: 0.1738
+Agent text: Yes, Ms. Priyanka Patil, we are conducting a short feedback exercise to understand our customer experience for adventure experience. This will help us to improve our future event, right?
+Nearby context:
+[11.07 - 17.61] Agent: I'm Shashikant calling from Mahindra and Mahindra Adventure team. Am I speaking with Mr. Priyanka Patil?
+[19.72 - 30.17] Agent: Yes, Ms. Priyanka Patil, we are conducting a short feedback exercise to understand our customer experience for adventure experience. This will help us to improve our future event, right?
+[31.15 - 40.16] Agent: So, it will take hardly 8 to 10 minutes. So, your experience will be kept confidential and used only for NLS purpose. So, shall we start?
+[41.46 - 42.25] Customer: Thank you.
+[42.81 - 45.63] Agent: Yeah. Miss Priyanka, can you confirm your age group?
+[48.78 - 53.12] Agent: 42 and what is your profession means you are a cellar ride or a business person
+[56.04 - 57.17] Agent: Okay, self-employed, right?
+
+Evidence window rank 3
+Combined score: 0.2266
+Retrieval score: 0.2443
+Key match score: 0.1937
+Agent text: So Ms. Priyanka ma'am, your feedback has been completed and I would like to thank you for the valuable feedback you have given. It was a pleasure to talk to you and get your feedback. Thank you ma'am, thank you for a valuable time and have a nice day. Bye.
+Nearby context:
+[518.65 - 520.32] Agent: Oh, definitely, definitely.
+[520.61 - 535.59] Agent: So Ms. Priyanka ma'am, your feedback has been completed and I would like to thank you for the valuable feedback you have given. It was a pleasure to talk to you and get your feedback. Thank you ma'am, thank you for a valuable time and have a nice day. Bye.
+
+Evidence window rank 4
+Combined score: 0.1858
+Retrieval score: 0.1754
+Key match score: 0.205
+Agent text: Yes, definitely, definitely. And my last question is, what are the things that you want to do in the future for adventure events?
+Nearby context:
+[444.1 - 444.87] Agent: Yeah, definitely.
+[446.9 - 460.5] Agent: Yes, definitely, definitely. And my last question is, what are the things that you want to do in the future for adventure events?
+[461.85 - 463.64] Agent: What is your opinion on this matter?
+[463.64 - 467.47] Customer: Yes, you should increase the number of tracks and obstacle training.
+[468.4 - 472.46] Customer: Okay It's not a big deal It's not a big deal
+[472.77 - 477.93] Customer: Going on, you have sold 40,000 and now you are also getting buyers. You also have Ladakh, right?
+[478.71 - 480.21] Customer: I don't get that much money.
+
+Retrieval score: 0.4621
+Key match score: 0.7219

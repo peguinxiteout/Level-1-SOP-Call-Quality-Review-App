@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly informed that the customer's experience will be kept confidential and used only for NLS purpose, which matches the practical intent of informing confidentiality and usage of responses."
+}

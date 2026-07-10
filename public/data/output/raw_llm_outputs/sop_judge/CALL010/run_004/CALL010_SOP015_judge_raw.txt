@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.4,
+  "reason": "Agent asked 'if you subscribe in the future, what do you think?' which is ambiguous and does not clearly ask what one thing could be improved to make the customer consider subscribing."
+}

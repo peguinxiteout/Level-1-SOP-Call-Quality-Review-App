@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked when the customer thinks they should be informed before the event, offering multiple time frames, matching the SOP intent to ask how early the customer expects to be informed."
+}

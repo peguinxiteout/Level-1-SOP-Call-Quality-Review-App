@@ -1,0 +1,101 @@
+Convert this customer survey/call script chunk into SOP checklist items.
+
+Return ONLY valid JSON. No markdown. No explanation.
+
+Rules:
+1. Create one SOP item for each auditable agent action or main survey question.
+2. Each numbered question such as Q1, Q2, Q3 should become one SOP item.
+3. Do not create separate SOP items for bracketed guidance, examples, capture notes, or probe notes.
+4. Attach guidance to the related item in expected_intent when useful.
+5. Do not invent items outside this script chunk.
+6. Keep every output value in English.
+7. Use the exact key "items".
+8. Keep item_text short and action-oriented.
+9. item_text must describe what the agent must ask, say, or do.
+10. expected_agent_utterance should contain the likely spoken agent question or sentence.
+11. retrieval_query must be a short agent-side search query for finding this item in a transcript.
+12. retrieval_query should include common spoken paraphrases and intent words.
+13. retrieval_query must not include capture notes, probe notes, examples, Q numbers, or SOP/checklist wording.
+14. Avoid brand/product/model names in retrieval_query unless the SOP item is specifically to confirm exact identity, exact product, or exact variant.
+15. Return only the fields shown in the JSON schema.
+16. For opening script lines, split greeting, identity confirmation, good-time check, purpose explanation, consent, and variant confirmation into separate items when explicitly present.
+17. Do not merge different numbered questions or different opening actions into one item.
+18. sub_category must be a short readable label, not a pipe-separated action list.
+19. Conditional items can appear anywhere in the script, not only opening. Detect phrases such as "If Yes", "If No", "If customer says", "Proceed if", "If salaried", "If self-employed", "If businessman", and similar branch instructions.
+20. For a conditional SOP item, keep the agent action as an item but populate condition_text, condition_type, condition_trigger, and condition_outcome_if_not_met.
+21. Use condition_type "depends_on_customer_answer" when the item applies only after a customer response. Use "none" when the item is always applicable.
+22. condition_trigger should describe the customer answer or situation that makes the item applicable.
+23. condition_outcome_if_not_met should be "Not Applicable" for conditional branch items.
+24. If the condition source item is in the same chunk and clear, fill condition_source_item_hint with the related prior question/action text. Otherwise leave it blank; a global pass will resolve it later.
+25. condition_trigger_keywords must list the customer answer words or phrases that make the conditional item applicable. Use exact answer options from the SOP/script where available. Keep it generic and script-derived; do not hardcode domain assumptions.
+26. Base/gating questions must not be conditional. Example: asking if it is a good time, asking if the customer can proceed, or asking a branching question is always applicable and should be scored if the agent misses it.
+27. Only dependent follow-up items should be conditional. Example: if customer says no, schedule a callback; if a selected answer option requires follow-up, ask that follow-up.
+
+SCRIPT CHUNK ID:
+1
+
+SCRIPT CHUNK:
+Introduction
+Hi Sir/Madam, Gm/Ga/Ge I am _____  from adventure team on Mahindra & Mahindra. We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.
+Sir/Mam, we would start with your basic info,
+Age
+Profession
+How many people are there in your family
+Which vehicle/vehicles do you own?
+Awareness and Initial Interest
+How did you first come across the Mahindra Adventure event? Allow spontaneous response. If needed, probe later: Instagram, Facebook, Google, Thrillophilia, a friend, Mahindra communication, or something else.)
+What part of the event caught your interest initially? Allow spontaneous response. If needed, probe later:
+The destination/location?
+Activities or itinerary?
+The photos or videos?
+Someone recommended it?
+Following Mahindra Adventure already?
+Looked exciting/unique?
+Reasons for not subscribing
+What stopped you from finally subscribing to the event? Allow spontaneous response. If needed, probe later:
+You didn’t have a Mahindra Vehicle.
+Was the price higher than expected?
+Were the dates inconvenient?
+Was the location too far?
+Did you feel you didn’t have enough clarity/information?
+Were there safety or comfort concerns?
+Family wasn’t interested?
+Didn’t get enough time to plan?
+Had other commitments?
+Didn’t find it suitable for your age group/preferences?
+Didn’t find the value for money?
+Were you also looking for any other outdoor experiences? (Yes/No)
+If yes, which ones did you look at?
+And where did you hear about these other outdoor experiences? (Allow spontaneous response. If needed, probe later: Instagram, Facebook, Google, Thrillophilia, a friend, Mahindra communication, or something else.)
+Future expectations
+According to you, how early should we inform you before an adventure event?
+Allow spontaneous response first, then probe
+Less than 1 week
+1-2 weeks
+2–4 weeks
+1–2 months
+More than 2 months
+What is the one thing we could improve that would make you consider subscribing in the future?
+
+Return only valid JSON in this exact format:
+
+{
+  "items": [
+    {
+      "category": "Opening|Consent|Survey|Closure|Other",
+      "sub_category": "",
+      "item_text": "",
+      "agent_action": "greet|confirm_identity|check_good_time|explain_purpose|get_consent|confirm_variant|ask_question|probe|close_call|other",
+      "expected_agent_utterance": "",
+      "expected_intent": "",
+      "retrieval_query": "",
+      "condition_type": "none|depends_on_customer_answer",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 1
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked about the customer's profession by saying 'And you are a businessman, sir?', which practically covers the SOP item of asking for the customer's profession."
+}

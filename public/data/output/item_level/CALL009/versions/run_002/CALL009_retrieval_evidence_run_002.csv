@@ -1,0 +1,649 @@
+﻿output_version,output_generated_at,sop_call_type,agent_id,agent_name,agent_name_confidence,agent_identity_source,call_id,item_id,rank,candidate_id,turn_ids,agent_turn_id,candidate_type,retrieval_query,agent_text_for_retrieval,candidate_text,context_text_for_evaluation,key_match_score,retrieval_score,combined_score,retrieval_method,retrieval_error
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP001,1,AW0048,"92,93",93,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Thank you very much. You're welcome, sir.","[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.","[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.",0.138,0.4892,0.3663,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP001,2,AW0037,"68,69,70,71,72,73,74",69,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Yes, sir. You can tell me, sir.","[314.23 - 316.4] Customer: Yes, Bentham, I have one more feedback.
+[316.12 - 317.52] Agent: Yes, sir. You can tell me, sir.
+[317.96 - 322.07] Customer: Yes, so a lot of expeditions, they are only 4x4s.
+[323.9 - 328.13] Customer: So, you might consider adding more events for the 4x2 bat also.
+[328.5 - 329.94] Agent: Okay for four by two
+[328.69 - 344.28] Customer: Okay, for 4x2 also. I personally, I own both. My car is 4x4 and my car is 4x2. So I am interested in all of it. But there are a lot of people who are very inclusive.
+[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.","[314.23 - 316.4] Customer: Yes, Bentham, I have one more feedback.
+[316.12 - 317.52] Agent: Yes, sir. You can tell me, sir.
+[317.96 - 322.07] Customer: Yes, so a lot of expeditions, they are only 4x4s.
+[323.9 - 328.13] Customer: So, you might consider adding more events for the 4x2 bat also.
+[328.5 - 329.94] Agent: Okay for four by two
+[328.69 - 344.28] Customer: Okay, for 4x2 also. I personally, I own both. My car is 4x4 and my car is 4x2. So I am interested in all of it. But there are a lot of people who are very inclusive.
+[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.",0.1786,0.3934,0.3182,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP001,3,AW0022,"41,42,43,44,45,46,47",42,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Sorry, can you repeat it again sir? Your voice was breaking.","[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience
+[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?","[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience
+[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?",0.1621,0.3543,0.287,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP001,4,AW0047,"90,91,92,93",91,agent_anchored_window,"Hi Sir/Madam, Good morning/afternoon/evening","Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.",0.1603,0.3444,0.28,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP002,1,AW0001,"2,3,4,5,6,7,8",3,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Hello, I am Dheeraj from Mahindra Adventures Events.","[13.43 - 15.47] Customer: Mahama Hello
+[16.45 - 21.19] Agent: Hello, I am Dheeraj from Mahindra Adventures Events.
+[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.","[13.43 - 15.47] Customer: Mahama Hello
+[16.45 - 21.19] Agent: Hello, I am Dheeraj from Mahindra Adventures Events.
+[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.",0.5391,0.664,0.6203,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP002,2,AW0013,"21,22,23,24,25,26,27",22,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Okay, so from where you know about the first first from where you know about the Mahindra adventures even","[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.
+[84.9 - 91.92] Agent: Okay, so from where you know about the first first from where you know about the Mahindra adventures even
+[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.","[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.
+[84.9 - 91.92] Agent: Okay, so from where you know about the first first from where you know about the Mahindra adventures even
+[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.",0.278,0.6547,0.5229,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP002,3,AW0003,"4,5,6,7,8,9,10",5,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Mr. Khushkara ji, as you were interested in Mahindra Adventures Event","[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?","[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?",0.2277,0.6408,0.4962,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP002,4,AW0014,"23,24,25,26,27,28,29",24,agent_anchored_window,I am from adventure team on Mahindra & Mahindra,"Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that","[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?","[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?",0.2756,0.5725,0.4686,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP003,1,AW0005,"7,8,9,10,11,12,13",8,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.",0.2682,0.6209,0.4975,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP003,2,AW0043,"79,80,81,82,83,84,85",80,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.",0.1274,0.5119,0.3773,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP003,3,AW0047,"90,91,92,93",91,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,"Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.",0.125,0.4094,0.3099,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP003,4,AW0033,"61,62,63,64,65,66,67",62,agent_anchored_window,We are conducting a short feedback exercise to understand customer preferences for Adventure experiences. This will help us improve future events. The call will take about 8–10 minutes. Your responses will be kept confidential and used only for analysis purposes.,So do you think there should be any improvement in the Mahindra Adventures event?,"[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so","[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so",0.0896,0.4171,0.3025,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP004,1,AW0006,"9,10,11,12,13,14,15",10,agent_anchored_window,May I know your age?,"Okay, so for profile purpose, first of all, can I know your age?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?",0.7139,0.7299,0.7243,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP004,2,AW0005,"7,8,9,10,11,12,13",8,agent_anchored_window,May I know your age?,"So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.",0.3408,0.288,0.3065,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP004,3,AW0009,"14,15,16,17,18,19,20",15,agent_anchored_window,May I know your age?,How many members are there in your family?,"[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.","[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.",0.2583,0.3267,0.3028,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP004,4,AW0037,"68,69,70,71,72,73,74",69,agent_anchored_window,May I know your age?,"Yes, sir. You can tell me, sir.","[314.23 - 316.4] Customer: Yes, Bentham, I have one more feedback.
+[316.12 - 317.52] Agent: Yes, sir. You can tell me, sir.
+[317.96 - 322.07] Customer: Yes, so a lot of expeditions, they are only 4x4s.
+[323.9 - 328.13] Customer: So, you might consider adding more events for the 4x2 bat also.
+[328.5 - 329.94] Agent: Okay for four by two
+[328.69 - 344.28] Customer: Okay, for 4x2 also. I personally, I own both. My car is 4x4 and my car is 4x2. So I am interested in all of it. But there are a lot of people who are very inclusive.
+[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.","[314.23 - 316.4] Customer: Yes, Bentham, I have one more feedback.
+[316.12 - 317.52] Agent: Yes, sir. You can tell me, sir.
+[317.96 - 322.07] Customer: Yes, so a lot of expeditions, they are only 4x4s.
+[323.9 - 328.13] Customer: So, you might consider adding more events for the 4x2 bat also.
+[328.5 - 329.94] Agent: Okay for four by two
+[328.69 - 344.28] Customer: Okay, for 4x2 also. I personally, I own both. My car is 4x4 and my car is 4x2. So I am interested in all of it. But there are a lot of people who are very inclusive.
+[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.",0.087,0.3803,0.2776,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP005,1,AW0017,"28,29,30,31,32,33,34",29,agent_anchored_window,What is your profession?,So what was the reason that you have shown the interest for that?,"[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.","[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.",0.2565,0.3302,0.3044,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP005,2,AW0006,"9,10,11,12,13,14,15",10,agent_anchored_window,What is your profession?,"Okay, so for profile purpose, first of all, can I know your age?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?",0.2538,0.3223,0.2983,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP005,3,AW0007,"11,12,13,14,15,16,17",12,agent_anchored_window,What is your profession?,31. And you are still right or businessman sir?,"[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.","[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.",0.0809,0.3885,0.2808,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP005,4,AW0009,"14,15,16,17,18,19,20",15,agent_anchored_window,What is your profession?,How many members are there in your family?,"[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.","[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.",0.2812,0.2552,0.2643,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP006,1,AW0009,"14,15,16,17,18,19,20",15,agent_anchored_window,How many people are there in your family?,How many members are there in your family?,"[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.","[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.",0.8785,0.8815,0.8804,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP006,2,AW0006,"9,10,11,12,13,14,15",10,agent_anchored_window,How many people are there in your family?,"Okay, so for profile purpose, first of all, can I know your age?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?","[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.
+[57.03 - 58.6] Agent: Okay, so light and businessman
+[59.01 - 62.64] Agent: How many members are there in your family?",0.2087,0.2494,0.2352,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP006,3,AW0039,"74,75,76,77,78,79,80",75,agent_anchored_window,How many people are there in your family?,"4x2, because most of people have the 4x2 vehicles, right?","[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.
+[347.72 - 351.84] Agent: 4x2, because most of people have the 4x2 vehicles, right?
+[351.84 - 354.39] Customer: Okay, I'm intended.
+[352.67 - 353.9] Agent: Okay, I meant to...
+[354.96 - 358.44] Agent: okay i mentioned for the 4x2 also person should be have the mode
+[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?","[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.
+[347.72 - 351.84] Agent: 4x2, because most of people have the 4x2 vehicles, right?
+[351.84 - 354.39] Customer: Okay, I'm intended.
+[352.67 - 353.9] Agent: Okay, I meant to...
+[354.96 - 358.44] Agent: okay i mentioned for the 4x2 also person should be have the mode
+[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?",0.1895,0.2413,0.2232,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP006,4,AW0026,"46,47,48,49,50,51,52",47,agent_anchored_window,How many people are there in your family?,Which one you are looking?,"[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.
+[241.34 - 243.23] Agent: Mahendra only
+[243.12 - 247.4] Customer: So I'll keep following the updates that you guys release on Instagram.","[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.
+[241.34 - 243.23] Agent: Mahendra only
+[243.12 - 247.4] Customer: So I'll keep following the updates that you guys release on Instagram.",0.1861,0.2199,0.2081,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP007,1,AW0010,"15,16,17,18,19,20,21",16,agent_anchored_window,Which vehicle or vehicles do you own?,and which vehicle you have own vehicle now,"[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.
+[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.","[59.01 - 62.64] Agent: How many members are there in your family?
+[65.98 - 69.0] Agent: and which vehicle you have own vehicle now
+[70.08 - 73.22] Customer: I have one Mahindra 41 and one Mahindra 41.
+[73.12 - 74.57] Agent: Mahendra, Thar
+[75.73 - 77.12] Customer: And one more interesting question.
+[77.82 - 80.68] Agent: scorpion. It is thar or thar raksa.
+[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.",0.5952,0.7332,0.6849,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP007,2,AW0039,"74,75,76,77,78,79,80",75,agent_anchored_window,Which vehicle or vehicles do you own?,"4x2, because most of people have the 4x2 vehicles, right?","[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.
+[347.72 - 351.84] Agent: 4x2, because most of people have the 4x2 vehicles, right?
+[351.84 - 354.39] Customer: Okay, I'm intended.
+[352.67 - 353.9] Agent: Okay, I meant to...
+[354.96 - 358.44] Agent: okay i mentioned for the 4x2 also person should be have the mode
+[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?","[344.72 - 347.25] Customer: But they don't own the 4x4 car, they own the 4x2.
+[347.72 - 351.84] Agent: 4x2, because most of people have the 4x2 vehicles, right?
+[351.84 - 354.39] Customer: Okay, I'm intended.
+[352.67 - 353.9] Agent: Okay, I meant to...
+[354.96 - 358.44] Agent: okay i mentioned for the 4x2 also person should be have the mode
+[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?",0.196,0.4126,0.3368,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP007,3,AW0026,"46,47,48,49,50,51,52",47,agent_anchored_window,Which vehicle or vehicles do you own?,Which one you are looking?,"[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.
+[241.34 - 243.23] Agent: Mahendra only
+[243.12 - 247.4] Customer: So I'll keep following the updates that you guys release on Instagram.","[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.
+[241.34 - 243.23] Agent: Mahendra only
+[243.12 - 247.4] Customer: So I'll keep following the updates that you guys release on Instagram.",0.329,0.3024,0.3117,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP007,4,AW0021,"39,40,41,42,43,44,45",40,agent_anchored_window,Which vehicle or vehicles do you own?,which part was the interested which you have shown the interested for the event,"[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience","[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience",0.2969,0.2483,0.2653,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP008,1,AW0003,"4,5,6,7,8,9,10",5,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Mr. Khushkara ji, as you were interested in Mahindra Adventures Event","[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?","[21.97 - 24.2] Agent: Garaji Surya
+[24.74 - 29.33] Agent: Mr. Khushkara ji, as you were interested in Mahindra Adventures Event
+[24.77 - 25.7] Customer: Mr. Khuskara
+[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?",0.377,0.6981,0.5857,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP008,2,AW0013,"21,22,23,24,25,26,27",22,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Okay, so from where you know about the first first from where you know about the Mahindra adventures even","[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.
+[84.9 - 91.92] Agent: Okay, so from where you know about the first first from where you know about the Mahindra adventures even
+[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.","[81.69 - 84.9] Customer: It is time. Time. We can do it in three, four. Okay.
+[84.9 - 91.92] Agent: Okay, so from where you know about the first first from where you know about the Mahindra adventures even
+[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.",0.442,0.6518,0.5784,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP008,3,AW0033,"61,62,63,64,65,66,67",62,agent_anchored_window,How did you first come across the Mahindra Adventure event?,So do you think there should be any improvement in the Mahindra Adventures event?,"[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so","[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so",0.4667,0.6123,0.5613,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP008,4,AW0014,"23,24,25,26,27,28,29",24,agent_anchored_window,How did you first come across the Mahindra Adventure event?,"Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that","[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?","[93.52 - 96.49] Customer: I follow Myndra Advances 3.0 Instagram.
+[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?",0.425,0.6325,0.5599,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP009,1,AW0020,"37,38,39,40,41,42,43",38,agent_anchored_window,What part of the event caught your interest initially?,"Okay, so which part of the event got you interested for that?","[171.11 - 174.42] Customer: Including all that cost, the given cost was becoming way too high.
+[175.23 - 181.99] Agent: Okay, so which part of the event got you interested for that?
+[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?","[171.11 - 174.42] Customer: Including all that cost, the given cost was becoming way too high.
+[175.23 - 181.99] Agent: Okay, so which part of the event got you interested for that?
+[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?",0.5074,0.8571,0.7347,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP009,2,AW0021,"39,40,41,42,43,44,45",40,agent_anchored_window,What part of the event caught your interest initially?,which part was the interested which you have shown the interested for the event,"[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience","[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience",0.3258,0.6233,0.5192,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP009,3,AW0017,"28,29,30,31,32,33,34",29,agent_anchored_window,What part of the event caught your interest initially?,So what was the reason that you have shown the interest for that?,"[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.","[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.",0.3868,0.5226,0.4751,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP009,4,AW0015,"24,25,26,27,28,29,30",25,agent_anchored_window,What part of the event caught your interest initially?,Okay. So for which location you have located for the event?,"[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...","[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...",0.2439,0.4229,0.3602,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP010,1,AW0020,"37,38,39,40,41,42,43",38,agent_anchored_window,What stopped you from finally subscribing to the event?,"Okay, so which part of the event got you interested for that?","[171.11 - 174.42] Customer: Including all that cost, the given cost was becoming way too high.
+[175.23 - 181.99] Agent: Okay, so which part of the event got you interested for that?
+[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?","[171.11 - 174.42] Customer: Including all that cost, the given cost was becoming way too high.
+[175.23 - 181.99] Agent: Okay, so which part of the event got you interested for that?
+[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?",0.3296,0.5553,0.4763,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP010,2,AW0021,"39,40,41,42,43,44,45",40,agent_anchored_window,What stopped you from finally subscribing to the event?,which part was the interested which you have shown the interested for the event,"[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience","[183.16 - 184.27] Customer: Sorry, I didn't get you.
+[185.15 - 190.55] Agent: which part was the interested which you have shown the interested for the event
+[194.25 - 197.65] Customer: I mean, so many things would not be such a good thing, right?
+[198.58 - 201.54] Agent: Sorry, can you repeat it again sir? Your voice was breaking.
+[206.13 - 209.3] Agent: Okay, due to the location, right?
+[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience",0.3553,0.4283,0.4027,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP010,3,AW0015,"24,25,26,27,28,29,30",25,agent_anchored_window,What stopped you from finally subscribing to the event?,Okay. So for which location you have located for the event?,"[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...","[97.67 - 104.64] Agent: Okay, as from the online you have only go from the website of the Mahindra adventures event you you have get about that
+[105.6 - 109.8] Agent: Okay. So for which location you have located for the event?
+[111.09 - 115.49] Customer: I am based in Pune actually.
+[115.88 - 120.6] Customer: I keep looking for expeditions around Dunia, around Maharashtra, you know, the neighbors. Okay.
+[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...",0.3581,0.3995,0.385,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP010,4,AW0044,"81,82,83,84,85,86,87",82,agent_anchored_window,What stopped you from finally subscribing to the event?,okay the reason was that due to the price was huge that was the reason you have to stop the plan,"[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.
+[404.76 - 410.5] Agent: So as the starting of the call, you have told that you were looking nearby only Maharashtra and Pune, right?
+[411.58 - 418.09] Customer: Nearby Maharashtra Street was a neighboring state, like Yolkua, Madraga, Gidraga and all that.","[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.
+[404.76 - 410.5] Agent: So as the starting of the call, you have told that you were looking nearby only Maharashtra and Pune, right?
+[411.58 - 418.09] Customer: Nearby Maharashtra Street was a neighboring state, like Yolkua, Madraga, Gidraga and all that.",0.31,0.4147,0.3781,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP011,1,AW0025,"44,45,46,47,48,49,50",45,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Okay, so currently I'm looking any mode outdoor experience","[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience
+[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.","[211.07 - 215.0] Agent: Okay, due to the location you have shown the interest rate of that, right?
+[216.57 - 220.44] Agent: Okay, so currently I'm looking any mode outdoor experience
+[221.75 - 227.98] Customer: Which one you are looking at?
+[225.95 - 229.01] Agent: Which one you are looking?
+[229.75 - 232.11] Customer: I'm looking somewhere around Juarez for you.
+[232.91 - 237.28] Agent: Maharashtrali, no of which company I am talking about, not about the location.
+[238.04 - 240.62] Customer: Maybe I'm not looking for anything other than my mirror on my own.",0.3432,0.6229,0.525,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP011,2,AW0043,"79,80,81,82,83,84,85",80,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.",0.1543,0.4581,0.3518,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP011,3,AW0017,"28,29,30,31,32,33,34",29,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,So what was the reason that you have shown the interest for that?,"[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.","[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.",0.2141,0.3942,0.3312,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP011,4,AW0045,"85,86,87,88,89,90,91",86,agent_anchored_window,Were you also looking for any other outdoor experiences? Yes or No?,"So as the starting of the call, you have told that you were looking nearby only Maharashtra and Pune, right?","[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.
+[404.76 - 410.5] Agent: So as the starting of the call, you have told that you were looking nearby only Maharashtra and Pune, right?
+[411.58 - 418.09] Customer: Nearby Maharashtra Street was a neighboring state, like Yolkua, Madraga, Gidraga and all that.
+[418.82 - 420.57] Customer: Okay.
+[420.71 - 421.5] Agent: Okay, okay.
+[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir","[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.
+[404.76 - 410.5] Agent: So as the starting of the call, you have told that you were looking nearby only Maharashtra and Pune, right?
+[411.58 - 418.09] Customer: Nearby Maharashtra Street was a neighboring state, like Yolkua, Madraga, Gidraga and all that.
+[418.82 - 420.57] Customer: Okay.
+[420.71 - 421.5] Agent: Okay, okay.
+[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir",0.2757,0.3554,0.3275,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP014,1,AW0030,"53,54,55,56,57,58,59",54,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","So if you want to inform any adventurous event, so how could we can inform within less than one week or within one to two weeks or within two to four weeks or within one to two months or more than two months?","[247.76 - 251.99] Agent: okay so from the Instagram you have got them about that right
+[253.7 - 271.8] Agent: So if you want to inform any adventurous event, so how could we can inform within less than one week or within one to two weeks or within two to four weeks or within one to two months or more than two months?
+[272.9 - 275.8] Customer: See, it has to be more than one month because
+[276.43 - 278.05] Customer: Yeah, I have to, you know.
+[279.06 - 280.9] Customer: Consider the leads and then...
+[281.39 - 285.32] Customer: okay you know how to manage the business everything so as uh more
+[283.97 - 286.89] Agent: so as more than two two months right","[247.76 - 251.99] Agent: okay so from the Instagram you have got them about that right
+[253.7 - 271.8] Agent: So if you want to inform any adventurous event, so how could we can inform within less than one week or within one to two weeks or within two to four weeks or within one to two months or more than two months?
+[272.9 - 275.8] Customer: See, it has to be more than one month because
+[276.43 - 278.05] Customer: Yeah, I have to, you know.
+[279.06 - 280.9] Customer: Consider the leads and then...
+[281.39 - 285.32] Customer: okay you know how to manage the business everything so as uh more
+[283.97 - 286.89] Agent: so as more than two two months right",0.3911,0.6061,0.5309,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP014,2,AW0005,"7,8,9,10,11,12,13",8,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.",0.2555,0.5012,0.4152,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP014,3,AW0033,"61,62,63,64,65,66,67",62,agent_anchored_window,"According to you, how early should we inform you before an adventure event?",So do you think there should be any improvement in the Mahindra Adventures event?,"[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so","[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so",0.3215,0.4395,0.3982,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP014,4,AW0047,"90,91,92,93",91,agent_anchored_window,"According to you, how early should we inform you before an adventure event?","Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.","[420.93 - 423.15] Customer: Okay, okay, okay.
+[422.68 - 429.01] Agent: Okay, sir. Okay, sir. I mentioned that what you have told to improve in the adventurous event. Okay, sir
+[429.87 - 431.17] Customer: Yes, yes. Thank you very much.
+[430.66 - 432.2] Agent: Thank you very much. You're welcome, sir.",0.2957,0.4402,0.3896,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP015,1,AW0005,"7,8,9,10,11,12,13",8,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.","[29.75 - 31.18] Agent: But due to some reason, you...
+[31.45 - 43.11] Agent: So this is a small feedback call so that we can improve our adventures even more. So without taking much time, can I know if this is the right time to talk to you? Hardly 5 minutes.
+[43.87 - 45.24] Customer: Okay.
+[45.17 - 49.02] Agent: Okay, so for profile purpose, first of all, can I know your age?
+[50.0 - 51.11] Customer: I'm 31 years old.
+[51.52 - 53.66] Agent: 31. And you are still right or businessman sir?
+[55.09 - 56.56] Customer: I am bored, actually.",0.3664,0.3608,0.3628,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP015,2,AW0017,"28,29,30,31,32,33,34",29,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,So what was the reason that you have shown the interest for that?,"[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.","[121.14 - 122.95] Agent: around the Maharashtra only, right?
+[124.45 - 127.91] Agent: So what was the reason that you have shown the interest for that?
+[129.06 - 129.97] Agent: As you do the...
+[129.19 - 141.48] Customer: as due to the yeah yeah so i enjoyed the northeast expedition it was quite interesting and i have been looking to you know visit northeast for a very long time but the problem was
+[142.25 - 144.43] Customer: Prices were extraordinarily high. They were very high.
+[145.14 - 148.82] Agent: okay due to the prices you have rejected you have not gone there right
+[149.05 - 150.08] Customer: That was one reason.",0.299,0.3264,0.3168,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP015,3,AW0033,"61,62,63,64,65,66,67",62,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,So do you think there should be any improvement in the Mahindra Adventures event?,"[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so","[288.96 - 290.01] Agent: Okay, well...
+[291.92 - 295.56] Agent: So do you think there should be any improvement in the Mahindra Adventures event?
+[297.05 - 300.54] Customer: I think we should really consider adding more locations.
+[301.49 - 304.0] Agent: okay there should be more location for the event right
+[304.15 - 305.05] Customer: Yes, yes.
+[306.28 - 309.54] Agent: Thank you, Mr. Khusrak, as you have given the feedback.
+[310.02 - 313.38] Agent: you have given a valuable time for the feedback and have a nice day so",0.2447,0.3356,0.3038,azure_openai,
+run_002,2026-06-22T14:05:35,Other,A006,Dheeraj,Medium,registry_name_match,CALL009,SOP015,4,AW0043,"79,80,81,82,83,84,85",80,agent_anchored_window,What is the one thing we could improve that would make you consider subscribing in the future?,"Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.","[358.73 - 360.3] Agent: adventurous event also right
+[361.56 - 365.88] Agent: Okay. Anything more, sir, you want to give the feedback related to the Mahindra Adventures event?
+[366.71 - 371.31] Customer: No, I think that's all. It's very well organized. I have been to a couple of events before.
+[371.92 - 377.51] Agent: okay the reason was that due to the price was huge that was the reason you have to stop the plan
+[376.73 - 386.67] Customer: stop the plan what happened if you're if i'm in the northern part like utmp western yeah all that traveling to megane is not an issue
+[388.24 - 395.45] Customer: it doesn't cost much but traveling from south or west all the way to medallion it already adds to your cost
+[396.63 - 402.57] Customer: Okay, so then the given cost that was the expedition cost was very high.",0.1771,0.328,0.2752,azure_openai,

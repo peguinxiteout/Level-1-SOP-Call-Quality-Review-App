@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not ask how long ago the customer last subscribed; questions focused on notification timing before events and past participation timing, not last subscription timing."
+}

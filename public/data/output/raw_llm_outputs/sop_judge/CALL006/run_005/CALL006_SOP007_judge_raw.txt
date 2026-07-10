@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'which vehicle do you own?' and followed up with 'which other vehicle do you have?' and 'which one do you personally own?', clearly covering the SOP item."
+}

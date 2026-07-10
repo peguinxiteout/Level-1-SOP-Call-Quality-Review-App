@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked when the customer last participated in an activity, not how long ago they last subscribed as per the SOP checklist item."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not explain the purpose or duration of the call; instead, agent asked about notification timing for the event."
+}

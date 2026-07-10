@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked about last participation time but did not ask how long ago the customer last subscribed or the timing categories specified in the SOP."
+}

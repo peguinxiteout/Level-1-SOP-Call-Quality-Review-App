@@ -1,0 +1,117 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask how the customer first came across the event
+Expected agent utterance: How did you first come across the Mahindra Adventure event?
+Expected intent: ask_event_source
+Agent action: ask_question
+Category: Survey
+Sub-category: Awareness
+
+Retrieval query used:
+How did you first come across the Mahindra Adventure event?
+
+Agent text used for retrieval:
+Mahindra Adventure, right, sir? The adventure event—where did you see it first, and at which location?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.7453
+Retrieval score: 0.8222
+Key match score: 0.6024
+Agent text: Mahindra Adventure, right, sir? The adventure event—where did you see it first, and at which location?
+Nearby context:
+[108.8 - 109.2] Agent: Yes.
+[110.9 - 118.6] Agent: Mahindra Adventure, right, sir? The adventure event—where did you see it first, and at which location?
+[117.5 - 117.8] Customer: Which one?
+[118.1 - 118.5] Customer: On...
+[118.6 - 121.2] Customer: Is there an Instagram ad?
+[122.3 - 124.2] Agent: Instagram and location?
+[126.6 - 127.4] Customer: Khajuraho.
+
+Evidence window rank 2
+Combined score: 0.7173
+Retrieval score: 0.8088
+Key match score: 0.5474
+Agent text: And sir, where did you first learn about Mahindra Adventure?
+Nearby context:
+[100.7 - 101.0] Customer: Hmm.
+[101.0 - 107.1] Agent: And sir, where did you first learn about Mahindra Adventure?
+[108.2 - 109.5] Customer: What?
+[108.8 - 109.2] Agent: Yes.
+[110.9 - 118.6] Agent: Mahindra Adventure, right, sir? The adventure event—where did you see it first, and at which location?
+[117.5 - 117.8] Customer: Which one?
+[118.1 - 118.5] Customer: On...
+
+Evidence window rank 3
+Combined score: 0.4989
+Retrieval score: 0.6346
+Key match score: 0.2468
+Agent text: Okay, so besides Mahindra, were you also looking at other adventures?
+Nearby context:
+[191.9 - 199.8] Customer: I have two MG Gloster and Hector. I have driven an MG Adventure and a Mercedes.
+[201.2 - 204.6] Agent: Okay, so besides Mahindra, were you also looking at other adventures?
+[205.4 - 208.4] Customer: I wasn't seeing it. I have joined before.
+[209.1 - 211.9] Agent: Okay, you have joined before. Where, sir?
+[212.9 - 213.9] Customer: In Gurgaon.
+[214.7 - 215.5] Agent: In Gurgaon.
+[216.1 - 216.8] Customer: Yes, yes.
+
+Evidence window rank 4
+Combined score: 0.4354
+Retrieval score: 0.4875
+Key match score: 0.3385
+Agent text: Yes, like you were just watching Mahindra's Adventure, but for some reason, you didn't subscribe to it, right?
+Nearby context:
+[225.8 - 227.1] Customer: Not seeing, I mean.
+[230.4 - 239.4] Agent: Yes, like you were just watching Mahindra's Adventure, but for some reason, you didn't subscribe to it, right?
+[239.9 - 241.7] Customer: Yes, and first you...
+[240.9 - 245.9] Agent: And earlier, you had a date issue, that's why.
+[246.5 - 246.8] Customer: Hmm.
+[249.6 - 257.6] Agent: So, sir, what do you think should be improved in this?
+[259.3 - 262.3] Customer: If they haven't gone, how can we tell them what should be improved?
+
+Retrieval score: 0.8222
+Key match score: 0.6024

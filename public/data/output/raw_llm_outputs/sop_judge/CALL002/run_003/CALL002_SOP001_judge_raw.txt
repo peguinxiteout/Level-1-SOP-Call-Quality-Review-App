@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent greeted the customer politely with 'Good evening. This is Sakshi calling you from Mahindra's Adventure team.' which matches the expected greeting intent."
+}

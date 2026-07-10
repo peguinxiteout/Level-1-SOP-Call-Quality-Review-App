@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked where the customer first saw the Mahindra Adventure event, mentioning examples like Instagram and Facebook, which matches the intent to ask how the customer first came across the event."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked for multiple basic info items: age, profession, family members, and vehicles owned, covering the SOP checklist item."
+}

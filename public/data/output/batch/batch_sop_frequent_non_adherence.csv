@@ -1,0 +1,9 @@
+﻿item_id,category,sub_category,item_text,missed_count,review_suggested_count,non_adherence_count,affected_call_count,affected_call_pct
+SOP017,Closure,Subscription Timing,Ask how long ago the customer last subscribed,5,0,5,5,50.0
+SOP015,Closure,Future Expectations,Ask what one thing could be improved to make customer consider subscribing,2,1,3,3,30.0
+SOP001,Opening,Greeting,Greet the customer politely,2,0,2,2,20.0
+SOP009,Survey,Initial Interest,Ask what part of the event caught the customer's interest initially,2,0,2,2,20.0
+SOP002,Opening,Identity Confirmation,Introduce yourself and your team,1,0,1,1,10.0
+SOP003,Opening,Purpose Explanation,Explain the purpose and duration of the call,0,1,1,1,10.0
+SOP010,Survey,Reasons for Not Subscribing,Ask what stopped the customer from subscribing to the event,1,0,1,1,10.0
+SOP018,Closure,Subscription Motivation,Ask what would make the customer more likely to subscribe again,1,0,1,1,10.0

@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.5,
+  "reason": "Agent states they are conducting a short feedback exercise to understand customer preferences for adventure, which partially explains the purpose, but does not mention the call duration or explicitly explain how this will help improve future events."
+}

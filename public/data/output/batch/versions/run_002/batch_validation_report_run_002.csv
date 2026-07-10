@@ -1,0 +1,15 @@
+﻿batch_output_version,batch_output_generated_at,call_id,issue_level,issue_type,field,details,source_value
+run_002,2026-07-02T17:28:33,CALL001,Info,Agent identity resolution,agent_id,"Resolved agent_id=A001, agent_name=Nagesh, source=registry_name_match.","Good morning, sir. This is Nagesh calling from the Mahindra and Mahindra Adventure team."
+run_002,2026-07-02T17:28:33,CALL002,Info,Agent identity resolution,agent_id,"Resolved agent_id=A002, agent_name=Sakshi, source=registry_name_match.",Good evening. This is Sakshi calling you from Mahindra's Adventure team. Am I speaking with Mr. Drishti
+run_002,2026-07-02T17:28:33,CALL003,Info,Agent identity resolution,agent_id,"Resolved agent_id=A003, agent_name=Shashikant, source=registry_name_match.","1: Hi, Madam. Good afternoon.
+3: I  am  Shashikant,  calling  from  the  Mahindra  and  Mahindra  Adventure  team.  Am  I  speaking  with  Miss
+5: Yes,  Miss  Priyanka  Patil.  We  are  conducting  a  short  feedback  exercise  to  understand  our  customers’"
+run_002,2026-07-02T17:28:33,CALL004,Info,Agent identity resolution,agent_id,"Resolved agent_id=A012, agent_name=Pragya, source=transcript_name.","Good afternoon, ma'am. This is Pragya calling from Mahindra Adventure Activity."
+run_002,2026-07-02T17:28:33,CALL005,Info,Agent identity resolution,agent_id,"Resolved agent_id=A012, agent_name=Pragya, source=registry_name_match.","Good afternoon, sir. This is Pragya calling from the Mahindra Adventure team."
+run_002,2026-07-02T17:28:33,CALL007,Info,Agent identity resolution,agent_id,"Resolved agent_id=A007, agent_name=Sneha, source=transcript_name.","2: Hey, Rakhi, Rakhi, Rakhi, Rakhi, Rakhi.
+4: Good morning, Sneha speaking from the Mahindra and Mahindra Adventure team.
+6: Am I speaking to Pati Sharma ji?"
+run_002,2026-07-02T17:28:33,CALL008,Info,Agent identity resolution,agent_id,"Resolved agent_id=A006, agent_name=Dheeraj, source=registry_name_match.","Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai. Am I speaking with Kunal"
+run_002,2026-07-02T17:28:33,CALL009,Info,Agent identity resolution,agent_id,"Resolved agent_id=A006, agent_name=Dheeraj, source=registry_name_match.","Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Khushra Garra ji? Am I"
+run_002,2026-07-02T17:28:33,CALL010,Info,Agent identity resolution,agent_id,"Resolved agent_id=A007, agent_name=Sneha, source=registry_name_match.","Yes, this is Sneha speaking from the Adventure Team of Mahindra & Mahindra. I am speaking with Anurag"
+run_002,2026-07-02T17:28:33,CALL006,Info,Agent identity resolution,agent_id,"Resolved agent_id=A006, agent_name=Dheeraj, source=registry_name_match.","Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Mr. Nath?"

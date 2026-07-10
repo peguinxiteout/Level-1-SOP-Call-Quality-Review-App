@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.6,
+  "reason": "Agent states this is a feedback call to improve the event and mentions the call duration of 8 to 10 minutes, but does not explicitly explain the purpose as understanding customer preferences or mention confidentiality and use of responses only for analysis."
+}

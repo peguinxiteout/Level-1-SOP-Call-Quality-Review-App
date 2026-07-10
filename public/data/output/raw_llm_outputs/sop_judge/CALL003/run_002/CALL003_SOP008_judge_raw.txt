@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked 'Which vehicle did you own?', which practically matches the SOP item asking which vehicle or vehicles the customer owns."
+}

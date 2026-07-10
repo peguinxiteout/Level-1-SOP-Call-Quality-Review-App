@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "category": "Survey",
+      "sub_category": "Subscription Timing",
+      "item_text": "Ask how long ago the customer last subscribed",
+      "agent_action": "ask_question",
+      "expected_agent_utterance": "How long ago did you last subscribe? Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months?",
+      "expected_intent": "Determine time since last subscription",
+      "retrieval_query": "how long ago last subscribed when did you subscribe last time",
+      "condition_type": "none",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 2
+    },
+    {
+      "category": "Survey",
+      "sub_category": "Subscription Motivation",
+      "item_text": "Ask what would make the customer more likely to subscribe again",
+      "agent_action": "ask_question",
+      "expected_agent_utterance": "What is the one thing that would make you more likely to subscribe to our adventure events in the future again?",
+      "expected_intent": "Identify factors to increase future subscription likelihood",
+      "retrieval_query": "what would make you subscribe again what would encourage future subscription",
+      "condition_type": "none",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 2
+    }
+  ]
+}

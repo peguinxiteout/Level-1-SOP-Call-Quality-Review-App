@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked about the customer's job or business, which practically covers asking for the customer's profession."
+}

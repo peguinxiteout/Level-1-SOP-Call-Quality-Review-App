@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked the customer's profession by saying, 'may I know your profession? Are you a businesswoman,' which matches the expected intent to collect profession."
+}

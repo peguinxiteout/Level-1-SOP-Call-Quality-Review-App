@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not ask how early the customer expects to be informed before an adventure event; the closest agent question was about encouraging subscription to future adventure, which is unrelated to notification timing."
+}

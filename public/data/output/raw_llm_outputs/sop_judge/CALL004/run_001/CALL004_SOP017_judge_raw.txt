@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked about the last trip the customer liked and reasons for booking, but did not ask what would make the customer more likely to subscribe again or identify factors to increase subscription likelihood."
+}

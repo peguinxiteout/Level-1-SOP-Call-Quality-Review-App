@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked about any issues or reasons for not going to the event, e.g., 'Is it any more things there was the issue for the not going for the event?' and 'Okay time issue anything more issue if there was a reason for not going for the event', which matches the intent to ask what stopped the customer from subscribing."
+}

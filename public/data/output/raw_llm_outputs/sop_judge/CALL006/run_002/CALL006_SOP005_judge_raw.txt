@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked about customer's risk and age, and whether they are a salaried businessman or student, but did not ask for the customer's profession explicitly or in a practically equivalent way."
+}

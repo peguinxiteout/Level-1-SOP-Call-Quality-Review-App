@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'How many people are there in your family, sir?' which matches the SOP checklist item."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked if the customer checked out any other experiences before booking Mahindra's Adventure, matching the SOP intent and expected utterance."
+}

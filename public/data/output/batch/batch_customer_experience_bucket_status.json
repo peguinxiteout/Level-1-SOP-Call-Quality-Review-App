@@ -1,0 +1,10 @@
+{
+  "bucket_mode_requested": "semantic_broad",
+  "fallback_used": false,
+  "fallback_error": "",
+  "concern_item_count": 3,
+  "bucket_count": 3,
+  "bucket_naming_methods": {
+    "azure_openai_semantic_broad": 3
+  }
+}

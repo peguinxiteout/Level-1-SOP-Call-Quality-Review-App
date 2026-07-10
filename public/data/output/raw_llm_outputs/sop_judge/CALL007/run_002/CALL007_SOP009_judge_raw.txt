@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent asked where the customer saw the event first (e.g., Instagram, Facebook), but did not ask what part of the event caught the customer's interest initially."
+}

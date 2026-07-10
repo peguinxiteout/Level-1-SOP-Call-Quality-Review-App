@@ -1,0 +1,67 @@
+﻿output_version,output_generated_at,call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role
+run_005,2026-07-03T13:18:49,CALL005,1,SPEAKER_0,19.8,20.2,0.4,Hello.,Unknown
+run_005,2026-07-03T13:18:49,CALL005,2,SPEAKER_2,22.2,25.4,3.2,"Good afternoon, sir. This is Pragya calling from the Mahindra Adventure team.",Agent
+run_005,2026-07-03T13:18:49,CALL005,3,SPEAKER_1,28.1,28.6,0.5,Okay.,Customer
+run_005,2026-07-03T13:18:49,CALL005,4,SPEAKER_2,29.5,47.2,17.7,"Sir,  we  are  conducting  a  short  feedback  exercise  to  understand  customer  preferences  for  adventure experiences.  This  will  help  us  improve  our  future  events.  The  call  will  take  8  to  10  minutes,  and  your  responses  will  be  kept confidential and used only for analysis purposes. Can we proceed with the feedback, sir?",Agent
+run_005,2026-07-03T13:18:49,CALL005,5,SPEAKER_1,38.8,39.1,0.3,Okay.,Customer
+run_005,2026-07-03T13:18:49,CALL005,6,SPEAKER_1,48.0,48.4,0.4,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,7,SPEAKER_2,49.3,53.7,4.4,"Sir, we would like to start your feedback with some basic information. May I know your age?",Agent
+run_005,2026-07-03T13:18:49,CALL005,8,SPEAKER_1,55.1,55.7,0.6,Thirty-five.,Customer
+run_005,2026-07-03T13:18:49,CALL005,9,SPEAKER_2,56.6,57.4,0.8,"Thirty-five, right?",Agent
+run_005,2026-07-03T13:18:49,CALL005,10,SPEAKER_1,58.0,58.4,0.4,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,11,SPEAKER_2,59.0,60.8,1.8,"Okay, sir. What is your profession?",Agent
+run_005,2026-07-03T13:18:49,CALL005,12,SPEAKER_1,62.3,63.5,1.2,"Lawyer, advocate.",Customer
+run_005,2026-07-03T13:18:49,CALL005,13,SPEAKER_2,63.9,64.4,0.5,Okay.,Agent
+run_005,2026-07-03T13:18:49,CALL005,14,SPEAKER_2,66.3,68.6,2.3,How many people are there in your family?,Agent
+run_005,2026-07-03T13:18:49,CALL005,15,SPEAKER_1,69.5,70.0,0.5,Four.,Customer
+run_005,2026-07-03T13:18:49,CALL005,16,SPEAKER_1,72.2,72.9,0.7,"Four, four.",Customer
+run_005,2026-07-03T13:18:49,CALL005,17,SPEAKER_2,72.7,76.4,3.7,"Okay. And sir, which vehicles do you own?",Agent
+run_005,2026-07-03T13:18:49,CALL005,18,SPEAKER_1,78.0,82.1,4.1,I have a Honda City and an MG Comet.,Customer
+run_005,2026-07-03T13:18:49,CALL005,19,SPEAKER_2,83.0,85.7,2.7,"Okay. And sir, the last one.",Agent
+run_005,2026-07-03T13:18:49,CALL005,20,SPEAKER_1,87.3,87.7,0.4,Pardon?,Customer
+run_005,2026-07-03T13:18:49,CALL005,21,SPEAKER_2,88.5,94.2,5.7,"Sir, the last name you mentioned—I didn’t hear it completely. Can you repeat it?",Agent
+run_005,2026-07-03T13:18:49,CALL005,22,SPEAKER_1,93.6,97.6,4.0,"Comet, Comet, Comet.",Customer
+run_005,2026-07-03T13:18:49,CALL005,23,SPEAKER_2,98.0,103.1,5.1,"Okay. And sir, when was the last time you participated in a Mahindra Adventure activity?",Agent
+run_005,2026-07-03T13:18:49,CALL005,24,SPEAKER_1,104.6,108.7,4.1,I think it has been a long time. I don’t remember right now.,Customer
+run_005,2026-07-03T13:18:49,CALL005,25,SPEAKER_2,109.1,112.3,3.2,"Okay, sir. Was it in 2025 or 2024?",Agent
+run_005,2026-07-03T13:18:49,CALL005,26,SPEAKER_1,113.3,115.1,1.8,"1924, I think.",Customer
+run_005,2026-07-03T13:18:49,CALL005,27,SPEAKER_2,115.8,120.9,5.1,"Okay. Sir, do you remember the event name or the location of the event?",Agent
+run_005,2026-07-03T13:18:49,CALL005,28,SPEAKER_1,121.7,125.4,3.7,"Sorry, I don’t.",Customer
+run_005,2026-07-03T13:18:49,CALL005,29,SPEAKER_2,126.3,131.6,5.3,"Sir, can you at least tell us what kind of activity it was?",Agent
+run_005,2026-07-03T13:18:49,CALL005,30,SPEAKER_1,134.0,139.7,5.7,I think it was an off-road activity somewhere in Kerala.,Customer
+run_005,2026-07-03T13:18:49,CALL005,31,SPEAKER_2,140.5,143.2,2.7,"Okay, an off-road activity in Kerala, right?",Agent
+run_005,2026-07-03T13:18:49,CALL005,32,SPEAKER_1,143.5,143.9,0.4,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,33,SPEAKER_2,144.3,149.9,5.6,"Okay. And sir, where did you get the information about this event?",Agent
+run_005,2026-07-03T13:18:49,CALL005,34,SPEAKER_1,151.0,157.8,6.8,"I have a Thar, so I get information online. I receive your emails or other updates.",Customer
+run_005,2026-07-03T13:18:49,CALL005,35,SPEAKER_2,156.6,157.3,0.7,Hmm.,Agent
+run_005,2026-07-03T13:18:49,CALL005,36,SPEAKER_2,158.0,161.3,3.3,Online—was it from any specific apps or websites?,Agent
+run_005,2026-07-03T13:18:49,CALL005,37,SPEAKER_1,162.5,164.5,2.0,"From Mahindra’s website, I think.",Customer
+run_005,2026-07-03T13:18:49,CALL005,38,SPEAKER_2,164.4,166.3,1.9,"Okay, Mahindra’s website, right?",Agent
+run_005,2026-07-03T13:18:49,CALL005,39,SPEAKER_1,166.7,167.0,0.3,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,40,SPEAKER_2,167.6,172.6,5.0,"Okay, sir. What made you feel interested enough to subscribe to this adventure event?",Agent
+run_005,2026-07-03T13:18:49,CALL005,41,SPEAKER_1,174.2,179.6,5.4,"Yeah, I love adventure. I have a car, and I often participate in adventure activities. That’s it.",Customer
+run_005,2026-07-03T13:18:49,CALL005,42,SPEAKER_2,179.6,182.9,3.3,"Okay, you like adventure and off-roading, right?",Agent
+run_005,2026-07-03T13:18:49,CALL005,43,SPEAKER_1,182.4,182.8,0.4,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,44,SPEAKER_1,183.4,184.3,0.9,"Yeah, yeah, yeah.",Customer
+run_005,2026-07-03T13:18:49,CALL005,45,SPEAKER_2,184.3,189.6,5.3,"Okay. And sir, before booking Mahindra Adventure, did you check out any other outdoor experiences?",Agent
+run_005,2026-07-03T13:18:49,CALL005,46,SPEAKER_1,191.4,197.2,5.8,I have done a couple of other activities.,Customer
+run_005,2026-07-03T13:18:49,CALL005,47,SPEAKER_2,197.6,198.3,0.7,Okay.,Agent
+run_005,2026-07-03T13:18:49,CALL005,48,SPEAKER_2,199.4,201.8,2.4,"Sir, which other ones did you look at?",Agent
+run_005,2026-07-03T13:18:49,CALL005,49,SPEAKER_1,203.6,204.4,0.8,Hmm.,Customer
+run_005,2026-07-03T13:18:49,CALL005,50,SPEAKER_1,206.1,210.8,4.7,I can’t say specifically which ones. I’ve checked many.,Customer
+run_005,2026-07-03T13:18:49,CALL005,51,SPEAKER_2,211.3,212.3,1.0,"Okay, okay.",Agent
+run_005,2026-07-03T13:18:49,CALL005,52,SPEAKER_1,211.5,214.1,2.6,"Okay, I have a job in the meantime.",Customer
+run_005,2026-07-03T13:18:49,CALL005,53,SPEAKER_2,214.6,225.1,10.5,"Okay,  sir.  While  exploring  and  deciding,  who  influenced  your  decision  the  most?  Was  it  a  personal decision or your family’s decision to go on the trip?",Agent
+run_005,2026-07-03T13:18:49,CALL005,54,SPEAKER_1,225.3,226.2,0.9,It was personal.,Customer
+run_005,2026-07-03T13:18:49,CALL005,55,SPEAKER_2,226.8,228.2,1.4,"Okay, it was personal, right?",Agent
+run_005,2026-07-03T13:18:49,CALL005,56,SPEAKER_1,228.6,228.8,0.2,Yes.,Customer
+run_005,2026-07-03T13:18:49,CALL005,57,SPEAKER_2,229.4,233.9,4.5,"Okay. According to you, how early should we inform you before any adventure event?",Agent
+run_005,2026-07-03T13:18:49,CALL005,58,SPEAKER_1,235.7,240.2,4.5,At least three months before. That will be fine so I can plan accordingly.,Customer
+run_005,2026-07-03T13:18:49,CALL005,59,SPEAKER_2,239.7,241.5,1.8,"At least three months before, right, sir?",Agent
+run_005,2026-07-03T13:18:49,CALL005,60,SPEAKER_1,241.5,242.3,0.8,"Yeah, yeah, yeah.",Customer
+run_005,2026-07-03T13:18:49,CALL005,61,SPEAKER_2,243.0,251.3,8.3,"Okay. And sir, what is one thing that would make you more likely to subscribe to our adventure events in the future?",Agent
+run_005,2026-07-03T13:18:49,CALL005,62,SPEAKER_1,254.8,258.4,3.6,Keep me posted and informed. That’s it.,Customer
+run_005,2026-07-03T13:18:49,CALL005,63,SPEAKER_2,258.4,259.0,0.6,Okay.,Agent
+run_005,2026-07-03T13:18:49,CALL005,64,SPEAKER_2,260.1,261.2,1.1,Anything else?,Agent
+run_005,2026-07-03T13:18:49,CALL005,65,SPEAKER_1,262.0,262.6,0.6,That’s it.,Customer
+run_005,2026-07-03T13:18:49,CALL005,66,SPEAKER_2,263.0,267.4,4.4,"Okay. Thank you for giving your precious time, sir. Have a great day, and thank you so much for your valuable feedback.",Agent

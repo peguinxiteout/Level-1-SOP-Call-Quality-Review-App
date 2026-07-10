@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked multiple times about other outdoor experiences the customer was looking for, e.g., 'You were watching—which other outdoor experience?' and 'Okay, so besides Mahindra, were you also looking at other adventures?' which matches the SOP intent to ask if the customer was also looking for other outdoor experiences."
+}

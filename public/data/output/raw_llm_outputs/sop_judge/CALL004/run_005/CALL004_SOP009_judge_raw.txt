@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked who influenced the customer's decision by asking if it was their own decision, their partner's, or their children's."
+}

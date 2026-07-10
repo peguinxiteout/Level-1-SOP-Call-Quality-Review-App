@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked which part of the event caught the customer's interest initially using different wording but same practical question."
+}

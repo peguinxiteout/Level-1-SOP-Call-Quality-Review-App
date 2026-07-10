@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not ask about the customer's profession; questions were about interests, age, family members, and other topics but not profession."
+}

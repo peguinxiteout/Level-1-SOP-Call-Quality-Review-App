@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly explains the call is a small feedback exercise to understand customer preferences for future events and mentions it will help improve them, covering the purpose. Although the exact duration is not stated, the overall explanation of purpose and call nature is sufficiently covered."
+}

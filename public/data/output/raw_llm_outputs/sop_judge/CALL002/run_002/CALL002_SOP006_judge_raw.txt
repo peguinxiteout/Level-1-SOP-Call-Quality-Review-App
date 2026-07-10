@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked the customer about their profession with examples, matching the expected intent to collect profession."
+}

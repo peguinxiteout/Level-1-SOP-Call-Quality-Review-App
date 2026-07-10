@@ -1,0 +1,11 @@
+﻿batch_output_version,batch_output_generated_at,call_id,evidenced_sop_items,sequence_break_count,sequence_followed_pct,first_sequence_break
+run_001,2026-07-02T16:44:50,CALL001,15,0,100.0,
+run_001,2026-07-02T16:44:50,CALL002,14,0,100.0,
+run_001,2026-07-02T16:44:50,CALL003,14,0,100.0,
+run_001,2026-07-02T16:44:50,CALL004,13,1,92.31,SOP017 before/overlaps after SOP016
+run_001,2026-07-02T16:44:50,CALL005,14,0,100.0,
+run_001,2026-07-02T16:44:50,CALL006,11,0,100.0,
+run_001,2026-07-02T16:44:50,CALL007,9,0,100.0,
+run_001,2026-07-02T16:44:50,CALL008,9,0,100.0,
+run_001,2026-07-02T16:44:50,CALL009,11,1,90.91,SOP010 before/overlaps after SOP009
+run_001,2026-07-02T16:44:50,CALL010,11,1,90.91,SOP015 before/overlaps after SOP014

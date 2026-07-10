@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly identified themselves and their team by saying, 'this is Farad Nia calling from Mahindra Adventure Activity' and 'I am talking to the Adventure Activity Team, Ma'am,' which matches the SOP requirement to identify self and team."
+}

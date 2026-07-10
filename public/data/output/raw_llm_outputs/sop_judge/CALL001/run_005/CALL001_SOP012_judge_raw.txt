@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'What is the one thing that will make you more likely to subscribe to our adventure event in the future again?' which matches the SOP checklist item intent and expected utterance."
+}

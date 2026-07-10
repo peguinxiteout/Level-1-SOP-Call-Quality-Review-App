@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'How many family members do you have?' which matches the SOP intent to ask how many people are in the customer's family."
+}

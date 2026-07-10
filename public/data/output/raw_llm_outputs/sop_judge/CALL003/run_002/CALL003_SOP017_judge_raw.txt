@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent text 'One month ago.' is a response, not a question or action asking how long ago the customer last subscribed. No agent utterance asking about the time since last subscription is present."
+}

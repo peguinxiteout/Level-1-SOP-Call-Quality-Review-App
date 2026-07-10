@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "item_id": "SOP001",
+      "retrieval_query": "Greet customer politely, say hello, good morning, or introduce yourself"
+    },
+    {
+      "item_id": "SOP002",
+      "retrieval_query": "Explain call purpose as feedback or survey and mention call duration"
+    },
+    {
+      "item_id": "SOP003",
+      "retrieval_query": "Ask for customer's basic info like age, profession, family size, and vehicles owned"
+    },
+    {
+      "item_id": "SOP004",
+      "retrieval_query": "Ask when last participated in adventure activity and which event it was"
+    },
+    {
+      "item_id": "SOP005",
+      "retrieval_query": "Ask how customer first heard about the adventure event or program"
+    },
+    {
+      "item_id": "SOP006",
+      "retrieval_query": "Ask what interested customer enough to book or subscribe to the event"
+    },
+    {
+      "item_id": "SOP007",
+      "retrieval_query": "Ask if customer checked other outdoor experiences before booking this one"
+    },
+    {
+      "item_id": "SOP008",
+      "retrieval_query": "If yes, ask which other outdoor experiences and where they heard about them"
+    },
+    {
+      "item_id": "SOP009",
+      "retrieval_query": "Ask who influenced customer's decision most like self, spouse, kids, or friends"
+    },
+    {
+      "item_id": "SOP010",
+      "retrieval_query": "Ask how early customer wants to be informed before an adventure event"
+    },
+    {
+      "item_id": "SOP011",
+      "retrieval_query": "Probe subscription timing: less than 1 week, 1-2 weeks, 2-4 weeks, or more"
+    },
+    {
+      "item_id": "SOP012",
+      "retrieval_query": "Ask what would make customer more likely to subscribe to future adventure events"
+    }
+  ]
+}

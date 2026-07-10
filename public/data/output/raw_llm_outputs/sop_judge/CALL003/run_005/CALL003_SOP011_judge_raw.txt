@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked 'Okay, which month was it?' and 'It was August, right?' which effectively probes subscription timing, clarifying the timing in months as required."
+}

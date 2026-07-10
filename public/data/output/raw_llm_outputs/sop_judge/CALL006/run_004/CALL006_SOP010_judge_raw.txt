@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked 'What was the reason?' after the customer mentioned canceling the plan, which practically covers asking what stopped the customer from subscribing to the event."
+}

@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "category": "Survey",
+      "sub_category": "Subscription Timing",
+      "item_text": "Ask how long ago the customer subscribed",
+      "agent_action": "ask_question",
+      "expected_agent_utterance": "How long ago did you subscribe?",
+      "expected_intent": "Ask about subscription timing",
+      "retrieval_query": "how long ago subscribed subscription timing",
+      "source_block_ids": ["C002-B001"],
+      "source_quote": "Allow spontaneous response first, then probe Less than 1 week",
+      "condition_type": "none",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 2
+    },
+    {
+      "category": "Survey",
+      "sub_category": "Subscription Timing",
+      "item_text": "Probe subscription timing if initial response is unclear",
+      "agent_action": "probe",
+      "expected_agent_utterance": "Was it less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, or more than 2 months ago?",
+      "expected_intent": "Clarify subscription timing",
+      "retrieval_query": "probe subscription timing clarify how long ago subscribed",
+      "source_block_ids": ["C002-B001"],
+      "source_quote": "Allow spontaneous response first, then probe Less than 1 week",
+      "condition_type": "none",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 2
+    },
+    {
+      "category": "Survey",
+      "sub_category": "Future Subscription Likelihood",
+      "item_text": "Ask what would make the customer more likely to subscribe again",
+      "agent_action": "ask_question",
+      "expected_agent_utterance": "What is the one thing that would make you more likely to subscribe to our adventure events in the future again?",
+      "expected_intent": "Identify factors to increase future subscription likelihood",
+      "retrieval_query": "what would make you subscribe again future subscription likelihood",
+      "source_block_ids": ["C002-B002"],
+      "source_quote": "What is the one thing that would make you more likely to subscribe to our adventure events in the future again?",
+      "condition_type": "none",
+      "condition_text": "",
+      "condition_trigger": "",
+      "condition_trigger_keywords": [],
+      "condition_source_item_hint": "",
+      "condition_outcome_if_not_met": "Not Applicable",
+      "source_chunk_id": 2
+    }
+  ]
+}

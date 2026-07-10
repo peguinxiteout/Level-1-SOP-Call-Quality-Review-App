@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "item_id": "SOP001",
+      "retrieval_query": "greet customer politely with hello, good morning, good afternoon, or good evening"
+    },
+    {
+      "item_id": "SOP002",
+      "retrieval_query": "introduce yourself and your team at the start of the call"
+    },
+    {
+      "item_id": "SOP003",
+      "retrieval_query": "explain purpose and duration of call, mention feedback and confidentiality"
+    },
+    {
+      "item_id": "SOP004",
+      "retrieval_query": "ask customer for their age or how old they are"
+    },
+    {
+      "item_id": "SOP005",
+      "retrieval_query": "ask customer about their profession or job"
+    },
+    {
+      "item_id": "SOP006",
+      "retrieval_query": "ask how many people are in your family or household"
+    },
+    {
+      "item_id": "SOP007",
+      "retrieval_query": "ask which vehicle or vehicles do you own"
+    },
+    {
+      "item_id": "SOP008",
+      "retrieval_query": "ask how did you first hear about or come across the event"
+    },
+    {
+      "item_id": "SOP009",
+      "retrieval_query": "ask what part of the event interested you initially"
+    },
+    {
+      "item_id": "SOP010",
+      "retrieval_query": "ask what stopped you from subscribing or joining the event"
+    },
+    {
+      "item_id": "SOP011",
+      "retrieval_query": "ask if you were looking for other outdoor experiences, yes or no"
+    },
+    {
+      "item_id": "SOP012",
+      "retrieval_query": "if yes, ask which other outdoor experiences did you consider"
+    },
+    {
+      "item_id": "SOP013",
+      "retrieval_query": "ask where did you hear about these other outdoor experiences"
+    },
+    {
+      "item_id": "SOP014",
+      "retrieval_query": "ask how early should we inform you before an adventure event"
+    },
+    {
+      "item_id": "SOP015",
+      "retrieval_query": "ask what one thing could improve to make you consider subscribing"
+    }
+  ]
+}

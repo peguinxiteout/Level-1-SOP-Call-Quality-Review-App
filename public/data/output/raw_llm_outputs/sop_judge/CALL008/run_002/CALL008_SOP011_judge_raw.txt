@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked 'Are you seeing any outdoor experience for the event?' which is unclear and does not explicitly ask if the customer was also looking for other outdoor experiences as a survey question."
+}

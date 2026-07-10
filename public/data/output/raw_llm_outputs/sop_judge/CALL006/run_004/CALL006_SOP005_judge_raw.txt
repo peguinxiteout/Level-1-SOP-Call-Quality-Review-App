@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked about the customer's profession by saying 'Are you salaried, a businessman, or a student?' which covers the practical intent of asking for the customer's profession."
+}

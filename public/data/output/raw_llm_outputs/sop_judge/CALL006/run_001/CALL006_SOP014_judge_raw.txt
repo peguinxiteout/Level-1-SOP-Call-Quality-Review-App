@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked how soon the customer wants to be informed before the adventure event, providing multiple time frame options, which matches the SOP intent to ask notification timing."
+}

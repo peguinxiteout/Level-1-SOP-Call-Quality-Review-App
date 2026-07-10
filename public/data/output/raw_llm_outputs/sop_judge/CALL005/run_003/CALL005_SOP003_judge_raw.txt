@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly states they are conducting a short feedback exercise to understand customer preferences for adventure, which matches the purpose explanation; duration is implied by 'short' and context."
+}

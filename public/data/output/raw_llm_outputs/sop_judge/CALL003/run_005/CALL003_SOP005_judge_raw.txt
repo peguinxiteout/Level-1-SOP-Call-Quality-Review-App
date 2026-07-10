@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Where did you hear about this event?', which matches the practical intent of asking how the customer first heard about the event."
+}

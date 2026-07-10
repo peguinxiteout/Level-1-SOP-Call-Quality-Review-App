@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked when the customer last took part in the activity, which practically determines the time since last subscription."
+}

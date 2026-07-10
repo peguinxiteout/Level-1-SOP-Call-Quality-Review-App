@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked how early the customer should be informed before any adventure event, matching the SOP intent and expected utterance."
+}

@@ -1,0 +1,15 @@
+﻿batch_output_version,batch_output_generated_at,category,sub_category,total_sop_items,applicable_sop_items,confirmed_count,review_suggested_count,missed_count,not_applicable_count,coverage_pct,missed_pct,affected_call_count
+run_001,2026-07-02T16:44:50,Closure,Subscription Timing,5,5,2,0,3,0,40.0,60.0,5
+run_001,2026-07-02T16:44:50,Opening,Purpose Explanation,10,10,4,1,5,0,50.0,50.0,10
+run_001,2026-07-02T16:44:50,Opening,Consent,5,5,3,0,2,0,60.0,40.0,5
+run_001,2026-07-02T16:44:50,Survey,Initial Interest,5,5,3,0,2,0,60.0,40.0,5
+run_001,2026-07-02T16:44:50,Opening,Greeting,10,10,7,0,3,0,70.0,30.0,10
+run_001,2026-07-02T16:44:50,Closure,Subscription Motivation,5,5,4,0,1,0,80.0,20.0,5
+run_001,2026-07-02T16:44:50,Survey,Awareness,5,5,4,0,1,0,80.0,20.0,5
+run_001,2026-07-02T16:44:50,Survey,Future Expectations,5,5,4,0,1,0,80.0,20.0,5
+run_001,2026-07-02T16:44:50,Survey,Other Outdoor Experiences,15,5,4,0,1,10,80.0,20.0,5
+run_001,2026-07-02T16:44:50,Survey,Reasons for Not Subscribing,5,5,4,0,1,0,80.0,20.0,5
+run_001,2026-07-02T16:44:50,Closure,Future Expectations,10,10,8,1,1,0,90.0,10.0,5
+run_001,2026-07-02T16:44:50,Survey,Basic Information,40,40,38,0,2,0,95.0,5.0,10
+run_001,2026-07-02T16:44:50,Survey,Awareness and Interest,35,25,24,0,1,10,96.0,4.0,5
+run_001,2026-07-02T16:44:50,Opening,Identity Confirmation,10,10,10,0,0,0,100.0,0.0,10

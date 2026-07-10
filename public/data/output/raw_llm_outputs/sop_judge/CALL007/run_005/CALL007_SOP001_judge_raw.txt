@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not greet the customer politely; no greeting utterance such as 'Hi Sir/Madam' or 'Good morning/afternoon/evening' was found in the agent text."
+}

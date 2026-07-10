@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "item_id": "SOP001",
+      "retrieval_query": "Hello, hi, good morning, good afternoon, good evening"
+    },
+    {
+      "item_id": "SOP002",
+      "retrieval_query": "I am calling from the adventure team, this is _____ from Mahindra"
+    },
+    {
+      "item_id": "SOP003",
+      "retrieval_query": "I am calling to do a short feedback survey about adventure events, it will take about 8 to 10 minutes"
+    },
+    {
+      "item_id": "SOP004",
+      "retrieval_query": "May I know your age, can you tell me your age"
+    },
+    {
+      "item_id": "SOP005",
+      "retrieval_query": "What is your profession, may I know your job or occupation"
+    },
+    {
+      "item_id": "SOP006",
+      "retrieval_query": "How many people are in your family, family size"
+    },
+    {
+      "item_id": "SOP007",
+      "retrieval_query": "Which vehicle or vehicles do you own, what vehicles do you have"
+    },
+    {
+      "item_id": "SOP008",
+      "retrieval_query": "How did you first hear about the adventure event, where did you come across the event"
+    },
+    {
+      "item_id": "SOP009",
+      "retrieval_query": "What part of the event interested you initially, what caught your interest first"
+    },
+    {
+      "item_id": "SOP010",
+      "retrieval_query": "What stopped you from subscribing to the event, why didn't you subscribe"
+    },
+    {
+      "item_id": "SOP011",
+      "retrieval_query": "Were you looking for other outdoor experiences, any other outdoor activities you considered"
+    },
+    {
+      "item_id": "SOP012",
+      "retrieval_query": "If yes, which other outdoor experiences did you look at, what other activities interested you"
+    },
+    {
+      "item_id": "SOP013",
+      "retrieval_query": "Where did you hear about these other outdoor experiences, source of other activities information"
+    },
+    {
+      "item_id": "SOP014",
+      "retrieval_query": "How early should we inform you before an event, preferred notification time"
+    },
+    {
+      "item_id": "SOP015",
+      "retrieval_query": "What one thing can we improve to make you consider subscribing, suggestions for improvement"
+    }
+  ]
+}

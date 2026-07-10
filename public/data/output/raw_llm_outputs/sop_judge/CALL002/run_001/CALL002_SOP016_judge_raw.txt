@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not explicitly ask how long ago the customer last subscribed; agent only confirmed the customer's volunteered timing without asking the specific timing question as per SOP."
+}

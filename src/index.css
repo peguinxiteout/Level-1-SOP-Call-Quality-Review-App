@@ -9,6 +9,12 @@
   --color-text-primary: #bcbbbd;
   --color-text-muted: #78787b;
   --color-highlight: #cb6cfe;
+
+  /* Status palette (fixed - never reused for series/identity color) */
+  --color-status-good: #0ca30c;
+  --color-status-warning: #fab219;
+  --color-status-critical: #d03b3b;
+  --color-status-neutral: #78787b;
 }
 
 body {

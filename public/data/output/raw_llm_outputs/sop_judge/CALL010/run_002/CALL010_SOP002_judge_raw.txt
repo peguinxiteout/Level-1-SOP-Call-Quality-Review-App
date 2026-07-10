@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent clearly introduced themselves and their team by saying 'I am talking to Anurag ji' and mentioning 'Adventure team, Mahindra and Mahindra', which matches the practical intent of introducing themselves and their team."
+}

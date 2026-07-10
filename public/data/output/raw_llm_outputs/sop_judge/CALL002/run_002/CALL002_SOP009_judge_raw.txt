@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked when the customer last took part in Mahindra's adventure activity and mentioned the event context, matching the SOP intent to collect last participation details."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked what should be improved to make the customer consider subscribing in the future, matching the expected intent and practical meaning."
+}

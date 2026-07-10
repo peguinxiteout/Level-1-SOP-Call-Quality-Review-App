@@ -1,0 +1,66 @@
+﻿output_version,output_generated_at,call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role
+run_001,2026-06-17T17:17:59,CALL004,1,SPEAKER_01,0.03,2.16,2.13,Thanks for watching!,Customer
+run_001,2026-06-17T17:17:59,CALL004,2,SPEAKER_00,5.19,8.97,3.78,"Good afternoon ma'am, this is Farad Nia calling from Mahindra Adventure Activity.",Agent
+run_001,2026-06-17T17:17:59,CALL004,3,SPEAKER_01,5.26,6.12,0.86,"Good afternoon, ma'am.",Customer
+run_001,2026-06-17T17:17:59,CALL004,4,SPEAKER_00,10.58,12.47,1.89,"I am talking to the Adventure Activity Team, Ma'am.",Agent
+run_001,2026-06-17T17:17:59,CALL004,5,SPEAKER_00,13.24,19.25,6.01,"There is a small feedback call ma'am, so that we can know our customer's preference for adventure experience.",Agent
+run_001,2026-06-17T17:17:59,CALL004,6,SPEAKER_00,20.23,30.22,9.99,"Yes, so this will be helpful for our future events to make it even better. And as ma'am, this college will be for 8-10 minutes maximum.",Agent
+run_001,2026-06-17T17:17:59,CALL004,7,SPEAKER_00,31.86,38.64,6.78,"Ma'am, the feedback will be kept confidential. We are going to use it for analytical purposes only.",Agent
+run_001,2026-06-17T17:17:59,CALL004,8,SPEAKER_00,39.42,45.73,6.31,"Ma'am, before starting the feedback, we want to know your basic information. Ma'am, we can know your age.",Agent
+run_001,2026-06-17T17:17:59,CALL004,9,SPEAKER_01,47.03,48.87,1.84,"There he is, a petite dude.",Customer
+run_001,2026-06-17T17:17:59,CALL004,10,SPEAKER_00,49.73,55.28,5.55,"Okay. And ma'am, what will be your profession like you are a salaried person or self-employed?",Agent
+run_001,2026-06-17T17:17:59,CALL004,11,SPEAKER_00,60.85,64.34,3.49,How many members are there in your family?,Agent
+run_001,2026-06-17T17:17:59,CALL004,12,SPEAKER_00,67.73,72.22,4.49,"Ma'am, how many cars are available in four-wheelers?",Agent
+run_001,2026-06-17T17:17:59,CALL004,13,SPEAKER_01,71.78,74.6,2.82,I have two in my formula.,Customer
+run_001,2026-06-17T17:17:59,CALL004,14,SPEAKER_00,75.26,77.01,1.75,"Ma'am, can you tell me your name?",Agent
+run_001,2026-06-17T17:17:59,CALL004,15,SPEAKER_01,77.89,79.33,1.44,"7-double-o, Thar road",Customer
+run_001,2026-06-17T17:17:59,CALL004,16,SPEAKER_00,80.34,82.11,1.77,"Okay, so I'm in the below entire rocks, right?",Agent
+run_001,2026-06-17T17:17:59,CALL004,17,SPEAKER_00,83.58,89.42,5.84,"Ma'am, when did you take part in Mahindra Adventure Activity last time?",Agent
+run_001,2026-06-17T17:17:59,CALL004,18,SPEAKER_01,91.04,93.74,2.7,Last july,Customer
+run_001,2026-06-17T17:17:59,CALL004,19,SPEAKER_00,93.86,96.02,2.16,"In 2025, in July, right?",Agent
+run_001,2026-06-17T17:17:59,CALL004,20,SPEAKER_00,97.7,102.12,4.42,"Ma'am, do you remember the location or name of the event?",Agent
+run_001,2026-06-17T17:17:59,CALL004,21,SPEAKER_01,103.31,106.39,3.08,What is the name of the event?,Customer
+run_001,2026-06-17T17:17:59,CALL004,22,SPEAKER_00,107.0,108.98,1.98,Great escape or trail hunt,Agent
+run_001,2026-06-17T17:17:59,CALL004,23,SPEAKER_01,108.98,110.82,1.84,"Talent, talent.",Customer
+run_001,2026-06-17T17:17:59,CALL004,24,SPEAKER_00,111.47,113.41,1.94,"Okay, trailhead. And ma'am, location?",Agent
+run_001,2026-06-17T17:17:59,CALL004,25,SPEAKER_01,111.83,113.46,1.63,"Okay, trailhead and then ma'am, location?",Customer
+run_001,2026-06-17T17:17:59,CALL004,26,SPEAKER_01,114.31,116.38,2.07,"Location Nagpur, Chokhardhani",Customer
+run_001,2026-06-17T17:17:59,CALL004,27,SPEAKER_00,117.73,120.1,2.37,"The location was Nagpur, right?",Agent
+run_001,2026-06-17T17:17:59,CALL004,28,SPEAKER_00,123.66,126.75,3.09,"Ma'am, where did you get the information about this?",Agent
+run_001,2026-06-17T17:17:59,CALL004,29,SPEAKER_01,127.77,130.49,2.72,I want to go to the store where we bought the car.,Customer
+run_001,2026-06-17T17:17:59,CALL004,30,SPEAKER_00,130.98,134.14,3.16,"Okay, so you will get to know about the dealership.",Agent
+run_001,2026-06-17T17:17:59,CALL004,31,SPEAKER_01,133.31,136.13,2.82,What is the name of the prehensile dealership?,Customer
+run_001,2026-06-17T17:17:59,CALL004,32,SPEAKER_00,137.09,144.72,7.63,"Ma'am, what were the things that you found interesting and that's why you booked this adventure?",Agent
+run_001,2026-06-17T17:17:59,CALL004,33,SPEAKER_00,148.89,151.97,3.08,"Like ma'am, you got information from the dealership, right?",Agent
+run_001,2026-06-17T17:17:59,CALL004,34,SPEAKER_00,153.39,160.5,7.11,"Yes, so what was the thing that made you very excited and interested and why did you book this adventure event ma'am?",Agent
+run_001,2026-06-17T17:17:59,CALL004,35,SPEAKER_01,161.49,164.97,3.48,I didn't see him before this.,Customer
+run_001,2026-06-17T17:17:59,CALL004,36,SPEAKER_01,165.07,175.13,10.06,"That's why I took Thar. Actually, there was a Thar on the 3rd floor. I didn't do any adventure on it. When I took rocks, I had to go on it. I liked it.",Customer
+run_001,2026-06-17T17:17:59,CALL004,37,SPEAKER_00,175.62,178.97,3.35,Location was looking good and we had to do an adventure right?,Agent
+run_001,2026-06-17T17:17:59,CALL004,38,SPEAKER_01,179.19,184.49,5.3,"The location where they have given the mapping is also very good, I have never seen anything like this in Nagpur.",Customer
+run_001,2026-06-17T17:17:59,CALL004,39,SPEAKER_00,185.3,196.74,11.44,"Okay, like to hear that ma'am, the experience you had in that event was very good and as you said that you belong to Nagpur, right? Yes, I belong to Nagpur.",Agent
+run_001,2026-06-17T17:17:59,CALL004,40,SPEAKER_01,195.98,208.49,12.51,I have never seen that location and I can't see it even today. I saw it during the event and I must have forgotten it now. We were told about it during the event and it was a very good location.,Customer
+run_001,2026-06-17T17:17:59,CALL004,41,SPEAKER_00,208.83,214.9,6.07,"It was nice to hear that you liked the location very much. And ma'am, Mahindra Adventure...",Agent
+run_001,2026-06-17T17:17:59,CALL004,42,SPEAKER_00,215.02,220.64,5.62,"Before booking Mahindra Adventure, have you taken any outdoor experience?",Agent
+run_001,2026-06-17T17:17:59,CALL004,43,SPEAKER_01,222.26,226.95,4.69,"We are not afraid of anything, we are not afraid of anything.",Customer
+run_001,2026-06-17T17:17:59,CALL004,44,SPEAKER_01,227.57,229.33,1.76,Okay.,Customer
+run_001,2026-06-17T17:17:59,CALL004,45,SPEAKER_00,229.9,240.74,10.84,"Ma'am, when you were taking the decision to participate in an adventure event, was it totally your own decision or your partner's or your children's? No, no.",Agent
+run_001,2026-06-17T17:17:59,CALL004,46,SPEAKER_01,240.62,249.17,8.55,"My son is 18 years old, so I have to keep him with me. He is 18 years old now, so I have to make the decision.",Customer
+run_001,2026-06-17T17:17:59,CALL004,47,SPEAKER_00,249.85,258.02,8.17,"Ma'am, how many days before any adventure event should you inform so that you can manage your schedule accordingly?",Agent
+run_001,2026-06-17T17:17:59,CALL004,48,SPEAKER_01,258.35,261.8,3.45,At least 10 days before my death.,Customer
+run_001,2026-06-17T17:17:59,CALL004,49,SPEAKER_00,262.52,263.74,1.22,"I mean, I don't know.",Agent
+run_001,2026-06-17T17:17:59,CALL004,50,SPEAKER_01,262.77,268.16,5.39,"You have a fixed schedule, right? Yes, yes, right. Where to go, what to do?",Customer
+run_001,2026-06-17T17:17:59,CALL004,51,SPEAKER_00,266.03,266.91,0.88,"Yes, yes, right.",Agent
+run_001,2026-06-17T17:17:59,CALL004,52,SPEAKER_01,268.53,277.95,9.42,"It should be kept for at least 10 to 12 days, so that they can decide whether they want to go or not, and then they can decide their work.",Customer
+run_001,2026-06-17T17:17:59,CALL004,53,SPEAKER_00,278.59,291.06,12.47,What was the last trip that you liked the most and would like to participate in Mahindra Adventure in future?,Agent
+run_001,2026-06-17T17:17:59,CALL004,54,SPEAKER_01,290.16,300.12,9.96,I have received a message from Manali that they are trying but it will take a long time.,Customer
+run_001,2026-06-17T17:17:59,CALL004,55,SPEAKER_01,300.52,302.43,1.91,"So, I will have to do the rejuvenation.",Customer
+run_001,2026-06-17T17:17:59,CALL004,56,SPEAKER_00,302.87,313.37,10.5,"Okay, so you liked the location. Apart from the location, ma'am, what other things did you like, like the event was organized, like you liked it or anything else?",Agent
+run_001,2026-06-17T17:17:59,CALL004,57,SPEAKER_01,323.0,324.22,1.22,Thank you very much.,Customer
+run_001,2026-06-17T17:17:59,CALL004,58,SPEAKER_00,324.5,327.15,2.65,Which one ma'am?,Agent
+run_001,2026-06-17T17:17:59,CALL004,59,SPEAKER_01,326.36,329.58,3.22,You should not have kept it on the 3rd limit.,Customer
+run_001,2026-06-17T17:17:59,CALL004,60,SPEAKER_00,332.5,334.02,1.52,"There's no limit to the speed, right?",Agent
+run_001,2026-06-17T17:17:59,CALL004,61,SPEAKER_01,332.81,339.71,6.9,There should be no speed limit. I have a speed limit of 222 kmph. There should be no speed limit.,Customer
+run_001,2026-06-17T17:17:59,CALL004,62,SPEAKER_00,340.4,341.46,1.06,"Yes, yes, right, right.",Agent
+run_001,2026-06-17T17:17:59,CALL004,63,SPEAKER_01,340.86,352.99,12.13,"I have been driving for a year and a half, but there should be an event too. When I am driving an engine of 2200cc, there should be an event in that too.",Customer
+run_001,2026-06-17T17:17:59,CALL004,64,SPEAKER_00,353.6,363.72,10.12,"Okay ma'am, definitely sure. We will definitely do it in future ma'am. Your feedback is complete ma'am. Thank you very much for your valuable time. Your feedback is very important for us ma'am. Thank you so much. Have a great day.",Agent
+run_001,2026-06-17T17:17:59,CALL004,65,SPEAKER_01,364.41,365.51,1.1,Good evening.,Customer

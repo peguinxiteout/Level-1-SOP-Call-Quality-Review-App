@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked 'Sir, where did you know about Mahindra Adventure for the first time?' which matches the SOP intent to ask how the customer first came across the event."
+}

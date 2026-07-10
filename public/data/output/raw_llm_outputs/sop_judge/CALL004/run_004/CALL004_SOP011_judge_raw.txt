@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked what the customer found exciting and interesting that led to booking the adventure event, matching the SOP intent to collect interest reasons."
+}

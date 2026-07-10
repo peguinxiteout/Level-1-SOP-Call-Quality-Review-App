@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Can I know your age for profile purpose?', which matches the SOP intent to ask for customer's age."
+}

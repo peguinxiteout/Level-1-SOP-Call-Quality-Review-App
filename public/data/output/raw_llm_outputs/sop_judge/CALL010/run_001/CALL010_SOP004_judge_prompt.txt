@@ -1,0 +1,113 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask for customer's age
+Expected agent utterance: May I know your age?
+Expected intent: ask_age
+Agent action: ask_question
+Category: Survey
+Sub-category: Basic Information
+
+Retrieval query used:
+May I know your age?
+
+Agent text used for retrieval:
+I would like to start with a basic question, so can I know your age, sir?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.6856
+Retrieval score: 0.6802
+Key match score: 0.6955
+Agent text: I would like to start with a basic question, so can I know your age, sir?
+Nearby context:
+[35.45 - 46.77] Agent: Thank you for confirming. Sir, this is a small feedback call so that we can give our customers a preference adventure exercise experience so that they can improve further.
+[49.85 - 54.17] Agent: I would like to start with a basic question, so can I know your age, sir?
+[55.62 - 56.39] Customer: 21.
+[57.14 - 60.04] Agent: 51, okay. And your profession, sir?
+[61.42 - 62.2] Customer: Yes, sir.
+[63.11 - 64.22] Agent: Business, okay.
+[65.03 - 68.16] Agent: And how many members are there in your family, sir?
+
+Evidence window rank 2
+Combined score: 0.3664
+Retrieval score: 0.4237
+Key match score: 0.26
+Agent text: 51, okay. And your profession, sir?
+Nearby context:
+[55.62 - 56.39] Customer: 21.
+[57.14 - 60.04] Agent: 51, okay. And your profession, sir?
+[61.42 - 62.2] Customer: Yes, sir.
+[63.11 - 64.22] Agent: Business, okay.
+[65.03 - 68.16] Agent: And how many members are there in your family, sir?
+[71.38 - 75.39] Agent: Sir, which vehicle do you have?
+[77.15 - 79.06] Customer: Thank you.
+
+Evidence window rank 3
+Combined score: 0.3272
+Retrieval score: 0.3711
+Key match score: 0.2456
+Agent text: And how many members are there in your family, sir?
+Nearby context:
+[63.11 - 64.22] Agent: Business, okay.
+[65.03 - 68.16] Agent: And how many members are there in your family, sir?
+[71.38 - 75.39] Agent: Sir, which vehicle do you have?
+[77.15 - 79.06] Customer: Thank you.
+[80.81 - 82.55] Agent: Whichever car you have
+[83.22 - 86.38] Customer: Thank you very much.
+[87.54 - 88.91] Agent: Which car do you have?
+
+Evidence window rank 4
+Combined score: 0.3003
+Retrieval score: 0.2681
+Key match score: 0.3602
+Agent text: I would like to mention your feedback here and thank you very much for your valuable time.
+Nearby context:
+[333.26 - 334.22] Agent: P.K. Anurag Ji.
+[335.08 - 340.35] Agent: I would like to mention your feedback here and thank you very much for your valuable time.
+[338.05 - 338.83] Customer: Thank you very much.
+
+Retrieval score: 0.6802
+Key match score: 0.6955

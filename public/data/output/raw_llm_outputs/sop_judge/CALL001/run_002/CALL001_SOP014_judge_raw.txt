@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked where the customer heard about 'this event' but did not ask where the customer heard about 'these other outdoor events' as required by the SOP."
+}

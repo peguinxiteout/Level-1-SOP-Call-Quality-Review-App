@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked 'Did you hear anything about the event?' which is a generic inquiry about hearing but does not specifically ask how the customer first heard about the event, thus missing the expected intent to collect source of awareness."
+}

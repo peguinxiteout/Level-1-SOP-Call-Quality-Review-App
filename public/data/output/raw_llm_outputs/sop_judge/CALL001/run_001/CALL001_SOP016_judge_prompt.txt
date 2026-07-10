@@ -1,0 +1,116 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask how long ago the customer last subscribed
+Expected agent utterance: How long ago did you last subscribe to our adventure events? Was it less than 1 week, 1 to 2 weeks, 2 to 4 weeks, 1 to 2 months, or more than 2 months?
+Expected intent: Identify last subscription timing
+Agent action: ask_question
+Category: Survey
+Sub-category: Subscription Timing
+
+Retrieval query used:
+How long ago did you last subscribe to our adventure events? Was it less than 1 week, 1 to 2 weeks, 2 to 4 weeks, 1 to 2 months, or more than 2 months?
+
+Agent text used for retrieval:
+Okay, sir. What is the one thing that would make you more likely to subscribe to our adventure event in the future again?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.489
+Retrieval score: 0.5846
+Key match score: 0.3116
+Agent text: Okay, sir. What is the one thing that would make you more likely to subscribe to our adventure event in the future again?
+Nearby context:
+[184.49 - 189.72] Agent: Okay, sir according to you. How early should we inform you before an adventure event?
+[195.8 - 203.46] Agent: Okay, sir. What is the one thing that would make you more likely to subscribe to our adventure event in the future again?
+[204.25 - 207.85] Customer: Already subscribed. Already subscribed, man. Already subscribed.
+[208.3 - 210.31] Agent: Already subscribers, okay
+[210.6 - 213.55] Agent: Thank you sir. Have a nice day. You are welcome.
+[215.51 - 216.3] Customer: Thank you.
+
+Evidence window rank 2
+Combined score: 0.3803
+Retrieval score: 0.4783
+Key match score: 0.1982
+Agent text: When was the last time you took part in a Mahindra Adventure activity?
+Nearby context:
+[83.09 - 85.49] Customer: I own Mercedes-AMG and Saat.
+[89.27 - 95.51] Agent: When was the last time you took part in a Mahindra Adventure activity?
+[97.99 - 100.18] Agent: Last year okay date yeah month
+[102.11 - 108.45] Customer: Yes, I'm waiting. I can't remember what it was. I'm in September 2019.
+[108.45 - 114.7] Agent: September right okay sir and which event was it and what location
+[115.29 - 118.59] Customer: It was Mahindra SK, 2025, Goa.
+[118.98 - 120.48] Agent: Mahindra escape, right?
+
+Evidence window rank 3
+Combined score: 0.3778
+Retrieval score: 0.4627
+Key match score: 0.2201
+Agent text: Sir, what made you feel interested Enoch to subscribe book this adventure event?
+Nearby context:
+[139.59 - 140.75] Agent: Okay, okay company, right
+[143.87 - 149.97] Agent: Sir, what made you feel interested Enoch to subscribe book this adventure event?
+[150.74 - 151.57] Customer: Just for three minutes.
+[154.3 - 157.63] Customer: Really, just to ask, I was just curious to do this.
+[158.37 - 159.65] Agent: Ok, ok.
+[159.67 - 166.13] Agent: Before booking Mahindra Adventure, did you check out any outdoor experiences?
+[168.17 - 173.29] Agent: Sir, while you were exploring and deciding,
+
+Evidence window rank 4
+Combined score: 0.376
+Retrieval score: 0.4656
+Key match score: 0.2097
+Agent text: Okay, sir according to you. How early should we inform you before an adventure event?
+Nearby context:
+[182.45 - 183.45] Agent: self, right?
+[184.49 - 189.72] Agent: Okay, sir according to you. How early should we inform you before an adventure event?
+[195.8 - 203.46] Agent: Okay, sir. What is the one thing that would make you more likely to subscribe to our adventure event in the future again?
+[204.25 - 207.85] Customer: Already subscribed. Already subscribed, man. Already subscribed.
+[208.3 - 210.31] Agent: Already subscribers, okay
+[210.6 - 213.55] Agent: Thank you sir. Have a nice day. You are welcome.
+[215.51 - 216.3] Customer: Thank you.
+
+Retrieval score: 0.5846
+Key match score: 0.3116

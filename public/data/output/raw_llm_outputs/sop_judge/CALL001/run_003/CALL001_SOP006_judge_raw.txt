@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'And may I know your profession, sir?' which matches the expected intent to collect profession."
+}

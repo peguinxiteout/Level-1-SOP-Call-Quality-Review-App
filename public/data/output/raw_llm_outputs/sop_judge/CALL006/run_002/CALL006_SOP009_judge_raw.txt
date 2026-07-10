@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not explicitly ask what part of the event caught the customer's interest initially; closest related question was about the reason for interest but was ambiguous and incomplete."
+}

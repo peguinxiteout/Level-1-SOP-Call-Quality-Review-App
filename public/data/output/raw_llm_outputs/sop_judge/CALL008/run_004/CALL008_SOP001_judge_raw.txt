@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent greeted the customer with 'Hello, I am Dheeraj speaking from the Mahindra Relationship Center, Mumbai.' which is a polite greeting consistent with the SOP intent."
+}

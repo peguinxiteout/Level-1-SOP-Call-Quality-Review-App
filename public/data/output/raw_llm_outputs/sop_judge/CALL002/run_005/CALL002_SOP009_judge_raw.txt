@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked who influenced the customer's decision the most, including options like spouse, friends, or someone else, matching the expected intent and practical meaning."
+}

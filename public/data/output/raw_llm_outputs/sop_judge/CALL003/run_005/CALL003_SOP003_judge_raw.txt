@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked for age, profession, family size, and vehicle ownership, covering all parts of the basic info checklist item."
+}

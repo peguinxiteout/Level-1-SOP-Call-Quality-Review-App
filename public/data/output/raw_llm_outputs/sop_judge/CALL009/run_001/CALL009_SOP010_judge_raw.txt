@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked about the reason for not subscribing by stating 'okay the reason was that due to the price was huge that was the reason you have to stop the plan,' which directly addresses what stopped the customer from subscribing."
+}

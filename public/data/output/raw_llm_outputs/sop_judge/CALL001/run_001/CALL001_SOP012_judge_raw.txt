@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked if the customer checked out any outdoor experiences but did not ask which other outdoor experiences the customer looked at."
+}

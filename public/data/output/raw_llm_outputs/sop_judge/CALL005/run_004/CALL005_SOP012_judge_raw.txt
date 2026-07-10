@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'before booking Mahindra Adventure, did you check out any other outdoor experiences?' which matches the SOP checklist item intent and action."
+}

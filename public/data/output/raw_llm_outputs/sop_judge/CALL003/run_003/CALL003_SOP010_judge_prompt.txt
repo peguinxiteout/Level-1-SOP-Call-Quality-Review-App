@@ -1,0 +1,117 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask how the customer first heard about the event
+Expected agent utterance: How did you first hear about this event?
+Expected intent: collect_source_of_awareness
+Agent action: ask_question
+Category: Survey
+Sub-category: Awareness and Interest
+
+Retrieval query used:
+How did you first hear about this event?
+
+Agent text used for retrieval:
+Okay. Where did you hear about this event?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.7911
+Retrieval score: 0.8085
+Key match score: 0.7587
+Agent text: Okay. Where did you hear about this event?
+Nearby context:
+[111.4 - 112.0] Customer: Hmm.
+[112.0 - 114.8] Agent: Okay. Where did you hear about this event?
+[116.3 - 120.5] Customer: I heard it from Mahindra people. Was it on the internet, on Instagram?
+[121.0 - 122.8] Agent: You saw it on Instagram, right?
+[123.2 - 123.6] Customer: Hmm.
+[123.8 - 134.1] Agent: Okay. So, you were interested in this. I mean, for the booking, right? What approach did you take to
+[134.1 - 148.4] Customer: Actually, what happened was, we had an event. I think it was a trail hunt in Nashik. Yes, yes, in Igatpuri.
+
+Evidence window rank 2
+Combined score: 0.3421
+Retrieval score: 0.3425
+Key match score: 0.3414
+Agent text: Okay. So, you were interested in this. I mean, for the booking, right? What approach did you take to
+Nearby context:
+[123.2 - 123.6] Customer: Hmm.
+[123.8 - 134.1] Agent: Okay. So, you were interested in this. I mean, for the booking, right? What approach did you take to
+[134.1 - 148.4] Customer: Actually, what happened was, we had an event. I think it was a trail hunt in Nashik. Yes, yes, in Igatpuri.
+[141.1 - 141.6] Agent: Okay.
+[142.4 - 143.6] Agent: Yes, yes, in Igatpuri.
+[146.3 - 146.8] Agent: Okay.
+[149.2 - 149.7] Agent: Okay.
+
+Evidence window rank 3
+Combined score: 0.3225
+Retrieval score: 0.3442
+Key match score: 0.2822
+Agent text: Oh no, it felt good to hear that, Miss Priyanka. Regarding these events, how many days in advance
+Nearby context:
+[350.2 - 350.6] Agent: Yes.
+[352.0 - 364.7] Agent: Oh no, it felt good to hear that, Miss Priyanka. Regarding these events, how many days in advance
+[365.2 - 367.8] Customer: It is enough if you inform us about a month in advance.
+[368.3 - 369.4] Agent: A month in advance.
+[368.4 - 387.1] Customer: Yes, maintain transparency. For example, if you are getting fifty cars for an event, let us know how
+[371.1 - 371.6] Agent: Yes.
+[378.3 - 378.9] Agent: Yes.
+
+Evidence window rank 4
+Combined score: 0.2913
+Retrieval score: 0.3501
+Key match score: 0.182
+Agent text: Okay. I want to ask, you became interested in subscribing and booking, right? What was the reason you
+Nearby context:
+[238.0 - 239.0] Agent: Yes, correct.
+[244.0 - 255.2] Agent: Okay. I want to ask, you became interested in subscribing and booking, right? What was the reason you
+[250.9 - 251.2] Customer: What?
+[252.7 - 273.6] Customer: We attended Igatpuri on our own. They did a trail hunt in Nashik. They also told us the trail hunt was
+[256.1 - 256.4] Agent: Yes.
+[258.2 - 259.7] Agent: Okay, it was done by myself.
+[261.7 - 263.0] Agent: Okay, yes, yes.
+
+Retrieval score: 0.8085
+Key match score: 0.7587

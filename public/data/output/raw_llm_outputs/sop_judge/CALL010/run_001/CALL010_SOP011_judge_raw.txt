@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked if the customer had any other outdoor experience related to this, which practically matches asking if the customer was looking for any other outdoor experiences."
+}

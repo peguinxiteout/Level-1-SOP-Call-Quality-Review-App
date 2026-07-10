@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent greeted the customer politely with 'Excuse me, sir' and also said 'Hello, I am Dheeraj from Mahindra Adventures Even. I am talking to Mr. Naaz.' which fulfills the greeting intent."
+}

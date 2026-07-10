@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Where did you hear about this event?' which matches the SOP intent to collect source of awareness."
+}

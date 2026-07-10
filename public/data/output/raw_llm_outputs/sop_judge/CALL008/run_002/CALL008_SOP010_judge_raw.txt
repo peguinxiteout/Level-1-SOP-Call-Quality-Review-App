@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked the customer for the reason why they rejected the subscription to the event, which matches the practical intent of asking what stopped the customer from subscribing."
+}

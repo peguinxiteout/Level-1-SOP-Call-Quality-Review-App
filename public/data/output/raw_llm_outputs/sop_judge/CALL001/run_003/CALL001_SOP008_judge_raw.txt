@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'Which vehicles do you own?' matching the SOP intent to collect vehicle ownership."
+}

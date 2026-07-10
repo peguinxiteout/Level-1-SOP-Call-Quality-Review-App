@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked who influenced the customer's decision by mentioning if it was their own decision or influenced by partner or children, matching the practical intent of collecting influencer information."
+}

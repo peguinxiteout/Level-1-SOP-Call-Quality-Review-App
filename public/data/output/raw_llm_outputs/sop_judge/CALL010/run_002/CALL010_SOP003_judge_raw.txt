@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.4,
+  "reason": "Agent mentions a feedback call to improve customer preferences for adventure experiences but does not clearly explain the call duration or confidentiality of responses as required by the SOP."
+}

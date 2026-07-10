@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked if the customer did not subscribe and which event they were watching, but did not explicitly ask what stopped the customer from subscribing to the event."
+}

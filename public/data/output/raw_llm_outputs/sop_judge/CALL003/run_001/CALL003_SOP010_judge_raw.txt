@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked what was the reason for the customer's interest in subscribing and booking the event, matching the practical intent of the SOP item."
+}

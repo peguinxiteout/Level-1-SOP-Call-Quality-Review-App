@@ -1,0 +1,46 @@
+﻿output_version,output_generated_at,call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role
+run_001,2026-06-17T17:14:59,CALL002,1,SPEAKER_01,0.71,1.8,1.09,BEEP BEEP,Agent
+run_001,2026-06-17T17:14:59,CALL002,2,SPEAKER_01,4.03,5.62,1.59,Hello?,Agent
+run_001,2026-06-17T17:14:59,CALL002,3,SPEAKER_01,7.07,15.25,8.18,"Good evening, this is Sakshi calling you from Mahindra's Adventure Team. Am I speaking with Mr. Drishti Ruparaj? Yeah, Ms. Drishti, yes.",Agent
+run_001,2026-06-17T17:14:59,CALL002,4,SPEAKER_01,15.59,23.4,7.81,"Yes, we are conducting a short feedback exercise to understand customer preferences for adventure experiences. This will help us to improve our future events.",Agent
+run_001,2026-06-17T17:14:59,CALL002,5,SPEAKER_01,23.62,32.65,9.03,It will about take your 8-10 minutes. Your responses will be kept confidential and used for analysis purpose only. So is this a convenient time to speak with you now ma'am?,Agent
+run_001,2026-06-17T17:14:59,CALL002,6,SPEAKER_01,33.39,36.8,3.41,"Yeah, yeah. Just tell me, please. Okay, okay. Thank you so much, ma'am, for your valuable time.",Agent
+run_001,2026-06-17T17:14:59,CALL002,7,SPEAKER_01,37.0,40.35,3.35,we would like to start with the basic information. So may I know your age?,Agent
+run_001,2026-06-17T17:14:59,CALL002,8,SPEAKER_01,41.48,54.18,12.7,"26. Okay. And so, ma'am, if you don't mind, may I know your profession, like a businesswoman, self-employed or salaried? Business. Business. Okay. And how many people are there in your immediate family?",Agent
+run_001,2026-06-17T17:14:59,CALL002,9,SPEAKER_01,55.4,56.38,0.98,"Mm-hmm, thanks.",Agent
+run_001,2026-06-17T17:14:59,CALL002,10,SPEAKER_00,55.6,56.39,0.79,Mm-hmm.,Customer
+run_001,2026-06-17T17:14:59,CALL002,11,SPEAKER_01,56.39,59.33,2.94,"Okay, and which vehicle do you own?",Agent
+run_001,2026-06-17T17:14:59,CALL002,12,SPEAKER_01,61.2,63.57,2.37,"Mahindra star vehicle, right?",Agent
+run_001,2026-06-17T17:14:59,CALL002,13,SPEAKER_01,64.51,70.37,5.86,"Okay, and when was the last time you took part in Mahindra's adventure activity. I think last",Agent
+run_001,2026-06-17T17:14:59,CALL002,14,SPEAKER_01,70.74,72.17,1.43,Last.,Agent
+run_001,2026-06-17T17:14:59,CALL002,15,SPEAKER_01,72.56,73.35,0.79,Thank you.,Agent
+run_001,2026-06-17T17:14:59,CALL002,16,SPEAKER_00,74.3,75.45,1.15,Whatever happened in...,Customer
+run_001,2026-06-17T17:14:59,CALL002,17,SPEAKER_01,74.74,75.65,0.91,happened in,Agent
+run_001,2026-06-17T17:14:59,CALL002,18,SPEAKER_00,75.65,79.7,4.05,I don't remember the place but I've been to the Igatpuri and the,Customer
+run_001,2026-06-17T17:14:59,CALL002,19,SPEAKER_01,76.59,78.21,1.62,I don't remember the place but I've been to,Agent
+run_001,2026-06-17T17:14:59,CALL002,20,SPEAKER_00,80.0,81.08,1.08,I'm following one.,Customer
+run_001,2026-06-17T17:14:59,CALL002,21,SPEAKER_01,82.3,84.29,1.99,"Ok, Igat Puri, you went to Igat Puri?",Agent
+run_001,2026-06-17T17:14:59,CALL002,22,SPEAKER_01,85.55,88.2,2.65,"Okay, and like which event was it?",Agent
+run_001,2026-06-17T17:14:59,CALL002,23,SPEAKER_00,88.66,91.31,2.65,I don't remember because it's almost been six to eight months.,Customer
+run_001,2026-06-17T17:14:59,CALL002,24,SPEAKER_01,92.12,95.54,3.42,"Okay, it's alright. And how did you first hear about this event?",Agent
+run_001,2026-06-17T17:14:59,CALL002,25,SPEAKER_00,96.59,101.31,4.72,My elder brother found it. He's the one who's always on the lookout for that such event. That's right.,Customer
+run_001,2026-06-17T17:14:59,CALL002,26,SPEAKER_01,101.31,107.93,6.62,"Okay, okay, and what made you feel interested enough to subscriber book this event adventure event",Agent
+run_001,2026-06-17T17:14:59,CALL002,27,SPEAKER_00,107.93,118.04,10.11,"Of course, we saw so many videos and all of that. The feedback was also really nice. So we thought we'll go ahead since we own a vehicle that we don't, you know, usually...",Customer
+run_001,2026-06-17T17:14:59,CALL002,28,SPEAKER_00,118.26,120.5,2.24,try offloading and all of that.,Customer
+run_001,2026-06-17T17:14:59,CALL002,29,SPEAKER_00,120.77,122.44,1.67,"Under the guidance of you guys, of course.",Customer
+run_001,2026-06-17T17:14:59,CALL002,30,SPEAKER_01,123.17,130.46,7.29,"Okay ma'am. And before booking Mahindra's Adventure, did you check out any other experiences, like outdoor experiences too? No.",Agent
+run_001,2026-06-17T17:14:59,CALL002,31,SPEAKER_01,131.49,132.63,1.14,"Okay, so you didn't trade",Agent
+run_001,2026-06-17T17:14:59,CALL002,32,SPEAKER_01,133.23,138.46,5.23,"And while you were exploring and deciding, who influenced your decision the most?",Agent
+run_001,2026-06-17T17:14:59,CALL002,33,SPEAKER_01,139.98,142.84,2.86,The one particular thing is that we...,Agent
+run_001,2026-06-17T17:14:59,CALL002,34,SPEAKER_00,143.01,146.17,3.16,"Okay, like, was it you?",Customer
+run_001,2026-06-17T17:14:59,CALL002,35,SPEAKER_01,144.16,150.25,6.09,"Okay, like, was it you, your spouse, friends, or someone else? No, no, no.",Agent
+run_001,2026-06-17T17:14:59,CALL002,36,SPEAKER_01,150.66,157.34,6.68,"Okay, so it was you only right and according to you how early should we inform you before an adventure event?",Agent
+run_001,2026-06-17T17:14:59,CALL002,37,SPEAKER_00,158.32,161.66,3.34,"Probably like a month ago, month or two.",Customer
+run_001,2026-06-17T17:14:59,CALL002,38,SPEAKER_01,162.17,164.22,2.05,"Okay, month or two months ago, right?",Agent
+run_001,2026-06-17T17:14:59,CALL002,39,SPEAKER_01,164.98,170.81,5.83,And what is the one thing that you would make you more likely to subscribe to our adventure events in future again?,Agent
+run_001,2026-06-17T17:14:59,CALL002,40,SPEAKER_01,172.02,174.7,2.68,I feel you guys are really doing it pretty nice.,Agent
+run_001,2026-06-17T17:14:59,CALL002,41,SPEAKER_01,176.59,181.66,5.07,"I'm so sorry, ma'am. I couldn't get you. Like, I didn't hear your voice properly. Can you please repeat once?",Agent
+run_001,2026-06-17T17:14:59,CALL002,42,SPEAKER_00,182.4,189.89,7.49,"And sir, you guys are already doing a really great job. I don't think I would want to have you change anything or something.",Customer
+run_001,2026-06-17T17:14:59,CALL002,43,SPEAKER_01,190.16,198.14,7.98,"Okay, I'm glad to hear it that you had such a great experience and thank you so much ma'am for the appreciation. So Ms. Drishti, I have updated your feedback here.",Agent
+run_001,2026-06-17T17:14:59,CALL002,44,SPEAKER_01,198.48,201.23,2.75,"Thank you so much, ma'am, for your valuable time and your valuable feedback.",Agent
+run_001,2026-06-17T17:14:59,CALL002,45,SPEAKER_01,202.06,204.29,2.23,Have a great day ahead. Thank you. You too.,Agent

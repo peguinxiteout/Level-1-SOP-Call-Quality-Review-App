@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not greet the customer politely with a greeting such as 'Hi Sir/Madam' or 'Good morning/afternoon/evening'; the closest greeting was 'Hello, I am Dheeraj from Mahinda Relationships in Mumbai,' which is an introduction but lacks the polite greeting as specified."
+}

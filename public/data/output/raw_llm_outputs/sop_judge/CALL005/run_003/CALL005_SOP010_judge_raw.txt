@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent asked 'where did you get the information about this event?', which matches the intent to collect source of awareness."
+}

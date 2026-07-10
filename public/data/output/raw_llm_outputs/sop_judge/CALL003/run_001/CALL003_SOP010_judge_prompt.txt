@@ -1,0 +1,117 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask what made the customer interested enough to subscribe or book the event
+Expected agent utterance: What made you feel interested enough to subscribe or book this Adventure event?
+Expected intent: ask_interest_reason
+Agent action: ask_question
+Category: Survey
+Sub-category: Interest Reasons
+
+Retrieval query used:
+What made you feel interested enough to subscribe or book this Adventure event?
+
+Agent text used for retrieval:
+I would like to ask, you have become interested in subscribing and booking, right? Yes. So, what was the reason that you became interested in it? Just one question.
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.5022
+Retrieval score: 0.5922
+Key match score: 0.335
+Agent text: I would like to ask, you have become interested in subscribing and booking, right? Yes. So, what was the reason that you became interested in it? Just one question.
+Nearby context:
+[238.24 - 243.12] Customer: We didn't attend any of the events. We had escaped from Pukan grade. But we didn't do anything.
+[244.04 - 255.15] Agent: I would like to ask, you have become interested in subscribing and booking, right? Yes. So, what was the reason that you became interested in it? Just one question.
+[253.63 - 257.91] Customer: We went to Yagatpur last year.
+[258.18 - 264.58] Customer: And we have also done a trail hunt of your Nasik. Yes, yes. We have also done a trail hunt. Okay.
+[258.22 - 259.69] Agent: Okay, so don't get out of there.
+[261.66 - 263.04] Agent: Okay.
+[264.92 - 272.01] Customer: Okay. He has done his job again. He did it that time, that time. We also wanted to tell you to come.
+
+Evidence window rank 2
+Combined score: 0.449
+Retrieval score: 0.539
+Key match score: 0.2818
+Agent text: Okay, and based on your experience of making this adventure plan, who influenced you in making this decision?
+Nearby context:
+[284.76 - 287.73] Agent: So, the outdoor experience was not checked, right?
+[289.2 - 301.62] Agent: Okay, and based on your experience of making this adventure plan, who influenced you in making this decision?
+[304.27 - 306.04] Agent: The decisions have influenced me.
+[304.29 - 305.65] Customer: The decisions that he influenced...
+[307.97 - 310.11] Customer: Is there any harm done to you or to us?
+[310.43 - 316.37] Agent: No, no, it's your family. Your family is the one who influenced you to make this decision.
+[315.8 - 324.3] Customer: Both of us, my husband, me and myself, we are both adventure lovers, we like it. Yes, yes, yes. I personally do bike rides too.
+
+Evidence window rank 3
+Combined score: 0.445
+Retrieval score: 0.5332
+Key match score: 0.2813
+Agent text: Okay. So, you were interested in booking, right? What was the reason for your interest in booking?
+Nearby context:
+[121.04 - 122.58] Agent: It's on Insta, right?
+[123.81 - 134.02] Agent: Okay. So, you were interested in booking, right? What was the reason for your interest in booking?
+[134.12 - 141.63] Customer: Actually, there was a trail hunt going on at our event in Nashik.
+[142.25 - 145.58] Customer: Yes, it will be completed now. It will be done in April.
+[142.41 - 143.67] Agent: Yes, this is Purila.
+[146.34 - 148.18] Customer: But we couldn't attend an event.
+[149.7 - 155.57] Customer: He told me that he will hold an event of Mahindra anywhere near you.
+
+Evidence window rank 4
+Combined score: 0.4266
+Retrieval score: 0.5428
+Key match score: 0.2108
+Agent text: Before you booked Mahindra's adventure, did you have any outdoor experience?
+Nearby context:
+[272.58 - 273.47] Customer: No, I didn't say that.
+[274.15 - 282.77] Agent: Before you booked Mahindra's adventure, did you have any outdoor experience?
+[284.76 - 287.73] Agent: So, the outdoor experience was not checked, right?
+[289.2 - 301.62] Agent: Okay, and based on your experience of making this adventure plan, who influenced you in making this decision?
+[304.27 - 306.04] Agent: The decisions have influenced me.
+[304.29 - 305.65] Customer: The decisions that he influenced...
+[307.97 - 310.11] Customer: Is there any harm done to you or to us?
+
+Retrieval score: 0.5922
+Key match score: 0.335

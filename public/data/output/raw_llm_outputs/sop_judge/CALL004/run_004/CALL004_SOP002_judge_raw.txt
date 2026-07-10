@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent clearly identifies themselves and their team by saying 'I am talking to the Adventure Activity Team, ma'am' and 'This is Pragya calling from Mahindra Adventure Activity,' which matches the practical intent of identity confirmation."
+}

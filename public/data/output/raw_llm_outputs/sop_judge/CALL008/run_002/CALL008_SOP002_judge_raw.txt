@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent introduced himself as 'Hello, I am Dheeraj from Mahinda Relationships in Mumbai,' which matches the practical intent of introducing self and team."
+}

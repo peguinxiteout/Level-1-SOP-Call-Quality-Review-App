@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked for basic details including age: 'Sir, I would like to get your basic details, such as your age.'"
+}

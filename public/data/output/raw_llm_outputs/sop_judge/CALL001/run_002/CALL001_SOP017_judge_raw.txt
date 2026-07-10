@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not ask how long ago the customer last subscribed or inquire about the time since last subscription; the closest related question was about the last time the customer took part in an activity, which is not the same as asking about subscription timing."
+}

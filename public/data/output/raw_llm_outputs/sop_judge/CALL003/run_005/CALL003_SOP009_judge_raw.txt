@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked who influenced the decision the most, including family members, matching the practical intent of the SOP checklist item."
+}

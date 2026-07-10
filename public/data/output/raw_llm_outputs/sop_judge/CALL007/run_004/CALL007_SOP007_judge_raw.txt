@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'which four-wheeler vehicle do you have?', directly covering the SOP item about vehicle ownership."
+}

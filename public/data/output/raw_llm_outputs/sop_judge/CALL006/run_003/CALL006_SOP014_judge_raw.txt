@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked when the customer expects to be informed about the event, evidenced by 'When should we inform you about the' and confirmed by customer's '2 to 4 weeks' response."
+}

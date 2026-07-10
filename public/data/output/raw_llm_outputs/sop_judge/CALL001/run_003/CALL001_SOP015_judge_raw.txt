@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked who influenced the customer's decision the most while exploring and deciding, matching the expected intent and practical meaning."
+}

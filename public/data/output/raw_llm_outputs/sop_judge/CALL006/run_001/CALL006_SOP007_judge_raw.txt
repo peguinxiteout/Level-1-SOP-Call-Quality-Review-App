@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked which vehicle the customer owns using a practical equivalent question: 'Okay, minute which vehicle you have own' and 'And which one you have?'"
+}

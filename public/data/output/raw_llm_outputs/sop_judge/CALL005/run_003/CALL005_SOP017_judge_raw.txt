@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not ask or mention how long ago the customer last subscribed; no question or statement about subscription timing was found in the agent's text."
+}

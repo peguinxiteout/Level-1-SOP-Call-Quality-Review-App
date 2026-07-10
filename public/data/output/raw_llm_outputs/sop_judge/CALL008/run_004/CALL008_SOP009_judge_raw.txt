@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked 'what kind of thing did you find interesting there that made you interested in that event?', which practically matches the SOP intent to ask what part of the event caught the customer's interest initially."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent greeted the customer with 'Hello, I am Dheeraj from Mahinda Relationships in Mumbai.' and also asked 'Am I talking to Gunal and Roy?', which constitutes a polite greeting."
+}

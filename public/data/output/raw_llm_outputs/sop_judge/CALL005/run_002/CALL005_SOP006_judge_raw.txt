@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent text 'Okay, Terrier profession' is unclear and does not constitute a clear question asking the customer's profession; no other agent utterance explicitly asks for the customer's profession."
+}

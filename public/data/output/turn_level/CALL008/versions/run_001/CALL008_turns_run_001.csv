@@ -1,0 +1,43 @@
+﻿output_version,output_generated_at,call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role
+run_001,2026-06-17T17:23:03,CALL008,1,SPEAKER_00,9.97,13.62,3.65,"Hello, I am Dheeraj from Mahinda Relationships in Mumbai.",Agent
+run_001,2026-06-17T17:23:03,CALL008,2,SPEAKER_00,14.59,16.74,2.15,Am I talking to Gunal and Roy?,Agent
+run_001,2026-06-17T17:23:03,CALL008,3,SPEAKER_01,17.43,18.29,0.86,I can't believe it.,Customer
+run_001,2026-06-17T17:23:03,CALL008,4,SPEAKER_00,18.64,37.71,19.07,"Kunal Roy ji, as you showed interest in Mahindra's adventures or event, but you rejected it for some reason. So, there is a small feedback call so that we can improve our adventure team event better. So, can I know if it takes more time or not? This is the right time to talk to you, hardly for 5 minutes.",Agent
+run_001,2026-06-17T17:23:03,CALL008,5,SPEAKER_01,38.42,39.54,1.12,"No, I just heard the news.",Customer
+run_001,2026-06-17T17:23:03,CALL008,6,SPEAKER_00,40.23,45.07,4.84,Can I know your age for profile purpose?,Agent
+run_001,2026-06-17T17:23:03,CALL008,7,SPEAKER_00,47.48,49.22,1.74,and now let's do business,Agent
+run_001,2026-06-17T17:23:03,CALL008,8,SPEAKER_01,49.88,51.53,1.65,I'm sorry I'm late. I'll be there in a second.,Customer
+run_001,2026-06-17T17:23:03,CALL008,9,SPEAKER_00,52.09,55.13,3.04,How many members are there in your family?,Agent
+run_001,2026-06-17T17:23:03,CALL008,10,SPEAKER_01,57.22,57.98,0.76,Good murder.,Customer
+run_001,2026-06-17T17:23:03,CALL008,11,SPEAKER_00,58.67,63.45,4.78,Can you tell me which car do you own in a four-wheeler?,Agent
+run_001,2026-06-17T17:23:03,CALL008,12,SPEAKER_01,65.0,67.9,2.9,"Rooks, brazilian record",Customer
+run_001,2026-06-17T17:23:03,CALL008,13,SPEAKER_00,70.3,71.67,1.37,"thyroxine brazier, right?",Agent
+run_001,2026-06-17T17:23:03,CALL008,14,SPEAKER_00,73.61,80.2,6.59,So can I know from where you got information about Mahindra's adventures event?,Agent
+run_001,2026-06-17T17:23:03,CALL008,15,SPEAKER_01,80.96,82.94,1.98,Look at the ad. Instagram.,Customer
+run_001,2026-06-17T17:23:03,CALL008,16,SPEAKER_00,82.45,86.68,4.23,Which location did you see the event for?,Agent
+run_001,2026-06-17T17:23:03,CALL008,17,SPEAKER_01,87.63,89.25,1.62,It was from Maryland.,Customer
+run_001,2026-06-17T17:23:03,CALL008,18,SPEAKER_00,89.96,96.39,6.43,"So what is the thing that you are interested in there that you are interested in that event, how can I know?",Agent
+run_001,2026-06-17T17:23:03,CALL008,19,SPEAKER_00,99.44,100.84,1.4,"As per location,",Agent
+run_001,2026-06-17T17:23:03,CALL008,20,SPEAKER_01,99.9,102.23,2.33,"For location case, I'll explore when we go.",Customer
+run_001,2026-06-17T17:23:03,CALL008,21,SPEAKER_00,103.15,105.25,2.1,Means you liked it according to the location?,Agent
+run_001,2026-06-17T17:23:03,CALL008,22,SPEAKER_00,107.52,116.3,8.78,so finally if you have rejected the subscription then you can know the reason,Agent
+run_001,2026-06-17T17:23:03,CALL008,23,SPEAKER_00,120.0,130.96,10.96,"For example, you had been interested in the event of the month, so you rejected it. So, can I know the reason why you rejected it?",Agent
+run_001,2026-06-17T17:23:03,CALL008,24,SPEAKER_01,130.59,134.69,4.1,"Sir, it was for 10-12 days. I couldn't have done it for so long.",Customer
+run_001,2026-06-17T17:23:03,CALL008,25,SPEAKER_00,135.45,137.68,2.23,"Okay, time is shooting, right?",Agent
+run_001,2026-06-17T17:23:03,CALL008,26,SPEAKER_00,139.6,145.68,6.08,Are you seeing any outdoor experience for the event?,Agent
+run_001,2026-06-17T17:23:03,CALL008,27,SPEAKER_01,146.03,148.11,2.08,"If there is anyone nearby, we will move.",Customer
+run_001,2026-06-17T17:23:03,CALL008,28,SPEAKER_00,148.4,149.76,1.36,So you are not seeing anyone right now?,Agent
+run_001,2026-06-17T17:23:03,CALL008,29,SPEAKER_01,150.22,155.97,5.75,"Earlier, the 7-12-year-old was also a thousand kilometers away from my house, so I canceled it.",Customer
+run_001,2026-06-17T17:23:03,CALL008,30,SPEAKER_00,156.8,159.5,2.7,"Okay, so for now, you haven't seen it yet, right?",Agent
+run_001,2026-06-17T17:23:03,CALL008,31,SPEAKER_01,159.5,160.85,1.35,Thank you very much.,Customer
+run_001,2026-06-17T17:23:03,CALL008,32,SPEAKER_00,160.92,166.2,5.28,"Okay, so it seems like something should be improved in Mahinda's adventure event.",Agent
+run_001,2026-06-17T17:23:03,CALL008,33,SPEAKER_01,167.53,170.27,2.74,"No, no, sir. There is no such issue. I had my own issue.",Customer
+run_001,2026-06-17T17:23:03,CALL008,34,SPEAKER_00,170.65,176.95,6.3,"So, if we want to inform you about adventures and events, how long can we inform you?",Agent
+run_001,2026-06-17T17:23:03,CALL008,35,SPEAKER_00,177.64,185.17,7.53,Less than one week or within one to two weeks or within two to three weeks or within one to two months or more than two months,Agent
+run_001,2026-06-17T17:23:03,CALL008,36,SPEAKER_01,185.89,187.14,1.25,About what sir?,Customer
+run_001,2026-06-17T17:23:03,CALL008,37,SPEAKER_00,188.59,189.6,1.01,"Uh, as...",Agent
+run_001,2026-06-17T17:23:03,CALL008,38,SPEAKER_01,189.1,193.91,4.81,"I can notify you if I want to go or not, it's up to you",Customer
+run_001,2026-06-17T17:23:03,CALL008,39,SPEAKER_00,193.55,196.96,3.41,How long can we inform you about this?,Agent
+run_001,2026-06-17T17:23:03,CALL008,40,SPEAKER_01,197.45,199.53,2.08,I will start from next month.,Customer
+run_001,2026-06-17T17:23:03,CALL008,41,SPEAKER_00,200.25,203.09,2.84,i.e. 1 week or 1 to 2 weeks before,Agent
+run_001,2026-06-17T17:23:03,CALL008,42,SPEAKER_00,204.98,212.54,7.56,"Thank you sir, almost all your feedback has been captured and you have given valuable feedback. Thank you very much for that and your day is over.",Agent

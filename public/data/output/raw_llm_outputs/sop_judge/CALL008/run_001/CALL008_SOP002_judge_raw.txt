@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not introduce themselves and their team as required; no utterance matching 'I am _____ from adventure team on Mahindra & Mahindra' or equivalent introduction was found."
+}

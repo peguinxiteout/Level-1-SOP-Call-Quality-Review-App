@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent asked 'How many members are there in your family?', which matches the practical intent of asking family size."
+}

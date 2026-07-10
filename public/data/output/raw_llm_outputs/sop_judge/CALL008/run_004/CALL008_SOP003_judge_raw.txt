@@ -1,0 +1,5 @@
+{
+  "status": "Review Suggested",
+  "confidence": 0.4,
+  "reason": "Agent explained the call is a small feedback call to improve adventure events and mentioned it would not take much time (about five minutes), but did not clearly explain the full purpose, duration (8-10 minutes), confidentiality, or use the expected detailed wording."
+}

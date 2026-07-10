@@ -1,0 +1,11 @@
+﻿call_id,evidenced_sop_items,sequence_break_count,sequence_followed_pct,first_sequence_break
+CALL001,15,0,100.0,
+CALL002,15,0,100.0,
+CALL003,15,0,100.0,
+CALL004,14,0,100.0,
+CALL005,15,0,100.0,
+CALL006,12,0,100.0,
+CALL007,11,1,90.91,SOP002 before/overlaps after SOP001
+CALL008,11,1,90.91,SOP003 before/overlaps after SOP001
+CALL009,11,2,81.82,SOP003 before/overlaps after SOP002
+CALL010,12,1,91.67,SOP015 before/overlaps after SOP014

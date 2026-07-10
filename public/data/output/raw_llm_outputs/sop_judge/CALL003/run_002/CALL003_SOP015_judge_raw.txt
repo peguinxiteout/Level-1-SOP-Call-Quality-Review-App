@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked who influenced the customer's decision with a question closely matching the SOP intent: 'Okay, and based on your experience of making this adventure plan, who influenced you in making this decision?'"
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked 'from where you know about the Mahindra adventures event', which matches the practical intent of asking how the customer first came across the event."
+}

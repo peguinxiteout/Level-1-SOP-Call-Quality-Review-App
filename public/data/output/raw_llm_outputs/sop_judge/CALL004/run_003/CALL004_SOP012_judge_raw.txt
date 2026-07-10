@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not ask if the customer checked out other outdoor experiences before booking; no question or statement covering this was found in the agent's text."
+}

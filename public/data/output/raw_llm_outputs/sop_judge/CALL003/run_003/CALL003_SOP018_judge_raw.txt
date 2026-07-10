@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked what can be done to encourage the customer to subscribe to future adventure events, which matches the intent to identify factors to increase future subscription likelihood."
+}

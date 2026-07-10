@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked for the customer's age twice: 'So, for profile purposes, I need to confirm your age. May I know your age?' and 'For profile purposes, may I know what your age is, Mr. Naz?'"
+}

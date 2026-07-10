@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent clearly introduced himself as Mahindra from Mahindra Adventure Team, matching the expected intent to introduce agent and team."
+}

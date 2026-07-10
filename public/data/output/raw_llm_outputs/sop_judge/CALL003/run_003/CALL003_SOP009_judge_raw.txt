@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'When was the last time you participated in a Mahindra adventure activity?' which matches the SOP checklist item intent to collect last participation details."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked if the customer was watching any other outdoor event at the time of cancelling the plan, which matches the practical intent of asking about other outdoor experiences."
+}

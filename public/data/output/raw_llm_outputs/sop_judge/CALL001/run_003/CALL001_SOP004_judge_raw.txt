@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly stated that the customer's response will be kept confidential and used to help improve future events, matching the expected confidentiality information."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked about preferred notice period and if there should be improvements in the event, but did not specifically ask what one thing could be improved to make the customer consider subscribing in the future."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 1.0,
+  "reason": "Agent did not explicitly ask what one thing could be improved to make the customer consider subscribing in the future; closest related question was about general improvements to the event, not linked to future subscription consideration."
+}

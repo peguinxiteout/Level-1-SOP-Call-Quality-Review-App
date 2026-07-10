@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly explained the purpose of the call as a short feedback exercise to understand customer preferences for adventure experiences and mentioned the call duration as 8 to 10 minutes."
+}

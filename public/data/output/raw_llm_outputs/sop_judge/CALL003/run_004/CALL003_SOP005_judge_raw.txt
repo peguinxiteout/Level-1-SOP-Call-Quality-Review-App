@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked the customer to confirm their age group, which matches the practical intent of asking the customer's age."
+}

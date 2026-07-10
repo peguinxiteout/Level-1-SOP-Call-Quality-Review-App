@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent asked 'so what was the reason uh what was the reason for you have shown the interested for that', which practically covers asking what part of the event caught the customer's interest initially."
+}

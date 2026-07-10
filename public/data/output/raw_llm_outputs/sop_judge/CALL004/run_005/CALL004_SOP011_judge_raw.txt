@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent asked about how many days before an event the customer wants to be informed, which is unrelated to probing subscription timing or clarifying when the subscription occurred."
+}

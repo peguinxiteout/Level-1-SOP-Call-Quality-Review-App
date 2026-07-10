@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent clearly informed that responses will be kept confidential and used for analysis purposes: 'Your responses will be kept confidential and used for analysis purpose only.'"
+}

@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked how many days ahead the customer expects to be informed before an adventure event, which matches the practical intent of collecting notification timing."
+}

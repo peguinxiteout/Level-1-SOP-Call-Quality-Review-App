@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked 'So what was your reason for not subscribing to this event?' which matches the SOP intent to ask what stopped the customer from subscribing."
+}

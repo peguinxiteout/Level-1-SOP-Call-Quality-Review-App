@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'what is one thing that would make you more likely to subscribe to our adventure events,' which matches the SOP intent to identify factors to increase future subscription likelihood."
+}

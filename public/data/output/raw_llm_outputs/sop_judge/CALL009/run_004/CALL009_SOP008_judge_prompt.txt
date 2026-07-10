@@ -1,0 +1,117 @@
+
+You are checking whether a call-center agent asked or covered one SOP checklist item.
+
+Return ONLY valid JSON. No markdown.
+
+Schema:
+{
+  "status": "Confirmed|Review Suggested|Missed / Not Evidenced",
+  "confidence": 0.0,
+  "reason": "short reason"
+}
+
+Decision rules:
+- Your task is agent SOP adherence only: did the AGENT ask/say/do the SOP checklist item?
+- Evaluate the full SOP checklist item details below, especially expected agent utterance and expected intent. Do not rely only on a short label.
+- Decide based on practical meaning, not exact wording.
+- Coverage must be based on AGENT text.
+- Customer text can help with context, but customer text alone cannot confirm coverage.
+- The evidence may contain multiple ranked windows. Check all agent text and nearby context, not only the first window.
+- Confirmed: agent text asks/covers the same practical SOP question/action, even in different words.
+- Review Suggested: agent evidence is genuinely ambiguous, incomplete, or too noisy to decide.
+- Missed / Not Evidenced: agent evidence is missing, unrelated, or clearly a different question.
+- Do NOT downgrade because customer response is missing. Customer response is not required for agent SOP adherence.
+- Do NOT downgrade because probe/follow-up is missing unless the SOP checklist item itself is specifically a probe/follow-up action.
+- Do NOT downgrade because the retrieval score or key match score is low. Scores are only retrieval hints, not decision rules.
+- ASR may distort names, product names, model names, numbers, and short phrases. Do not reject only because named entities differ when the agent asked the same practical question/action.
+- For survey questions, first compare the action and intent after ignoring noisy product/model names. If the practical question is the same, mark Confirmed.
+- If the SOP asks a general survey question about a named product/service and the agent asks the same question using a noisy or different named entity, treat the named entity mismatch as ASR/entity noise and mark Confirmed.
+- Only mark Missed for a named-entity mismatch when the SOP checklist item is specifically to confirm the exact named entity, exact variant, or exact identity and the agent clearly confirms a different one.
+- Do not over-credit adjacent but different actions or intents. Considering an option is not the same as visiting a provider/dealer. Asking what was liked is not the same as asking what should improve. Asking about service is not the same as asking about sales/dealer visit unless the agent clearly covers it.
+- For multi-part SOP checklist items joined by "and", all required agent-side parts should be evidenced. If only one required part is covered, use Review Suggested or Missed depending on how much is missing.
+- If an item is record-only or observe-only and not expected to be asked aloud, do not require a spoken question; use Review Suggested if transcript evidence cannot prove the recorded value.
+- Do not over-credit generic or unrelated wording.
+- The reason must refer to agent evidence only. Do not cite missing customer response, missing probe, low retrieval score, or named-entity noise as the reason for Review Suggested.
+
+Examples:
+- SOP: "Is this a convenient time to speak?" Agent: "Is now okay to talk?" => Confirmed.
+- SOP: "What was the main reason for choosing this option?" Agent: "Can you tell me the key reason you selected this?" => Confirmed.
+- SOP: "Why did you choose this service?" Agent: "Can you tell me the reason you decided to go ahead with it?" Customer response missing => Confirmed.
+- SOP: "Which other options did you consider?" Agent: "What alternatives were you looking at before this?" Low retrieval score => Confirmed.
+- SOP: "Why did you choose Service A?" Agent: "What was the key reason for choosing Service B?" Same practical survey question with noisy named entity => Confirmed.
+- SOP: "Which provider location did you visit?" Agent: "Which option were you considering?" => Missed / Not Evidenced.
+- SOP: "What can be improved in the service?" Agent: "What did you like about the service?" => Missed / Not Evidenced.
+
+SOP item:
+SOP checklist item: Ask how the customer first came across the event
+Expected agent utterance: How did you first come across the Mahindra Adventure event?
+Expected intent: ask_event_source
+Agent action: ask_question
+Category: Survey
+Sub-category: Awareness
+
+Retrieval query used:
+How did you first come across the Mahindra Adventure event?
+
+Agent text used for retrieval:
+Okay. So, from where did you first hear about the Mahindra Adventures Event?
+
+Nearby transcript context for evaluation:
+Evidence window rank 1
+Combined score: 0.7958
+Retrieval score: 0.8813
+Key match score: 0.637
+Agent text: Okay. So, from where did you first hear about the Mahindra Adventures Event?
+Nearby context:
+[82.8 - 83.2] Agent: Thar.
+[84.9 - 92.1] Agent: Okay. So, from where did you first hear about the Mahindra Adventures Event?
+[93.5 - 96.8] Customer: I follow Mahindra Adventure Series on Instagram.
+[97.7 - 109.9] Agent: Okay, so you got to know about it online, from the website or Instagram, right? For which location did you register for the event?
+[111.1 - 120.7] Customer: Yeah, location-wise, I am based in Pune actually. So, I keep looking for expeditions around Pune, around Maharashtra, you know, the neighborhood.
+[120.5 - 123.2] Agent: Okay, around Maharashtra only, right?
+[123.6 - 123.9] Customer: Yes.
+
+Evidence window rank 2
+Combined score: 0.6526
+Retrieval score: 0.7534
+Key match score: 0.4654
+Agent text: Anything else you’d like to share about the Mahindra Adventures Event?
+Nearby context:
+[360.8 - 361.5] Customer: Yes.
+[361.5 - 366.0] Agent: Anything else you’d like to share about the Mahindra Adventures Event?
+[366.7 - 371.5] Customer: No, that's all. It's very well organized. I'm very happy. I’ve attended a couple of events before.
+[371.9 - 377.6] Agent: Okay. So, the main reason you didn’t attend was the high cost, right?
+[376.8 - 387.0] Customer: Yes. If you're in the northern part of India, like UP, MP, or West Bengal, traveling to Meghalaya isn’t an issue.
+[387.3 - 387.9] Agent: Okay.
+[388.2 - 396.1] Customer: But traveling from the south or west to Meghalaya adds to the cost significantly.
+
+Evidence window rank 3
+Combined score: 0.5717
+Retrieval score: 0.629
+Key match score: 0.4654
+Agent text: Do you think there should be any improvements in the Mahindra Adventures Event?
+Nearby context:
+[289.0 - 290.8] Agent: Okay, more than one month.
+[291.9 - 295.7] Agent: Do you think there should be any improvements in the Mahindra Adventures Event?
+[297.0 - 300.7] Customer: I think you should consider adding more locations.
+[301.4 - 304.2] Agent: Okay, more locations for the event, right?
+[304.2 - 305.3] Customer: Yes.
+[305.6 - 313.5] Agent: Thank you, Mr. Khushra, for your valuable feedback. Have a nice day, sir.
+[314.1 - 316.3] Customer: Thank you. I have one more feedback.
+
+Evidence window rank 4
+Combined score: 0.4294
+Retrieval score: 0.4942
+Key match score: 0.309
+Agent text: Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Khushra Garra ji? Am I speaking with Khush Garra ji? Mr. Khush Garra ji, as you had shown interest in the Mahindra Adventures Event, but due to some reason, you couldn't attend, this is a small feedback call so that we can improve our Adventures Event further. So, without taking much time, may I know if this is the right time to talk to you? It will hardly take five minutes.
+Nearby context:
+[15.2 - 15.5] Unknown: Hello
+[16.4 - 43.2] Agent: Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Khushra Garra ji? Am I speaking with Khush Garra ji? Mr. Khush Garra ji, as you had shown interest in the Mahindra Adventures Event, but due to some reason, you couldn't attend, this is a small feedback call so that we can improve our Adventures Event further. So, without taking much time, may I know if this is the right time to talk to you? It will hardly take five minutes.
+[30.0 - 30.3] Customer: TCP
+[43.9 - 45.2] Customer: Yes, yes, speaking.
+[45.1 - 49.1] Agent: Okay, so for profile purposes, first of all, may I know your age?
+[50.0 - 51.2] Customer: I am 31 years old.
+[51.5 - 53.8] Agent: 31. And you are a businessman, sir?
+
+Retrieval score: 0.8813
+Key match score: 0.637

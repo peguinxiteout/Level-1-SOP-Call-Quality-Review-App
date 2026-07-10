@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked to know the customer's age by saying 'Ma'am, we can know your age,' which practically covers the SOP item of asking for customer's age."
+}

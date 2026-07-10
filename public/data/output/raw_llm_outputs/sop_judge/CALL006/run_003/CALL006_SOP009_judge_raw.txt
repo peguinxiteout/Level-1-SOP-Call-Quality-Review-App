@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.9,
+  "reason": "Agent explicitly asked what was the reason the customer showed interest in the Coorg location, which matches the practical intent of asking what part of the event caught the customer's interest initially."
+}

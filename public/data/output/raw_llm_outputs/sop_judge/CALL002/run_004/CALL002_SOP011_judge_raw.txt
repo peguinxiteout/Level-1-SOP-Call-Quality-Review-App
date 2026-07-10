@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 1.0,
+  "reason": "Agent explicitly asked, 'And what made you feel interested enough to subscribe or book this adventure event?' which matches the SOP checklist item intent to collect interest reasons."
+}

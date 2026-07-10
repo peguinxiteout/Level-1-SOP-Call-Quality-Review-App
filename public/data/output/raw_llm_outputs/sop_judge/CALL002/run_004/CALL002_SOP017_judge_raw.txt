@@ -1,0 +1,5 @@
+{
+  "status": "Missed / Not Evidenced",
+  "confidence": 0.9,
+  "reason": "Agent did not ask how long ago the customer last subscribed or provide time interval options; closest related question was about what would make the customer subscribe again, which does not cover the SOP item."
+}

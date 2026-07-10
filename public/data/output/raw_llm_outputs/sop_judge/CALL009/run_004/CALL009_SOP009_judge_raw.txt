@@ -1,0 +1,5 @@
+{
+  "status": "Confirmed",
+  "confidence": 0.95,
+  "reason": "Agent explicitly asked 'Which part of the event were you most interested in?', which matches the practical intent of asking what part of the event caught the customer's interest initially."
+}
