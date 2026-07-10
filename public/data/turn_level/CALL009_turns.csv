@@ -1,0 +1,77 @@
+﻿call_id,turn_id,speaker,start_time_sec,end_time_sec,duration_sec,utterance,role
+CALL009,1,SPEAKER_2,1.4,11.4,10.0,Namaste Sadavatsale Matrubhoome Dvaya Hindu Bhoome Sukham Vardhito Om,Customer
+CALL009,2,SPEAKER_2,13.3,14.6,1.3,Mahamana,Customer
+CALL009,3,SPEAKER_0,15.2,15.5,0.3,Hello,Unknown
+CALL009,4,SPEAKER_1,16.4,43.2,26.8,"Hello, I am Dheeraj speaking from Mahindra Adventures Event. Am I speaking with Khushra Garra ji? Am I speaking with Khush Garra ji? Mr. Khush Garra ji, as you had shown interest in the Mahindra Adventures Event, but due to some reason, you couldn't attend, this is a small feedback call so that we can improve our Adventures Event further. So, without taking much time, may I know if this is the right time to talk to you? It will hardly take five minutes.",Agent
+CALL009,5,SPEAKER_2,30.0,30.3,0.3,TCP,Customer
+CALL009,6,SPEAKER_2,43.9,45.2,1.3,"Yes, yes, speaking.",Customer
+CALL009,7,SPEAKER_1,45.1,49.1,4.0,"Okay, so for profile purposes, first of all, may I know your age?",Agent
+CALL009,8,SPEAKER_2,50.0,51.2,1.2,I am 31 years old.,Customer
+CALL009,9,SPEAKER_1,51.5,53.8,2.3,"31. And you are a businessman, sir?",Agent
+CALL009,10,SPEAKER_2,55.1,56.6,1.5,"I am both, okay.",Customer
+CALL009,11,SPEAKER_1,57.0,62.7,5.7,"Okay, so both. In your family, how many members are there?",Agent
+CALL009,12,SPEAKER_2,63.7,64.5,0.8,Three.,Customer
+CALL009,13,SPEAKER_1,65.2,69.1,3.9,Three. And which vehicle do you currently own?,Agent
+CALL009,14,SPEAKER_2,70.0,73.2,3.2,I have one Mahindra Pursuit and one Mahindra Thar.,Customer
+CALL009,15,SPEAKER_1,73.1,74.7,1.6,Mahindra Thar.,Agent
+CALL009,16,SPEAKER_2,75.7,77.2,1.5,"And one more, it’s a positive entry.",Customer
+CALL009,17,SPEAKER_1,77.8,80.8,3.0,Scorpio. Is it Thar or Thar Rocks?,Agent
+CALL009,18,SPEAKER_2,81.7,84.9,3.2,It is Thar. New Year 2024.,Customer
+CALL009,19,SPEAKER_1,82.8,83.2,0.4,Thar.,Agent
+CALL009,20,SPEAKER_1,84.9,92.1,7.2,"Okay. So, from where did you first hear about the Mahindra Adventures Event?",Agent
+CALL009,21,SPEAKER_2,93.5,96.8,3.3,I follow Mahindra Adventure Series on Instagram.,Customer
+CALL009,22,SPEAKER_1,97.7,109.9,12.2,"Okay, so you got to know about it online, from the website or Instagram, right? For which location did you register for the event?",Agent
+CALL009,23,SPEAKER_2,111.1,120.7,9.6,"Yeah, location-wise, I am based in Pune actually. So, I keep looking for expeditions around Pune, around Maharashtra, you know, the neighborhood.",Customer
+CALL009,24,SPEAKER_1,120.5,123.2,2.7,"Okay, around Maharashtra only, right?",Agent
+CALL009,25,SPEAKER_2,123.6,123.9,0.3,Yes.,Customer
+CALL009,26,SPEAKER_1,124.4,130.0,5.6,"So, what was the reason you showed interest in the event but couldn’t attend?",Agent
+CALL009,27,SPEAKER_2,129.7,144.6,14.9,"Yeah, yeah, so I enjoyed the Northeast expedition. It was quite interesting, and I have been looking to visit the Northeast for a very long time. The problem was that the prices were extraordinarily high.",Customer
+CALL009,28,SPEAKER_1,145.1,149.0,3.9,"Okay, so due to the prices, you decided not to go, right?",Agent
+CALL009,29,SPEAKER_2,149.1,150.9,1.8,That was one reason.,Customer
+CALL009,30,SPEAKER_2,151.3,161.1,9.8,"If you are based around some states in North India or somewhere near the Northeast, then it becomes manageable.",Customer
+CALL009,31,SPEAKER_1,161.8,162.3,0.5,Yes.,Agent
+CALL009,32,SPEAKER_2,162.2,174.6,12.4,"But  driving  from  the  southern  or  western  part  of  India  all  the  way  up  there,  including  all  the  costs, made the overall expense way too high.",Customer
+CALL009,33,SPEAKER_1,175.2,182.2,7.0,"Okay. So, which part of the event were you most interested in?",Agent
+CALL009,34,SPEAKER_2,183.2,184.4,1.2,"Sorry, I didn't get you.",Customer
+CALL009,35,SPEAKER_1,185.1,190.7,5.6,Which part of the event were you most interested in?,Agent
+CALL009,36,SPEAKER_2,202.8,206.8,4.0,"I showed interest in Northeast Secrets, Meghalaya.",Customer
+CALL009,37,SPEAKER_1,206.2,209.5,3.3,"Okay, due to the location, right?",Agent
+CALL009,38,SPEAKER_2,210.2,210.6,0.4,Yes.,Customer
+CALL009,39,SPEAKER_1,216.5,220.5,4.0,Okay. Are you currently looking for any more outdoor experiences?,Agent
+CALL009,40,SPEAKER_2,221.8,227.7,5.9,I have considered the prices that Mahindra has given.,Customer
+CALL009,41,SPEAKER_1,225.9,229.1,3.2,Which one are you looking at?,Agent
+CALL009,42,SPEAKER_2,229.8,232.3,2.5,I'm looking somewhere around Guwahati only.,Customer
+CALL009,43,SPEAKER_1,232.9,237.4,4.5,"No, I mean, which company’s event are you considering, not the location.",Agent
+CALL009,44,SPEAKER_2,238.0,240.8,2.8,"No, no, I'm not looking for anything other than Mahindra. Only Mahindra.",Customer
+CALL009,45,SPEAKER_1,241.3,243.2,1.9,"Okay, Mahindra only.",Agent
+CALL009,46,SPEAKER_2,243.2,247.4,4.2,I keep following the updates you guys release on Instagram.,Customer
+CALL009,47,SPEAKER_1,247.7,252.2,4.5,"Okay, so you get updates from Instagram, right?",Agent
+CALL009,48,SPEAKER_2,252.9,253.2,0.3,Yes.,Customer
+CALL009,49,SPEAKER_1,253.6,271.9,18.3,"If we want to inform you about an adventurous event, how much notice would you prefer? Less than one week, one to two weeks, two to four weeks, or more than two months?",Agent
+CALL009,50,SPEAKER_2,272.9,278.2,5.3,It has to be more than one month because you need time to plan and manage everything.,Customer
+CALL009,51,SPEAKER_1,289.0,290.8,1.8,"Okay, more than one month.",Agent
+CALL009,52,SPEAKER_1,291.9,295.7,3.8,Do you think there should be any improvements in the Mahindra Adventures Event?,Agent
+CALL009,53,SPEAKER_2,297.0,300.7,3.7,I think you should consider adding more locations.,Customer
+CALL009,54,SPEAKER_1,301.4,304.2,2.8,"Okay, more locations for the event, right?",Agent
+CALL009,55,SPEAKER_2,304.2,305.3,1.1,Yes.,Customer
+CALL009,56,SPEAKER_1,305.6,313.5,7.9,"Thank you, Mr. Khushra, for your valuable feedback. Have a nice day, sir.",Agent
+CALL009,57,SPEAKER_2,314.1,316.3,2.2,Thank you. I have one more feedback.,Customer
+CALL009,58,SPEAKER_1,316.1,317.6,1.5,"Yes, sir. Please go ahead.",Agent
+CALL009,59,SPEAKER_2,317.9,328.5,10.6,A lot of expeditions are only for 4x4 vehicles. You might consider adding more events for 4x2 vehicles as well.,Customer
+CALL009,60,SPEAKER_1,328.5,330.1,1.6,"Okay, for 4x2 vehicles.",Agent
+CALL009,61,SPEAKER_2,328.9,347.3,18.4,"I own both a 4x4 and a 4x2. While I can participate in all events, there are many people who only own 4x2 vehicles.",Customer
+CALL009,62,SPEAKER_1,347.7,360.8,13.1,"4x2, because most people have 4x2 vehicles, right? I’ll make a note of that.",Agent
+CALL009,63,SPEAKER_2,360.8,361.5,0.7,Yes.,Customer
+CALL009,64,SPEAKER_1,361.5,366.0,4.5,Anything else you’d like to share about the Mahindra Adventures Event?,Agent
+CALL009,65,SPEAKER_2,366.7,371.5,4.8,"No, that's all. It's very well organized. I'm very happy. I’ve attended a couple of events before.",Customer
+CALL009,66,SPEAKER_1,371.9,377.6,5.7,"Okay. So, the main reason you didn’t attend was the high cost, right?",Agent
+CALL009,67,SPEAKER_2,376.8,387.0,10.2,"Yes. If you're in the northern part of India, like UP, MP, or West Bengal, traveling to Meghalaya isn’t an issue.",Customer
+CALL009,68,SPEAKER_1,387.3,387.9,0.6,Okay.,Agent
+CALL009,69,SPEAKER_2,388.2,396.1,7.9,But traveling from the south or west to Meghalaya adds to the cost significantly.,Customer
+CALL009,70,SPEAKER_1,396.1,396.7,0.6,Okay.,Agent
+CALL009,71,SPEAKER_2,396.6,402.8,6.2,"So, the overall cost becomes very high.",Customer
+CALL009,72,SPEAKER_1,404.7,410.6,5.9,"At the start of the call, you mentioned you were looking for events near Maharashtra and Pune, right?",Agent
+CALL009,73,SPEAKER_2,411.5,418.6,7.1,"Yes, near Maharashtra, or neighboring states like Goa, Karnataka, and Gujarat.",Customer
+CALL009,74,SPEAKER_1,422.7,429.1,6.4,Okay. I’ve noted your suggestions for improving the event. Thank you very much.,Agent
+CALL009,75,SPEAKER_2,429.9,431.1,1.2,"Yes, thank you.",Customer
+CALL009,76,SPEAKER_1,431.1,432.3,1.2,"You're welcome, sir.",Agent
