@@ -285,9 +285,6 @@ export default function MetricGlossary() {
   return (
     <PageContainer title="Metric Glossary">
       <div className="space-y-6">
-        <h1 className="text-4xl font-semibold text-text-primary">
-          Metric Glossary
-        </h1>
 
         <p className="text-text-muted">
           Use this as the common reference for metric names shown across Executive
