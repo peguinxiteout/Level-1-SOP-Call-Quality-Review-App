@@ -29,7 +29,7 @@ export default function TileGrid({ tiles }: { tiles: Tile[] }) {
           <div key={tile.label} className={CARD_SHELL}>
             <p className="text-xs font-medium text-text-muted">{tile.label}</p>
             <p className="mt-1 text-lg font-normal text-text-primary" title={tile.name}>
-              {tile.name} <span className="text-text-muted">({tile.pct})</span>
+              {tile.name} <span>({tile.pct})</span>
             </p>
           </div>
         ),
