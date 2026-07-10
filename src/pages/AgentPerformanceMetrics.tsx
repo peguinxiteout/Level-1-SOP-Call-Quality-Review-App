@@ -1,15 +1,21 @@
 import { useEffect, useMemo, useState } from 'react';
 import Papa from 'papaparse';
 import PageContainer from '../layout/PageContainer';
-import DataTable, { type DataTableColumn } from '../components/executive-story/DataTable';
 import StatusPill from '../components/executive-story/StatusPill';
-import TableCard from '../components/executive-story/TableCard';
-import TabGroup from '../components/executive-story/TabGroup';
 import TileGrid, { type Tile } from '../components/executive-story/TileGrid';
 import { toneForBand, type StatusTone } from '../lib/ui/status';
-import RowsToShowSelect, { sliceRows, type RowsToShow } from '../components/sop-adherence/RowsToShowSelect';
 
 type CsvRow = Record<string, string>;
+
+type RowsToShow = '5' | '10' | '25' | '50' | 'all';
+
+type TableColumn<T> = {
+  key: string;
+  header: string;
+  accessor?: (row: T) => string | number;
+  render: (row: T) => React.ReactNode;
+  minWidth?: string;
+};
 
 const QUALITY_SUMMARY_PATH = '/data/batch/batch_quality_summary.csv';
 
@@ -283,8 +289,15 @@ function addCustomerTalkoverFallback(rows: CsvRow[]): CsvRow[] {
 
 function statusBadge(status?: string): { tone: StatusTone; label: string } | undefined {
   const normalized = normalizeStatus(status);
-  if (normalized === 'NA') return undefined;
-  return { tone: toneForBand(normalized), label: normalized };
+
+  if (normalized === 'NA') {
+    return undefined;
+  }
+
+  return {
+    tone: toneForBand(normalized),
+    label: normalized,
+  };
 }
 
 function bandedCell(value: string, band?: string) {
@@ -292,127 +305,247 @@ function bandedCell(value: string, band?: string) {
   const showPill = bandLabel && bandLabel.toUpperCase() !== 'NA';
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap items-center gap-2">
       <span>{value}</span>
-      {showPill && <StatusPill tone={toneForBand(bandLabel)} label={bandLabel} />}
+      {showPill ? <StatusPill tone={toneForBand(bandLabel)} label={bandLabel} /> : null}
     </div>
   );
 }
 
-/** Renders whatever columns are present on the first row - used for turn-level CSV panels with no curated shape. */
-function buildGenericColumns(rows: CsvRow[]): DataTableColumn<CsvRow>[] {
+function RowsToShowSelect({
+  value,
+  onChange,
+}: {
+  value: RowsToShow;
+  onChange: (value: RowsToShow) => void;
+}) {
+  return (
+    <div className="flex flex-wrap items-center gap-3">
+      <label className="text-sm font-medium text-text-muted">Rows to show</label>
+
+      <select
+        value={value}
+        onChange={(event) => onChange(event.target.value as RowsToShow)}
+        className="rounded-lg border border-accent-secondary/50 bg-black px-4 py-2 text-text-primary outline-none"
+      >
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="all">All</option>
+      </select>
+    </div>
+  );
+}
+
+function sliceRows(rows: CsvRow[], rowsToShow: RowsToShow): CsvRow[] {
+  if (rowsToShow === 'all') {
+    return rows;
+  }
+
+  return rows.slice(0, Number(rowsToShow));
+}
+
+function buildGenericColumns(rows: CsvRow[]): TableColumn<CsvRow>[] {
   if (!rows.length) return [];
 
   return Object.keys(rows[0]).map((column) => ({
     key: column,
     header: titleCaseColumn(column),
-    accessor: (row) => row[column],
     render: (row) => formatTableValue(column, row[column]),
+    minWidth: column.length > 20 ? '180px' : '130px',
   }));
 }
 
-const AGENT_SUMMARY_COLUMNS: DataTableColumn<CsvRow>[] = [
-  { key: 'call_id', header: 'Call ID', accessor: (row) => row.call_id, render: (row) => row.call_id || '' },
+function ScrollDataTable({
+  columns,
+  rows,
+  rowKey,
+  emptyMessage = 'No data available.',
+  maxHeight = 360,
+}: {
+  columns: TableColumn<CsvRow>[];
+  rows: CsvRow[];
+  rowKey: (row: CsvRow, index: number) => string;
+  emptyMessage?: string;
+  maxHeight?: number;
+}) {
+  if (!rows.length) {
+    return (
+      <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
+        {emptyMessage}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className="agent-scrollbar overflow-auto rounded-xl border border-white/70"
+      style={{ maxHeight }}
+    >
+      <table className="min-w-full border-collapse text-left text-sm">
+        <thead className="sticky top-0 z-10 bg-surface text-text-primary">
+          <tr className="border-b-2 border-white/80">
+            {columns.map((column) => (
+              <th
+                key={column.key}
+                className="whitespace-normal break-words border border-white/60 px-3 py-3 align-top font-semibold leading-snug"
+                style={{ minWidth: column.minWidth ?? '130px' }}
+              >
+                {column.header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+
+        <tbody>
+          {rows.map((row, rowIndex) => (
+            <tr key={rowKey(row, rowIndex)} className="bg-black">
+              {columns.map((column) => (
+                <td
+                  key={column.key}
+                  className="whitespace-pre-line break-words border border-white/45 px-3 py-3 align-top text-text-primary"
+                >
+                  {column.render(row)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+const AGENT_SUMMARY_COLUMNS: TableColumn<CsvRow>[] = [
+  {
+    key: 'call_id',
+    header: 'Call ID',
+    render: (row) => row.call_id || '',
+    minWidth: '110px',
+  },
   {
     key: 'agent',
     header: 'Agent',
-    accessor: (row) => row.agent_name || row.agent_id || '',
     render: (row) => (
-      <div className="whitespace-pre-line">{[row.agent_name, row.agent_id].filter(Boolean).join('\n')}</div>
+      <div className="whitespace-pre-line">
+        {[row.agent_name, row.agent_id].filter(Boolean).join('\n')}
+      </div>
     ),
+    minWidth: '130px',
   },
-  { key: 'call_type', header: 'Call Type', accessor: (row) => row.call_type, render: (row) => row.call_type || '' },
-  { key: 'sop_call_type', header: 'SOP Call Type', accessor: (row) => row.sop_call_type, render: (row) => row.sop_call_type || '' },
+  {
+    key: 'call_type',
+    header: 'Call Type',
+    render: (row) => row.call_type || '',
+    minWidth: '130px',
+  },
+  {
+    key: 'sop_call_type',
+    header: 'SOP Call Type',
+    render: (row) => row.sop_call_type || '',
+    minWidth: '130px',
+  },
   {
     key: 'call_duration_sec',
     header: 'Call Duration',
-    accessor: (row) => toNumber(row.call_duration_sec),
     render: (row) => formatDurationMinutesSeconds(row.call_duration_sec),
+    minWidth: '130px',
   },
   {
     key: 'talk_ratio',
     header: 'Talk Ratio',
-    accessor: (row) => toNumber(row.agent_talk_ratio_pct),
-    render: (row) => bandedCell(formatPercentValue(row.agent_talk_ratio_pct), row.agent_talk_ratio_band),
+    render: (row) =>
+      bandedCell(formatPercentValue(row.agent_talk_ratio_pct), row.agent_talk_ratio_band),
+    minWidth: '140px',
   },
   {
     key: 'silence',
     header: 'Silence',
-    accessor: (row) => toNumber(row.silence_ratio_pct),
-    render: (row) => bandedCell(formatPercentValue(row.silence_ratio_pct), row.silence_ratio_band),
+    render: (row) =>
+      bandedCell(formatPercentValue(row.silence_ratio_pct), row.silence_ratio_band),
+    minWidth: '130px',
   },
   {
     key: 'talkover',
     header: 'Talk-over',
-    accessor: (row) => toNumber(row.agent_talkover_rate_pct),
-    render: (row) => bandedCell(formatPercentValue(row.agent_talkover_rate_pct), row.agent_talkover_rate_band),
+    render: (row) =>
+      bandedCell(formatPercentValue(row.agent_talkover_rate_pct), row.agent_talkover_rate_band),
+    minWidth: '140px',
   },
   {
     key: 'talkover_duration',
     header: 'Talk-over Duration',
-    accessor: (row) => toNumber(row.agent_talkover_duration_sec),
     render: (row) => formatNumberValue(row.agent_talkover_duration_sec),
+    minWidth: '155px',
   },
   {
     key: 'customer_talkover',
     header: 'Customer Talk-over',
-    accessor: (row) => toNumber(row.customer_talkover_rate_pct),
-    render: (row) => bandedCell(formatPercentValue(row.customer_talkover_rate_pct), row.customer_talkover_rate_band),
+    render: (row) =>
+      bandedCell(formatPercentValue(row.customer_talkover_rate_pct), row.customer_talkover_rate_band),
+    minWidth: '160px',
   },
   {
     key: 'customer_talkover_duration',
     header: 'Customer Talk-over Duration',
-    accessor: (row) => toNumber(row.customer_talkover_duration_sec),
     render: (row) => formatNumberValue(row.customer_talkover_duration_sec),
+    minWidth: '175px',
   },
   {
     key: 'agent_wpm',
     header: 'Agent WPM',
-    accessor: (row) => toNumber(row.agent_wpm),
     render: (row) => bandedCell(formatNumberValue(row.agent_wpm), row.agent_wpm_band),
+    minWidth: '135px',
   },
   {
     key: 'long_turns',
     header: 'Long Turns',
-    accessor: (row) => toNumber(row.long_agent_turn_count),
     render: (row) => formatNumberValue(row.long_agent_turn_count),
+    minWidth: '110px',
   },
   {
     key: 'audio_metrics_available',
     header: 'Audio Metrics Available',
-    accessor: (row) => row.audio_metrics_available,
     render: (row) => row.audio_metrics_available || '',
+    minWidth: '170px',
   },
-  { key: 'audio_format', header: 'Audio Format', accessor: (row) => row.audio_format, render: (row) => row.audio_format || '' },
+  {
+    key: 'audio_format',
+    header: 'Audio Format',
+    render: (row) => row.audio_format || '',
+    minWidth: '140px',
+  },
   {
     key: 'audio_channels',
     header: 'Audio Channels',
-    accessor: (row) => toNumber(row.audio_channels),
     render: (row) => formatNumberValue(row.audio_channels),
+    minWidth: '140px',
   },
   {
     key: 'sample_width_bytes',
     header: 'Sample Width Bytes',
-    accessor: (row) => toNumber(row.sample_width_bytes),
     render: (row) => formatNumberValue(row.sample_width_bytes),
+    minWidth: '160px',
   },
   {
     key: 'snr',
     header: 'SNR',
-    accessor: (row) => toNumber(row.snr_db_approx),
     render: (row) => bandedCell(formatNumberValue(row.snr_db_approx), row.snr_band),
+    minWidth: '120px',
   },
   {
     key: 'pitch_variability',
     header: 'Pitch Variability',
-    accessor: (row) => toNumber(row.pitch_std_hz_approx),
-    render: (row) => bandedCell(formatNumberValue(row.pitch_std_hz_approx), row.pitch_variability_band),
+    render: (row) =>
+      bandedCell(formatNumberValue(row.pitch_std_hz_approx), row.pitch_variability_band),
+    minWidth: '155px',
   },
   {
     key: 'customer_concern',
     header: 'Customer Concern',
-    accessor: (row) => row.customer_experience_concern_call_flag || 'No',
     render: (row) => row.customer_experience_concern_call_flag || 'No',
+    minWidth: '160px',
   },
 ];
 
@@ -425,6 +558,10 @@ function getTranscriptSpeakerLabel(row: CsvRow): string {
   }
 
   return speaker || 'Speaker';
+}
+
+function getTranscriptSpeakerCode(row: CsvRow): string {
+  return String(row.speaker || '').trim();
 }
 
 function formatTranscriptTimestamp(row: CsvRow): string {
@@ -484,41 +621,56 @@ function TranscriptView({ rows }: { rows: CsvRow[] }) {
   }
 
   return (
-    <div className="flex max-h-[32rem] flex-col gap-4 overflow-y-auto rounded-xl border border-white/70 bg-black px-6 py-5">
-      {rows.map((row, index) => {
-        const isAgent = isAgentTranscriptTurn(row);
-        const speakerLabel = getTranscriptSpeakerLabel(row);
-        const timestamp = formatTranscriptTimestamp(row);
-        const utterance = getTranscriptText(row);
-        const turnId = row.turn_id || String(index + 1);
+    <div className="space-y-3">
+      <p className="text-sm text-text-muted">
+        Showing all {rows.length} transcript turns for this call.
+      </p>
 
-        return (
-          <div
-            key={`${turnId}-${index}`}
-            className={`flex w-full ${isAgent ? 'justify-start pr-[22%]' : 'justify-end pl-[22%]'}`}
-          >
+      <div className="agent-scrollbar flex max-h-[32rem] flex-col gap-4 overflow-auto rounded-xl border border-white/70 bg-black px-6 py-5">
+        {rows.map((row, index) => {
+          const isAgent = isAgentTranscriptTurn(row);
+          const speakerLabel = getTranscriptSpeakerLabel(row);
+          const speakerCode = getTranscriptSpeakerCode(row);
+          const timestamp = formatTranscriptTimestamp(row);
+          const utterance = getTranscriptText(row);
+          const turnId = row.turn_id || String(index + 1);
+
+          const showSpeakerCode =
+            speakerCode &&
+            speakerCode.toLowerCase() !== speakerLabel.toLowerCase();
+
+          return (
             <div
-              className={`max-w-[620px] rounded-lg border px-3 py-2 shadow-sm ${
-                isAgent
-                  ? 'border-violet-500/70 bg-[#241f63]'
-                  : 'border-blue-500/70 bg-[#17326d]'
+              key={`${turnId}-${index}`}
+              className={`flex w-full ${
+                isAgent ? 'justify-start pr-[28%]' : 'justify-end pl-[28%]'
               }`}
             >
-              <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-text-muted">
-                <span className="font-semibold text-text-primary">
-                  {speakerLabel}
-                </span>
+              <div
+                className={`max-w-[560px] rounded-lg border px-3 py-2 shadow-sm ${
+                  isAgent
+                    ? 'border-violet-500/70 bg-[#241f63]'
+                    : 'border-blue-500/70 bg-[#17326d]'
+                }`}
+              >
+                <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-text-muted">
+                  <span className="font-semibold text-text-primary">
+                    {speakerLabel}
+                  </span>
 
-                {timestamp ? <span>{timestamp}</span> : null}
+                  {showSpeakerCode ? <span>{speakerCode}</span> : null}
+
+                  {timestamp ? <span>{timestamp}</span> : null}
+                </div>
+
+                <p className="whitespace-normal break-words text-sm leading-relaxed text-text-primary">
+                  {utterance}
+                </p>
               </div>
-
-              <p className="whitespace-normal break-words text-sm leading-relaxed text-text-primary">
-                {utterance}
-              </p>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -536,6 +688,14 @@ function DetailTabs({
   negativeTurnRows: CsvRow[];
   transcriptRows: CsvRow[];
 }) {
+  const [activeTab, setActiveTab] = useState('turn-level-flow');
+
+  const tabs = [
+    { key: 'turn-level-flow', label: 'Turn-Level Flow' },
+    { key: 'sentiment-evidence', label: 'Sentiment Evidence' },
+    { key: 'transcript', label: 'Transcript' },
+  ];
+
   return (
     <div className="space-y-5">
       <hr className="border-accent-secondary/30" />
@@ -544,65 +704,73 @@ function DetailTabs({
         Agent Performance Detail: {selectedCallId}
       </h1>
 
-      <TabGroup
-        title="Agent Performance"
-        tabs={[
-          {
-            key: 'turn-level-flow',
-            label: 'Turn-Level Flow',
-            available: qualityTurnRows.length > 0,
-            content: qualityTurnRows.length ? (
-              <div className="max-h-[420px] overflow-y-auto">
-                <DataTable columns={buildGenericColumns(qualityTurnRows)} rows={qualityTurnRows} rowKey={(_row, index) => String(index)} />
-              </div>
-            ) : (
-              <p className="p-4 text-sm text-text-muted">Turn-level agent performance details not available.</p>
-            ),
-          },
-          {
-            key: 'sentiment-evidence',
-            label: 'Sentiment Evidence',
-            available: sentimentTurnRows.length > 0 || negativeTurnRows.length > 0,
-            content: (
-              <div className="space-y-5">
-                <h2 className="text-xl font-semibold text-text-primary">Customer Experience Concern Evidence</h2>
+      <div className="flex flex-wrap gap-3">
+        {tabs.map((tab) => (
+          <button
+            key={tab.key}
+            type="button"
+            onClick={() => setActiveTab(tab.key)}
+            className={`rounded-full px-4 py-2 text-sm font-medium ${
+              activeTab === tab.key
+                ? 'bg-accent text-white'
+                : 'bg-surface text-text-muted'
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
 
-                {negativeTurnRows.length ? (
-                  <div className="max-h-[300px] overflow-y-auto">
-                    <DataTable
-                      columns={buildGenericColumns(negativeTurnRows)}
-                      rows={negativeTurnRows}
-                      rowKey={(_row, index) => String(index)}
-                    />
-                  </div>
-                ) : (
-                  <p className="rounded-lg border border-status-good/30 bg-status-good/10 p-3 text-sm text-status-good">
-                    No customer experience concerns detected.
-                  </p>
-                )}
+      {activeTab === 'turn-level-flow' ? (
+        qualityTurnRows.length ? (
+          <ScrollDataTable
+            columns={buildGenericColumns(qualityTurnRows)}
+            rows={qualityTurnRows}
+            rowKey={(_row, index) => String(index)}
+            maxHeight={360}
+          />
+        ) : (
+          <p className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
+            Turn-level agent performance details not available.
+          </p>
+        )
+      ) : null}
 
-                <h2 className="text-xl font-semibold text-text-primary">All Turn-Level Sentiment Audit</h2>
+      {activeTab === 'sentiment-evidence' ? (
+        <div className="space-y-5">
+          <h2 className="text-xl font-semibold text-text-primary">
+            Customer Experience Concern Evidence
+          </h2>
 
-                {sentimentTurnRows.length ? (
-                  <div className="max-h-[420px] overflow-y-auto">
-                    <DataTable
-                      columns={buildGenericColumns(sentimentTurnRows)}
-                      rows={sentimentTurnRows}
-                      rowKey={(_row, index) => String(index)}
-                    />
-                  </div>
-                ) : null}
-              </div>
-            ),
-          },
-          {
-            key: 'transcript',
-            label: 'Transcript',
-            available: transcriptRows.length > 0,
-            content: <TranscriptView rows={transcriptRows} />,
-          },
-        ]}
-      />
+          {negativeTurnRows.length ? (
+            <ScrollDataTable
+              columns={buildGenericColumns(negativeTurnRows)}
+              rows={negativeTurnRows}
+              rowKey={(_row, index) => String(index)}
+              maxHeight={300}
+            />
+          ) : (
+            <p className="rounded-lg border border-status-good/30 bg-status-good/10 p-3 text-sm text-status-good">
+              No customer experience concerns detected.
+            </p>
+          )}
+
+          <h2 className="text-xl font-semibold text-text-primary">
+            All Turn-Level Sentiment Audit
+          </h2>
+
+          {sentimentTurnRows.length ? (
+            <ScrollDataTable
+              columns={buildGenericColumns(sentimentTurnRows)}
+              rows={sentimentTurnRows}
+              rowKey={(_row, index) => String(index)}
+              maxHeight={360}
+            />
+          ) : null}
+        </div>
+      ) : null}
+
+      {activeTab === 'transcript' ? <TranscriptView rows={transcriptRows} /> : null}
     </div>
   );
 }
@@ -610,7 +778,7 @@ function DetailTabs({
 export default function AgentPerformanceMetrics() {
   const [rows, setRows] = useState<CsvRow[]>([]);
   const [selectedCallId, setSelectedCallId] = useState('');
-  const [rowsToShow, setRowsToShow] = useState<RowsToShow>(10);
+  const [rowsToShow, setRowsToShow] = useState<RowsToShow>('10');
 
   const [qualityTurnRows, setQualityTurnRows] = useState<CsvRow[]>([]);
   const [sentimentTurnRows, setSentimentTurnRows] = useState<CsvRow[]>([]);
@@ -704,7 +872,43 @@ export default function AgentPerformanceMetrics() {
   ];
 
   return (
-    <PageContainer title="Agent Performance Metrics">
+    <PageContainer title="Agent Performance">
+      <style>
+        {`
+          .agent-scrollbar {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+
+          .agent-scrollbar::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+          }
+
+          .agent-scrollbar:hover {
+            scrollbar-width: thin;
+          }
+
+          .agent-scrollbar:hover::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+          }
+
+          .agent-scrollbar:hover::-webkit-scrollbar-track {
+            background: #f2f2f2;
+          }
+
+          .agent-scrollbar:hover::-webkit-scrollbar-thumb {
+            background: #8f8f8f;
+            border-radius: 999px;
+          }
+
+          .agent-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+            background: #6f6f6f;
+          }
+        `}
+      </style>
+
       <div className="space-y-8">
         {!rows.length ? (
           <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
@@ -727,14 +931,13 @@ export default function AgentPerformanceMetrics() {
                 </p>
               ) : null}
 
-              <TableCard>
-                <DataTable
-                  columns={AGENT_SUMMARY_COLUMNS}
-                  rows={displayRows}
-                  rowKey={(row, index) => `${row.call_id}-${index}`}
-                  emptyMessage="No data available."
-                />
-              </TableCard>
+              <ScrollDataTable
+                columns={AGENT_SUMMARY_COLUMNS}
+                rows={displayRows}
+                rowKey={(row, index) => `${row.call_id}-${index}`}
+                emptyMessage="No data available."
+                maxHeight={360}
+              />
             </section>
 
             <section className="space-y-4">
