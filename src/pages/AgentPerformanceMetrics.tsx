@@ -367,7 +367,7 @@ function DataTable({
 }) {
   if (!rows.length) {
     return (
-      <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
+      <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
         No data available.
       </div>
     );
@@ -377,16 +377,16 @@ function DataTable({
 
   return (
     <div
-      className="overflow-auto rounded-xl border border-accent-secondary/40"
+      className="overflow-auto rounded-xl border border-white/70"
       style={{ maxHeight }}
     >
       <table className="min-w-full border-collapse text-left text-sm">
         <thead className="sticky top-0 z-10 bg-surface text-text-primary">
-          <tr>
+          <tr className="border-b-2 border-white/80">
             {columns.map((column) => (
               <th
                 key={column}
-                className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold"
+                className="border border-white/60 px-3 py-3 align-top font-semibold"
               >
                 {titleCaseColumn(column)}
               </th>
@@ -396,11 +396,11 @@ function DataTable({
 
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={rowIndex} className="bg-background/80">
+            <tr key={rowIndex} className="bg-black">
               {columns.map((column) => (
                 <td
                   key={column}
-                  className="whitespace-pre-line border border-accent-secondary/20 px-3 py-3 align-top text-text-primary"
+                  className="whitespace-pre-line border border-white/45 px-3 py-3 align-top text-text-primary"
                 >
                   {formatTableValue(column, row[column])}
                 </td>
@@ -422,7 +422,7 @@ function AgentSummaryTable({
 }) {
   if (!rows.length) {
     return (
-      <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
+      <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
         No data available.
       </div>
     );
@@ -430,70 +430,70 @@ function AgentSummaryTable({
 
   return (
     <div
-      className="overflow-auto rounded-xl border border-accent-secondary/40"
+      className="overflow-auto rounded-xl border border-white/70"
       style={{ maxHeight }}
     >
       <table className="min-w-full border-collapse text-left text-sm">
         <thead className="sticky top-0 z-10 bg-surface text-text-primary">
-          <tr>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+          <tr className="border-b-2 border-white/80">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Call ID
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Agent
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Call Type
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               SOP Call Type
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Call Duration
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Talk Ratio
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Silence
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Talk-over
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Talk-over Duration
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Customer Talk-over
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Customer Talk-over Duration
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Agent WPM
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Long Turns
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Audio Metrics Available
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Audio Format
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Audio Channels
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Sample Width Bytes
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               SNR
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Pitch Variability
             </th>
-            <th className="border border-accent-secondary/30 px-3 py-3 align-top font-semibold">
+            <th className="border border-white/60 px-3 py-3 align-top font-semibold">
               Customer Concern
             </th>
           </tr>
@@ -501,105 +501,105 @@ function AgentSummaryTable({
 
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={`${row.call_id}-${rowIndex}`} className="bg-background/80">
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+            <tr key={`${row.call_id}-${rowIndex}`} className="bg-black">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.call_id || ''}
               </td>
 
-              <td className="whitespace-pre-line border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="whitespace-pre-line border border-white/45 px-3 py-3 align-top text-text-primary">
                 {[row.agent_name, row.agent_id].filter(Boolean).join('\n')}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.call_type || ''}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.sop_call_type || ''}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatDurationMinutesSeconds(row.call_duration_sec)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatPercentValue(row.agent_talk_ratio_pct)}
                   status={row.agent_talk_ratio_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatPercentValue(row.silence_ratio_pct)}
                   status={row.silence_ratio_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatPercentValue(row.agent_talkover_rate_pct)}
                   status={row.agent_talkover_rate_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatNumberValue(row.agent_talkover_duration_sec)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatPercentValue(row.customer_talkover_rate_pct)}
                   status={row.customer_talkover_rate_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatNumberValue(row.customer_talkover_duration_sec)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatNumberValue(row.agent_wpm)}
                   status={row.agent_wpm_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatNumberValue(row.long_agent_turn_count)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.audio_metrics_available || ''}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.audio_format || ''}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatNumberValue(row.audio_channels)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {formatNumberValue(row.sample_width_bytes)}
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatNumberValue(row.snr_db_approx)}
                   status={row.snr_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top">
+              <td className="border border-white/45 px-3 py-3 align-top">
                 <ValueWithBadge
                   value={formatNumberValue(row.pitch_std_hz_approx)}
                   status={row.pitch_variability_band}
                 />
               </td>
 
-              <td className="border border-accent-secondary/20 px-3 py-3 align-top text-text-primary">
+              <td className="border border-white/45 px-3 py-3 align-top text-text-primary">
                 {row.customer_experience_concern_call_flag || 'No'}
               </td>
             </tr>
@@ -610,94 +610,109 @@ function AgentSummaryTable({
   );
 }
 
+function getTranscriptSpeakerLabel(row: CsvRow): string {
+  const role = String(row.role || '').trim();
+  const speaker = String(row.speaker || '').trim();
+
+  if (role && role.toLowerCase() !== 'unknown' && role.toLowerCase() !== 'na') {
+    return role;
+  }
+
+  return speaker || 'Speaker';
+}
+
+function formatTranscriptTimestamp(row: CsvRow): string {
+  const start =
+    row.start_time_sec ||
+    row.start_time ||
+    row.start ||
+    row.start_sec ||
+    '';
+
+  const end =
+    row.end_time_sec ||
+    row.end_time ||
+    row.end ||
+    row.end_sec ||
+    '';
+
+  const startNumber = Number(start);
+  const endNumber = Number(end);
+
+  if (!Number.isFinite(startNumber)) {
+    return '';
+  }
+
+  if (!Number.isFinite(endNumber)) {
+    return `${startNumber.toFixed(1)}s`;
+  }
+
+  return `${startNumber.toFixed(1)}–${endNumber.toFixed(1)}s`;
+}
+
+function isAgentTranscriptTurn(row: CsvRow): boolean {
+  const role = String(row.role || '').trim().toLowerCase();
+
+  return role === 'agent';
+}
+
+function getTranscriptText(row: CsvRow): string {
+  return (
+    row.utterance ||
+    row.text ||
+    row.transcript ||
+    row.content ||
+    row.message ||
+    row.sentence ||
+    ''
+  );
+}
+
 function TranscriptView({ rows }: { rows: CsvRow[] }) {
   if (!rows.length) {
     return (
-      <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
+      <div className="rounded-xl border border-white/60 bg-black p-4 text-sm text-text-muted">
         Transcript turns not available.
       </div>
     );
   }
 
-  function downloadTranscript() {
-    const csv = Papa.unparse(rows);
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `${rows[0]?.call_id || 'call'}_full_transcript.csv`;
-    link.click();
-
-    URL.revokeObjectURL(url);
-  }
-
   return (
-    <div className="space-y-3">
-      <p className="text-sm text-text-muted">
-        Showing all {rows.length} transcript turns for this call.
-      </p>
+    <div className="flex max-h-[32rem] flex-col gap-4 overflow-y-auto rounded-xl border border-white/70 bg-black px-6 py-5">
+      {rows.map((row, index) => {
+        const isAgent = isAgentTranscriptTurn(row);
+        const speakerLabel = getTranscriptSpeakerLabel(row);
+        const timestamp = formatTranscriptTimestamp(row);
+        const utterance = getTranscriptText(row);
+        const turnId = row.turn_id || String(index + 1);
 
-      <div className="max-h-[650px] overflow-auto rounded-xl border border-accent-secondary/40 bg-background px-4 py-2">
-        {rows.map((row, index) => {
-          const turnId = row.turn_id || String(index + 1);
-          const role = row.role || '';
-          const speaker = row.speaker || '';
-          const start =
-            row.start_time_sec ||
-            row.start_time ||
-            row.start ||
-            row.start_sec ||
-            '';
-
-          const end =
-            row.end_time_sec ||
-            row.end_time ||
-            row.end ||
-            row.end_sec ||
-            '';
-
-          const utterance =
-            row.utterance ||
-            row.text ||
-            row.transcript ||
-            row.content ||
-            row.message ||
-            row.sentence ||
-            '';
-
-          const speakerLabel = role && role !== 'NA' ? role : speaker;
-
-          return (
+        return (
+          <div
+            key={`${turnId}-${index}`}
+            className={`flex w-full ${isAgent ? 'justify-start pr-[22%]' : 'justify-end pl-[22%]'}`}
+          >
             <div
-              key={`${turnId}-${index}`}
-              className="border-b border-accent-secondary/20 py-3 last:border-b-0"
+              className={`max-w-[620px] rounded-lg border px-3 py-2 shadow-sm ${
+                isAgent
+                  ? 'border-violet-500/70 bg-[#241f63]'
+                  : 'border-blue-500/70 bg-[#17326d]'
+              }`}
             >
-              <div className="mb-1 flex flex-wrap gap-3 text-xs text-text-muted">
-                <span className="font-semibold text-text-primary">#{turnId}</span>
-                <span>
-                  {formatTableValue('start_time_sec', start)} -{' '}
-                  {formatTableValue('end_time_sec', end)}
+              <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-text-muted">
+                <span className="font-semibold text-text-primary">
+                  {speakerLabel}
                 </span>
-                <span>{speakerLabel}</span>
-                <span>{speaker}</span>
+
+                {timestamp ? <span>{timestamp}</span> : null}
               </div>
 
-              <p className="whitespace-pre-wrap break-words text-sm leading-relaxed text-text-primary">
+              <p className="whitespace-normal break-words text-sm leading-relaxed text-text-primary">
                 {utterance}
               </p>
             </div>
-          );
-        })}
-      </div>
-
-      <button
-        type="button"
-        onClick={downloadTranscript}
-        className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white"
-      >
-        Download full transcript CSV
-      </button>
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -748,7 +763,7 @@ function DetailTabs({
         qualityTurnRows.length ? (
           <DataTable rows={qualityTurnRows} maxHeight={400} />
         ) : (
-          <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
+          <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
             Turn-level agent performance details not available.
           </div>
         )
@@ -845,9 +860,8 @@ export default function AgentPerformanceMetrics() {
   return (
     <PageContainer title="Agent Performance Metrics">
       <div className="space-y-8">
-
         {!rows.length ? (
-          <div className="rounded-xl border border-accent-secondary/40 bg-surface p-4 text-sm text-text-muted">
+          <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
             Run batch processing to generate agent performance summary.
           </div>
         ) : (
