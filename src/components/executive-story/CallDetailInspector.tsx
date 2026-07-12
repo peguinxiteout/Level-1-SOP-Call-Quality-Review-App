@@ -4,6 +4,32 @@ import SopResultTable from './SopResultTable';
 import TabGroup from './TabGroup';
 import TranscriptView from './TranscriptView';
 
+const RETRIEVAL_EVIDENCE_LABELS: Record<string, string> = {
+  output_version: 'Output Version',
+  output_generated_at: 'Output Generated At',
+  sop_call_type: 'SOP Call Type',
+  agent_id: 'Agent ID',
+  agent_name: 'Agent Name',
+  agent_name_confidence: 'Agent Name Confidence',
+  agent_identity_source: 'Agent Identity Source',
+  call_id: 'Call ID',
+  item_id: 'Item ID',
+  rank: 'Rank',
+  candidate_id: 'Candidate ID',
+  turn_ids: 'Turn IDs',
+  agent_turn_id: 'Agent Turn ID',
+  candidate_type: 'Candidate Type',
+  retrieval_query: 'Retrieval Query',
+  agent_text_for_retrieval: 'Agent Text for Retrieval',
+  candidate_text: 'Candidate Text',
+  context_text_for_evaluation: 'Context Text for Evaluation',
+  key_match_score: 'Key Match Score',
+  retrieval_score: 'Retrieval Score',
+  combined_score: 'Combined Score',
+  retrieval_method: 'Retrieval Method',
+  retrieval_error: 'Retrieval Error',
+};
+
 function SentimentEvidencePanel({
   negativeTurns,
   allTurns,
@@ -52,19 +78,30 @@ export default function CallDetailInspector({ callId, showAgentPerformance = tru
       <h3 className="text-sm font-semibold text-text-primary">{title ?? `Call Detail Inspector — ${callId}`}</h3>
 
       <TabGroup
-        title="SOP"
         tabs={[
           {
             key: 'sop-result',
             label: 'SOP Result',
             available: data.sopItems.length > 0,
-            content: <SopResultTable rows={data.sopItems} />,
+            content: (
+              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                <SopResultTable rows={data.sopItems} />
+              </div>
+            ),
           },
           {
             key: 'retrieval-evidence',
             label: 'Retrieval Evidence',
             available: data.retrievalEvidence.length > 0,
-            content: <GenericInspectorTable rows={data.retrievalEvidence} />,
+            content: (
+              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                <GenericInspectorTable
+                  rows={data.retrievalEvidence}
+                  labelMap={RETRIEVAL_EVIDENCE_LABELS}
+                  excludeKeys={['output_version', 'output_generated_at']}
+                />
+              </div>
+            ),
           },
           {
             key: 'sop-transcript',

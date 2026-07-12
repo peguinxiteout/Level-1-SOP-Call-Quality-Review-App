@@ -33,14 +33,9 @@ const columns: DataTableColumn<SequenceSummaryRow>[] = [
 /**
  * Shows every call unconditionally, worst-sequence-adherence first (the
  * order computeSequenceAdherenceDetail already returns) - the live app never
- * filters this down to only calls with breaks. A fixed-height scroll
- * container stands in for the original's short, internally-scrolling panel
- * instead of actually limiting the row count.
+ * filters this down to only calls with breaks. The caller wraps this in the
+ * shared scroll container instead of limiting the row count here.
  */
 export default function SequenceAdherenceTable({ rows }: { rows: SequenceSummaryRow[] }) {
-  return (
-    <div className="max-h-72 overflow-y-auto">
-      <DataTable columns={columns} rows={rows} rowKey={(row, index) => String(row.call_id ?? index)} emptyMessage="No sequence data available." />
-    </div>
-  );
+  return <DataTable columns={columns} rows={rows} rowKey={(row, index) => String(row.call_id ?? index)} emptyMessage="No sequence data available." />;
 }
