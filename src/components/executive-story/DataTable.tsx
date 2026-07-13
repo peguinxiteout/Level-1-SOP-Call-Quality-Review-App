@@ -36,11 +36,11 @@ interface DataTableProps<T> {
 
 export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No data available.' }: DataTableProps<T>) {
   if (!rows.length) {
-    return <p className="rounded-lg border border-accent-secondary/30 bg-surface p-4 text-sm text-text-muted">{emptyMessage}</p>;
+    return <p className="rounded-lg border-2 border-white/40 bg-surface p-4 text-sm text-text-muted">{emptyMessage}</p>;
   }
 
   return (
-    <div className="scroll-hover overflow-x-auto rounded-lg border border-accent-secondary/30">
+    <div className="scroll-hover overflow-x-auto rounded-lg border-2 border-white/40">
       <table className="w-full border-collapse text-left text-sm">
         <thead>
           <tr className="bg-accent-secondary/20">
