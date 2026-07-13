@@ -1,5 +1,6 @@
 import DataTable, { type DataTableColumn } from './DataTable';
 import { formatCell } from './formatters';
+import { INSPECTOR_FIELD_WIDTHS } from './inspectorColumnWidths';
 
 interface GenericInspectorTableProps {
   rows: Record<string, unknown>[];
@@ -24,6 +25,7 @@ export default function GenericInspectorTable({ rows, labelMap, excludeKeys }: G
       const value = row[key];
       return typeof value === 'string' || typeof value === 'number' ? value : String(value ?? '');
     },
+    width: INSPECTOR_FIELD_WIDTHS[key] ?? 'md',
     render: (row) => formatCell(row[key]),
   }));
 

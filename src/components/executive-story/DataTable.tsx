@@ -1,14 +1,31 @@
 import { useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 
+export type ColumnWidth = 'xs' | 'sm' | 'md' | 'lg';
+
+/**
+ * Explicit per-column width tiers, picked by content shape rather than
+ * auto-detected. Every column should set one deliberately:
+ *  - xs: short unbreakable content - IDs, counts, scores, plain percentages.
+ *  - sm: short badges/pills and short labels (call type, status pill text).
+ *  - md: moderate content - combined cells, category/sub-category text.
+ *  - lg: long free-text that wraps (SOP text, reasons, file names, quotes).
+ */
+const WIDTH_STYLES: Record<ColumnWidth, { minWidth: string; maxWidth: string }> = {
+  xs: { minWidth: '64px', maxWidth: '100px' },
+  sm: { minWidth: '120px', maxWidth: '170px' },
+  md: { minWidth: '180px', maxWidth: '260px' },
+  lg: { minWidth: '720px', maxWidth: '720px' },
+};
+
 export interface DataTableColumn<T> {
   key: string;
   header: string;
   /** Raw value used for sorting. Omit to make the column unsortable (e.g. an actions column). */
   accessor?: (row: T) => string | number | null | undefined;
   render: (row: T) => ReactNode;
-  /** Render this column's cells wider than the default (e.g. for long free-text fields). */
-  wide?: boolean;
+  /** Width tier for this column's cells. Defaults to 'md' when omitted. */
+  width?: ColumnWidth;
 }
 
 interface DataTableProps<T> {
@@ -71,7 +88,7 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
                 <th
                   key={column.key}
                   onClick={() => toggleSort(column)}
-                  className={`whitespace-nowrap border-r border-b border-white/30 px-3 py-2 font-medium text-text-muted ${
+                  className={`whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-middle font-medium text-text-muted ${
                     column.accessor ? 'cursor-pointer select-none hover:text-text-primary' : ''
                   }`}
                 >
@@ -94,9 +111,7 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
               <tr key={rowKey(row, index)} className="bg-background">
                 {columns.map((column) => {
                   const baseClasses = 'whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary';
-                  const style = column.wide
-                    ? { minWidth: '720px', maxWidth: '720px' }
-                    : { minWidth: '260px', maxWidth: '416px' };
+                  const style = WIDTH_STYLES[column.width ?? 'md'];
                   return (
                     <td key={column.key} className={baseClasses} style={style}>
                       {column.render(row)}
