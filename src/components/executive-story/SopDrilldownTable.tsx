@@ -25,34 +25,34 @@ const ALL_COLUMNS: DataTableColumn<SopDrilldownRow>[] = [
   },
   {
     key: 'purpose_context_explained',
-    header: 'Purpose Explained',
+    header: 'Purpose Context Explained',
     accessor: (r) => r.purpose_context_explained,
     render: (r) => flagCell(r.purpose_context_explained),
   },
   {
     key: 'consent_availability_checked',
-    header: 'Consent Checked',
+    header: 'Consent Availability Checked',
     accessor: (r) => r.consent_availability_checked,
     render: (r) => flagCell(r.consent_availability_checked),
   },
-  {
-    key: 'survey_completion_status',
-    header: 'Survey Completion',
-    accessor: (r) => r.survey_completion_status,
-    render: (r) => flagCell(r.survey_completion_status),
-  },
+  // {
+  //   key: 'survey_completion_status',
+  //   header: 'Survey Completion',
+  //   accessor: (r) => r.survey_completion_status,
+  //   render: (r) => flagCell(r.survey_completion_status),
+  // },
   {
     key: 'proper_closure_detected',
-    header: 'Proper Closure',
+    header: 'Proper Closure Detected',
     accessor: (r) => r.proper_closure_detected,
     render: (r) => flagCell(r.proper_closure_detected),
   },
-  {
-    key: 'followup_next_step_mentioned',
-    header: 'Follow-up Mentioned',
-    accessor: (r) => r.followup_next_step_mentioned,
-    render: (r) => flagCell(r.followup_next_step_mentioned),
-  },
+  // {
+  //   key: 'followup_next_step_mentioned',
+  //   header: 'Follow-up Mentioned',
+  //   accessor: (r) => r.followup_next_step_mentioned,
+  //   render: (r) => flagCell(r.followup_next_step_mentioned),
+  // },
 ];
 
 interface SopDrilldownTableProps {

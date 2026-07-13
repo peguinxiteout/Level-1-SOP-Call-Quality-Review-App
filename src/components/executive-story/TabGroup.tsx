@@ -9,7 +9,7 @@ export interface TabSpec {
 }
 
 interface TabGroupProps {
-  title: string;
+  title?: string;
   tabs: TabSpec[];
 }
 
@@ -26,7 +26,7 @@ export default function TabGroup({ title, tabs }: TabGroupProps) {
 
   return (
     <div className="rounded-lg border border-accent-secondary/30 bg-surface p-4">
-      <h4 className="mb-3 text-sm font-semibold text-text-primary">{title}</h4>
+      {title && <h4 className="mb-3 text-sm font-semibold text-text-primary">{title}</h4>}
       <div className="flex flex-wrap gap-1 border-b border-accent-secondary/20 pb-2">
         {tabs.map((tab) => (
           <button

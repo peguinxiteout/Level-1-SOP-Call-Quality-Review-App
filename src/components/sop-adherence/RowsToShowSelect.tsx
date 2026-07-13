@@ -1,4 +1,4 @@
-export const ROWS_TO_SHOW_OPTIONS = [10, 25, 50, 'all'] as const;
+export const ROWS_TO_SHOW_OPTIONS = [5, 10, 25, 50, 'all'] as const;
 export type RowsToShow = (typeof ROWS_TO_SHOW_OPTIONS)[number];
 
 interface RowsToShowSelectProps {

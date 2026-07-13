@@ -10,11 +10,20 @@ import AgentDrilldownTable from '../components/executive-story/AgentDrilldownTab
 import Accordion from '../components/executive-story/Accordion';
 import TableCard from '../components/executive-story/TableCard';
 import CallSelector from '../components/executive-story/CallSelector';
-import CallDetailInspector from '../components/executive-story/CallDetailInspector';
+import SopInspectorTabs from '../components/executive-story/SopInspectorTabs';
+import AgentPerformanceInspectorTabs from '../components/executive-story/AgentPerformanceInspectorTabs';
 
 export default function ExecutiveStory() {
   const { data, loading, error } = useExecutiveStoryData();
   const [selectedCallId, setSelectedCallId] = useState('');
+  const [sopDrilldownOpen, setSopDrilldownOpen] = useState(false);
+  const [agentDrilldownOpen, setAgentDrilldownOpen] = useState(false);
+
+  const handleCallIdChange = (callId: string) => {
+    setSelectedCallId(callId);
+    setSopDrilldownOpen(Boolean(callId));
+    setAgentDrilldownOpen(Boolean(callId));
+  };
 
   const filteredSopDrilldown = useMemo(() => {
     if (!data) return [];
@@ -37,7 +46,7 @@ export default function ExecutiveStory() {
             <KpiGrid kpi={data.kpiSummary} />
           </Section>
 
-          <Section title="Executive Signals">
+          <Section title="Executive Signals" caption="These signals summarize SOP adherence and agent performance patterns from the analyzed calls.">
             <TableCard>
               <SignalsTable rows={data.signals} />
             </TableCard>
@@ -45,7 +54,7 @@ export default function ExecutiveStory() {
 
           <Section
             title="Top 5 Calls With Lowest Adherence"
-            caption="Ranked by a composite attention score based on SOP misses, coverage gaps, and quality review flags — not a literal lowest-to-highest sort."
+            caption="This section highlights calls that need attention."
           >
             <TableCard>
               <PriorityCallsTable rows={data.priorityCalls} />
@@ -54,23 +63,33 @@ export default function ExecutiveStory() {
 
           <Section title="Detailed Check">
             <div className="flex flex-col gap-4">
-              <CallSelector callIds={data.callIds} selectedCallId={selectedCallId} onChange={setSelectedCallId} />
+              <CallSelector callIds={data.callIds} selectedCallId={selectedCallId} onChange={handleCallIdChange} />
 
-              <Accordion title="SOP Adherence Drilldown">
-                <SopDrilldownTable rows={filteredSopDrilldown} />
+              <Accordion
+                title="SOP Adherence Drilldown"
+                open={sopDrilldownOpen}
+                onToggle={setSopDrilldownOpen}
+              >
+                <div className="flex flex-col gap-4">
+                  <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                    <SopDrilldownTable rows={filteredSopDrilldown} />
+                  </div>
+                  {selectedCallId && <SopInspectorTabs callId={selectedCallId} />}
+                </div>
               </Accordion>
 
-              <Accordion title="Agent Performance Drilldown">
-                <AgentDrilldownTable rows={filteredAgentDrilldown} />
+              <Accordion
+                title="Agent Performance Drilldown"
+                open={agentDrilldownOpen}
+                onToggle={setAgentDrilldownOpen}
+              >
+                <div className="flex flex-col gap-4">
+                  <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                    <AgentDrilldownTable rows={filteredAgentDrilldown} />
+                  </div>
+                  {selectedCallId && <AgentPerformanceInspectorTabs callId={selectedCallId} />}
+                </div>
               </Accordion>
-
-              {selectedCallId ? (
-                <CallDetailInspector callId={selectedCallId} />
-              ) : (
-                <p className="rounded-lg border border-accent-secondary/30 bg-surface p-4 text-sm text-text-muted">
-                  Select a call above to view its detailed SOP and agent performance inspection.
-                </p>
-              )}
             </div>
           </Section>
         </>

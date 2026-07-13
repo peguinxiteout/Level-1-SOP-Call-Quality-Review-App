@@ -7,6 +7,8 @@ export interface DataTableColumn<T> {
   /** Raw value used for sorting. Omit to make the column unsortable (e.g. an actions column). */
   accessor?: (row: T) => string | number | null | undefined;
   render: (row: T) => ReactNode;
+  /** Render this column's cells wider than the default (e.g. for long free-text fields). */
+  wide?: boolean;
 }
 
 interface DataTableProps<T> {
@@ -87,18 +89,23 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
           </tr>
         </thead>
         <tbody>
-          {sortedRows.map((row, index) => (
-            <tr key={rowKey(row, index)} className="bg-background">
-              {columns.map((column) => (
-                <td
-                  key={column.key}
-                  className="max-w-[26rem] whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary"
-                >
-                  {column.render(row)}
-                </td>
-              ))}
-            </tr>
-          ))}
+          {sortedRows.map((row, index) => {
+            return (
+              <tr key={rowKey(row, index)} className="bg-background">
+                {columns.map((column) => {
+                  const baseClasses = 'whitespace-normal break-words border-r border-b border-white/30 px-3 py-2 align-top text-text-primary';
+                  const style = column.wide
+                    ? { minWidth: '720px', maxWidth: '720px' }
+                    : { minWidth: '260px', maxWidth: '416px' };
+                  return (
+                    <td key={column.key} className={baseClasses} style={style}>
+                      {column.render(row)}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

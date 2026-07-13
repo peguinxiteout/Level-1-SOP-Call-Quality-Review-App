@@ -16,7 +16,7 @@ import CallDetailInspector from '../components/executive-story/CallDetailInspect
 
 export default function SopAdherenceMetrics() {
   const { data, loading, error } = useSopAdherenceData();
-  const [rowsToShow, setRowsToShow] = useState<RowsToShow>(10);
+  const [rowsToShow, setRowsToShow] = useState<RowsToShow>(5);
   const [selectedCallId, setSelectedCallId] = useState('');
 
   const visibleCallLevelSummary = useMemo(() => {
@@ -47,30 +47,35 @@ export default function SopAdherenceMetrics() {
           <Section title="Aggregate SOP Area Patterns">
             <div className="flex flex-col gap-4">
               <Accordion title="SOP Area Adherence">
-                <SopAreaAdherenceTable rows={data.sopAreaFull} />
+                <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                  <SopAreaAdherenceTable rows={data.sopAreaFull} />
+                </div>
               </Accordion>
 
               <Accordion title="Recurring SOP Non-Adherence">
-                <RecurringNonAdherenceTable rows={data.frequentNonAdherenceFull} />
+                <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                  <RecurringNonAdherenceTable rows={data.frequentNonAdherenceFull} />
+                </div>
               </Accordion>
 
               <Accordion title="Calls With Lowest SOP Sequence Adherence">
-                <SequenceAdherenceTable rows={data.sequenceAdherenceDetail} />
+                <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                  <SequenceAdherenceTable rows={data.sequenceAdherenceDetail} />
+                </div>
               </Accordion>
             </div>
           </Section>
 
           <Section title="Detailed Check">
             <div className="flex flex-col gap-4">
-              <CallSelector callIds={data.sopOnlyCallIds} selectedCallId={selectedCallId} onChange={setSelectedCallId} />
+              <CallSelector
+                callIds={data.sopOnlyCallIds}
+                selectedCallId={selectedCallId}
+                onChange={setSelectedCallId}
+                label="Select call for SOP adherence"
+              />
 
-              {selectedCallId ? (
-                <CallDetailInspector callId={selectedCallId} showAgentPerformance={false} title={`SOP Detail: ${selectedCallId}`} />
-              ) : (
-                <p className="rounded-lg border border-accent-secondary/30 bg-surface p-4 text-sm text-text-muted">
-                  Select a call above to view its detailed SOP inspection.
-                </p>
-              )}
+              {selectedCallId && <CallDetailInspector callId={selectedCallId} showAgentPerformance={false} title={`SOP Detail: ${selectedCallId}`} />}
             </div>
           </Section>
         </>
