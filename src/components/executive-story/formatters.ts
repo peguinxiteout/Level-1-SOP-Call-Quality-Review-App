@@ -28,6 +28,14 @@ export function formatCell(value: unknown): string {
   return String(value);
 }
 
+/** Duration in minutes carries far more float precision than useful for display - round to 4 decimal places. */
+export function formatDurationMin(value: unknown): string {
+  if (isMissing(value)) return '—';
+  const num = Number(value);
+  if (Number.isNaN(num)) return '—';
+  return num.toFixed(4);
+}
+
 /** Wraps the calc module's formatPercentValue, swapping its "NA" string for the shared "—" placeholder. */
 export function formatKpiPercent(value: number | NA): string {
   const formatted = formatPercentValue(value);

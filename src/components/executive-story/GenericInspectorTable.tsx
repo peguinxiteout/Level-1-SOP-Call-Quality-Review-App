@@ -1,5 +1,5 @@
 import DataTable, { type DataTableColumn } from './DataTable';
-import { formatCell } from './formatters';
+import { formatCell, formatDurationMin } from './formatters';
 import { INSPECTOR_FIELD_WIDTHS } from './inspectorColumnWidths';
 
 interface GenericInspectorTableProps {
@@ -44,7 +44,7 @@ export default function GenericInspectorTable({ rows, labelMap, excludeKeys }: G
         return typeof value === 'string' || typeof value === 'number' ? value : String(value ?? '');
       },
       width: INSPECTOR_FIELD_WIDTHS[key] ?? 'md',
-      render: (row) => formatCell(row[key]),
+      render: (row) => (key === 'duration_min' ? formatDurationMin(row[key]) : formatCell(row[key])),
     }));
 
   if (shouldMergeAgent) {

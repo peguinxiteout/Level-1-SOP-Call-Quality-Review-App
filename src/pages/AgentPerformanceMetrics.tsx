@@ -552,7 +552,7 @@ function DetailTabs({
             label: 'Turn-Level Flow',
             available: qualityTurnRows.length > 0,
             content: qualityTurnRows.length ? (
-              <div className="w-full max-h-[420px] overflow-auto [&>div]:overflow-visible">
+              <div className="w-full max-h-[420px] overflow-auto scroll-hover [&>div]:overflow-visible">
                 <DataTable columns={buildGenericColumns(qualityTurnRows)} rows={qualityTurnRows} rowKey={(_row, index) => String(index)} />
               </div>
             ) : (
@@ -568,7 +568,7 @@ function DetailTabs({
                 <h2 className="text-xl font-semibold text-text-primary">Customer Experience Concern Evidence</h2>
 
                 {negativeTurnRows.length ? (
-                  <div className="w-full max-h-[300px] overflow-auto [&>div]:overflow-visible">
+                  <div className="w-full max-h-[300px] overflow-auto scroll-hover [&>div]:overflow-visible">
                     <DataTable
                       columns={buildGenericColumns(negativeTurnRows)}
                       rows={negativeTurnRows}
@@ -584,7 +584,7 @@ function DetailTabs({
                 <h2 className="text-xl font-semibold text-text-primary">All Turn-Level Sentiment Audit</h2>
 
                 {sentimentTurnRows.length ? (
-                  <div className="w-full max-h-[420px] overflow-auto [&>div]:overflow-visible">
+                  <div className="w-full max-h-[420px] overflow-auto scroll-hover [&>div]:overflow-visible">
                     <DataTable
                       columns={buildGenericColumns(sentimentTurnRows)}
                       rows={sentimentTurnRows}

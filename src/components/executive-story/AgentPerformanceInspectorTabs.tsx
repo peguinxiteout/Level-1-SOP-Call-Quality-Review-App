@@ -64,7 +64,7 @@ function SentimentEvidencePanel({
           Customer Experience Concern Evidence
         </h5>
         {negativeTurns.length ? (
-          <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+          <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
             <GenericInspectorTable rows={negativeTurns} labelMap={SENTIMENT_TURN_LABELS} excludeKeys={EXCLUDED_TURN_KEYS} />
           </div>
         ) : (
@@ -75,7 +75,7 @@ function SentimentEvidencePanel({
       </div>
       <div>
         <h5 className="mb-2 text-xs font-semibold tracking-wide text-text-muted uppercase">All Turn-Level Sentiment Audit</h5>
-        <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+        <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
           <GenericInspectorTable rows={allTurns} labelMap={SENTIMENT_TURN_LABELS} excludeKeys={EXCLUDED_TURN_KEYS} />
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function AgentPerformanceInspectorTabs({ callId }: AgentPerforman
             label: 'Turn-Level Flow',
             available: data.qualityTurns.length > 0,
             content: (
-              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+              <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
                 <GenericInspectorTable rows={data.qualityTurns} labelMap={QUALITY_TURN_LABELS} excludeKeys={EXCLUDED_TURN_KEYS} />
               </div>
             ),

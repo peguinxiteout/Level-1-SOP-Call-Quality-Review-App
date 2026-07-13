@@ -71,7 +71,7 @@ export default function ExecutiveStory() {
                 onToggle={setSopDrilldownOpen}
               >
                 <div className="flex flex-col gap-4">
-                  <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                  <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
                     <SopDrilldownTable rows={filteredSopDrilldown} />
                   </div>
                   {selectedCallId && <SopInspectorTabs callId={selectedCallId} />}
@@ -84,7 +84,7 @@ export default function ExecutiveStory() {
                 onToggle={setAgentDrilldownOpen}
               >
                 <div className="flex flex-col gap-4">
-                  <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+                  <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
                     <AgentDrilldownTable rows={filteredAgentDrilldown} />
                   </div>
                   {selectedCallId && <AgentPerformanceInspectorTabs callId={selectedCallId} />}

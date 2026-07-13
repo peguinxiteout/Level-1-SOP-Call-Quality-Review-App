@@ -50,7 +50,7 @@ export default function SopInspectorTabs({ callId }: SopInspectorTabsProps) {
             label: 'SOP Result',
             available: data.sopItems.length > 0,
             content: (
-              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+              <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
                 <SopResultTable rows={data.sopItems} />
               </div>
             ),
@@ -60,7 +60,7 @@ export default function SopInspectorTabs({ callId }: SopInspectorTabsProps) {
             label: 'Retrieval Evidence',
             available: data.retrievalEvidence.length > 0,
             content: (
-              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
+              <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
                 <GenericInspectorTable
                   rows={data.retrievalEvidence}
                   labelMap={RETRIEVAL_EVIDENCE_LABELS}

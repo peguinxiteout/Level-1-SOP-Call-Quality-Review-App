@@ -23,3 +23,28 @@ body {
   color: var(--color-text-primary);
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* Scroll containers: scrollbar track/thumb stay transparent until the
+   container is hovered, so tables don't show a scrollbar at rest. Scrolling
+   itself (wheel/trackpad/drag) is unaffected either way. */
+.scroll-hover {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.scroll-hover:hover {
+  scrollbar-color: var(--color-text-muted) transparent;
+}
+.scroll-hover::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-hover::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 9999px;
+}
+.scroll-hover:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-text-muted);
+}
