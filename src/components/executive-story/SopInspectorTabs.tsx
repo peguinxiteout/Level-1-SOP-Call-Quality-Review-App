@@ -73,11 +73,7 @@ export default function SopInspectorTabs({ callId }: SopInspectorTabsProps) {
             key: 'sop-transcript',
             label: 'Transcript',
             available: data.turns.length > 0,
-            content: (
-              <div className="w-full max-h-80 overflow-auto [&>div]:overflow-visible">
-                <TranscriptView turns={data.turns} />
-              </div>
-            ),
+            content: <TranscriptView turns={data.turns} />,
           },
         ]}
       />

@@ -1,0 +1,157 @@
+[33mcommit f7bf9008e1d915a3b183885d1b48142646a93db7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Mon Jul 13 14:47:47 2026 +0530
+
+    Revert "Merge branch 'master' of https://github.com/peguinxiteout/Level-1-SOP-Call-Quality-Review-App"
+    
+    This reverts commit 728a4dae9c14bfb2027733c49be8fe0635483eaf, reversing
+    changes made to a6449f60fceebd6e3c5ce24935c0bcad7c8ea8c6.
+
+[33mcommit 728a4dae9c14bfb2027733c49be8fe0635483eaf[m
+Merge: a6449f6 2f3aa70
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Mon Jul 13 14:37:24 2026 +0530
+
+    Merge branch 'master' of https://github.com/peguinxiteout/Level-1-SOP-Call-Quality-Review-App
+
+[33mcommit a6449f60fceebd6e3c5ce24935c0bcad7c8ea8c6[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Mon Jul 13 14:33:24 2026 +0530
+
+    Show Table Scrollbars Only on Hover is added, Remove Column Header Sort Icons + Hover Effect, Normalize Header Text Color
+
+[33mcommit 2f3aa70f8e31a52438b3c1b828fa2b63fe6975d1[m
+Author: cynthia <cynthia.philomine@inxiteout.ai>
+Date:   Mon Jul 13 13:58:09 2026 +0530
+
+    Updated table design
+
+[33mcommit 1fb94455ab54cfd4496c77479429b0e1ec3e3840[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Mon Jul 13 13:16:10 2026 +0530
+
+    Merge Agent ID + Agent Name in All Remaining Inspector Tables
+
+[33mcommit 056642319b3ec75f4aa0b92840accb1f1dd551a6[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Mon Jul 13 13:01:03 2026 +0530
+
+    Merge Agent ID and Agent Name columns into single stacked display and Right-size table column widths with explicit per-column tiers
+
+[33mcommit 4571b038b7c712fc10a93a18a28092b540f9d74c[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Sun Jul 12 12:19:05 2026 +0530
+
+    Auto-expand drilldown accordions on call selection and humanize inspector table columns
+    and fix SOP table scroll behavior and improve Adherence Metrics UI
+
+[33mcommit bf709d38660ac94df0971228d0e80a6d4015d888[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 16:30:33 2026 +0530
+
+    Fix Nested Scroll Containers Causing Horizontal Scrollbar to Stay Hidden
+
+[33mcommit c89e074286371a0595c83d38a4a838208e4fe5e4[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 14:55:43 2026 +0530
+
+    Unify table and KPI card styling across all tabs
+    
+    - Migrate all tables to shared DataTable component with text wrapping
+    - Replace Agent Performance Metrics KPI cards with shared TileGrid
+    - Extend TileGrid to support status badges on stat tiles
+    - Ensures visual consistency across Executive Story, SOP Adherence Metrics, Agent Performance Metrics, and Metric Glossary
+
+[33mcommit db6eaaabd22944474d97d3a596d1ef80993743c5[m
+Merge: 1498bea 33ef005
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 14:01:53 2026 +0530
+
+    Merge branch 'feature/agent-performance-metric-glossary' of https://github.com/peguinxiteout/Level-1-SOP-Call-Quality-Review-App
+
+[33mcommit 33ef0057c3be530f38d336fdb17e0a621a305bff[m
+Author: cynthia <cynthia.philomine@inxiteout.ai>
+Date:   Fri Jul 10 13:48:10 2026 +0530
+
+    Update agent performance metrics-trascript UI look & table view
+
+[33mcommit 1498beae7aae5543eb8e2f533c8ef1e7cac28aab[m
+Merge: 6d1e1c3 2ba1495
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 13:18:19 2026 +0530
+
+    Merge branch 'master' of https://github.com/peguinxiteout/Level-1-SOP-Call-Quality-Review-App
+
+[33mcommit 6d1e1c3f47edafb6342f0a56f6eae96fa3eeddfb[m
+Merge: b22fdda 9de24ed
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 13:17:06 2026 +0530
+
+    Merge branch 'feature/ES_and_SOP_tabs'
+
+[33mcommit 2ba149576d444dc28a86b065a748b3a657353c01[m
+Merge: b22fdda 9de24ed
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 13:15:25 2026 +0530
+
+    Merge pull request #1 from peguinxiteout/feature/ES_and_SOP_tabs
+    
+    Refine KPI and table styling
+
+[33mcommit 9de24ede4f7f00a49439694176ad157cc3cbbbf1[m[33m ([m[1;31morigin/feature/ES_and_SOP_tabs[m[33m, [m[1;32mfeature/ES_and_SOP_tabs[m[33m)[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 13:13:30 2026 +0530
+
+    Refine KPI and table styling: simplify cards, standardize tables, add white grid lines
+
+[33mcommit b22fdda81176e0020bb238eea093308644220b5a[m[33m ([m[1;32mfeature/agent-performance-metric-glossary[m[33m)[m
+Merge: 8f6cede 180c311
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 11:55:41 2026 +0530
+
+    Merge branch 'feature/agent-performance-metric-glossary' of https://github.com/peguinxiteout/Level-1-SOP-Call-Quality-Review-App into feature/agent-performance-metric-glossary
+
+[33mcommit 8f6cede4fdf93b4f35991c98d12b86868aa24244[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 11:31:02 2026 +0530
+
+    Simplify KPI percentages to plain text and standardize table styling with card wrapper
+    
+    - Remove colored pill/badge styling from Most Non-Adherence Area and
+      Most Frequent Missed SOP percentages, render as plain text in parentheses
+    - Add TableCard wrapper component for consistent purple-navy card styling
+    - Wrap Executive Signals, Priority Calls, and Call-Level SOP Summary tables
+      with TableCard so all tables use unified card appearance across app
+    - All status badges and sorting behavior unaffected
+
+[33mcommit 180c31188ba692c555fa85d16e63ab684589b640[m
+Author: cynthia <cynthia.philomine@inxiteout.ai>
+Date:   Fri Jul 10 11:13:42 2026 +0530
+
+    Update agent performance metrics and glossary tabs
+
+[33mcommit 0885d3f24aafdbfdf7c0c1a40e51e463548bd2a1[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Fri Jul 10 10:16:46 2026 +0530
+
+    Build SOP Adherence Metrics tab with shared data layer and Actual Context fix
+    
+    - Extract shared batch CSV + item-level loader (coreDataset.ts) to eliminate duplication
+    - Implement SOP Adherence Metrics tab: 8 KPI cards, call-level summary (10/25/50/All rows), 3 accordion sections (SOP Area/Recurring Non-Adherence/Sequence), SOP-only inspector
+    - Generalize KpiGrid rendering via TileGrid component for reuse across Executive Story (12 cards) and SOP tab (8 cards)
+    - Add column-subset support to SopDrilldownTable; build RowsToShowSelect control
+    - Extend CallDetailInspector with showAgentPerformance prop and custom title for SOP-only rendering
+    - Fix SOP Result Actual Context column to use computeActualContext(itemRow) fallback logic instead of raw evidence
+    - Refactor Section layout into shared component
+
+[33mcommit dce74a731ff3d64480726ac84a2e21ce35bc558e[m
+Author: peguinxiteout <himanshu.pegu@inxiteout.ai>
+Date:   Wed Jul 8 14:50:26 2026 +0530
+
+    - Set up Vite + React + TypeScript with Tailwind CSS v4 (@tailwindcss/vite)
+    - Implement design tokens (navy background, violet accent, semantic color names)
+    - Build responsive nav bar (sticky header, logo, pill-style active tab indicator)
+    - Set up React Router with 4 tab routes (Executive Story, SOP/Agent Metrics, Glossary)
+    - Create shared layout components (AppLayout, PageContainer) for consistent structure
+    - Add 4 placeholder page components (empty shells ready for content)
+    - No dashboard content yet—structure and styling only

@@ -4,6 +4,7 @@ import PageContainer from "../layout/PageContainer";
 import StatusPill from "../components/executive-story/StatusPill";
 import TabGroup from "../components/executive-story/TabGroup";
 import TileGrid, { type Tile } from "../components/executive-story/TileGrid";
+import TranscriptView from "../components/executive-story/TranscriptView";
 import { toneForBand, type StatusTone } from "../lib/ui/status";
 import RowsToShowSelect, {
   sliceRows,
@@ -587,110 +588,6 @@ const AGENT_SUMMARY_COLUMNS: TableColumn<CsvRow>[] = [
   },
 ];
 
-function getTranscriptRoleLabel(row: CsvRow): string {
-  const role = String(row.role || "").trim();
-  return role && role.toLowerCase() !== "na" ? role : "Unknown";
-}
-
-function getTranscriptSpeakerCode(row: CsvRow): string {
-  return String(row.speaker || "").trim() || "SPEAKER_UNKNOWN";
-}
-
-function formatTranscriptTimestamp(row: CsvRow): string {
-  const start =
-    row.start_time_sec || row.start_time || row.start || row.start_sec || "";
-
-  const end = row.end_time_sec || row.end_time || row.end || row.end_sec || "";
-
-  const startNumber = Number(start);
-  const endNumber = Number(end);
-
-  if (!Number.isFinite(startNumber)) {
-    return "";
-  }
-
-  if (!Number.isFinite(endNumber)) {
-    return `${startNumber.toFixed(1)}s`;
-  }
-
-  return `${startNumber.toFixed(1)}–${endNumber.toFixed(1)}s`;
-}
-
-function isAgentTranscriptTurn(row: CsvRow): boolean {
-  const role = String(row.role || "")
-    .trim()
-    .toLowerCase();
-
-  return role === "agent";
-}
-
-function getTranscriptText(row: CsvRow): string {
-  return (
-    row.utterance ||
-    row.text ||
-    row.transcript ||
-    row.content ||
-    row.message ||
-    row.sentence ||
-    ""
-  );
-}
-
-function TranscriptView({ rows }: { rows: CsvRow[] }) {
-  if (!rows.length) {
-    return (
-      <div className="rounded-xl border border-white/60 bg-black p-4 text-sm text-text-muted">
-        Transcript turns not available.
-      </div>
-    );
-  }
-
-  return (
-    <div className="space-y-3">
-      <p className="text-sm text-text-muted">
-        Showing all {rows.length} transcript turns for this call.
-      </p>
-
-      <div className="agent-table-scroll flex max-h-[32rem] flex-col gap-4 overflow-auto rounded-xl border border-white/70 bg-black px-6 py-5">
-        {rows.map((row, index) => {
-          const isAgent = isAgentTranscriptTurn(row);
-          const roleLabel = getTranscriptRoleLabel(row);
-          const speakerCode = getTranscriptSpeakerCode(row);
-          const timestamp = formatTranscriptTimestamp(row);
-          const utterance = getTranscriptText(row) || "NA";
-          const turnId = row.turn_id || String(index + 1);
-
-          return (
-            <div
-              key={`${turnId}-${index}`}
-              className={`flex w-full ${isAgent ? "justify-start pr-[22%]" : "justify-end pl-[22%]"}`}
-            >
-              <div
-                className={`max-w-[620px] rounded-lg border px-3 py-2 shadow-sm ${isAgent
-                    ? "border-violet-500/70 bg-[#241f63]"
-                    : "border-blue-500/70 bg-[#17326d]"
-                  }`}
-              >
-                <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-text-muted">
-                  <span className="font-semibold text-text-primary">
-                    {roleLabel}
-                  </span>
-                  <span>{speakerCode}</span>
-                  {timestamp ? <span>{timestamp}</span> : null}
-                </div>
-
-                <p className="whitespace-normal break-words text-sm leading-relaxed text-text-primary">
-                  {utterance}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 function DetailTabs({
   selectedCallId,
   qualityTurnRows,
@@ -774,7 +671,7 @@ function DetailTabs({
             key: "transcript",
             label: "Transcript",
             available: transcriptRows.length > 0,
-            content: <TranscriptView rows={transcriptRows} />,
+            content: <TranscriptView turns={transcriptRows} />,
           },
         ]}
       />
