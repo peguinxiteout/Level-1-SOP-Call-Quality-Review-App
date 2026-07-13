@@ -40,6 +40,24 @@ export interface SopAdherenceData {
  */
 export const SOP_CALL_LEVEL_SUMMARY_COLUMNS: string[] = [
   'call_id',
+  'agent',
+  'call_type',
+  'sop_call_type',
+  'sop_file',
+  'sop_coverage_pct',
+  'purpose_context_explained',
+  'consent_availability_checked',
+  'proper_closure_detected',
+];
+
+/**
+ * Raw source fields to copy from each CSV row into the SopDrilldownRow-shaped
+ * object. Distinct from SOP_CALL_LEVEL_SUMMARY_COLUMNS (the UI column allow-
+ * list) because the merged 'agent' column key has no matching raw field -
+ * it derives from agent_id/agent_name instead.
+ */
+const SOP_CALL_LEVEL_SUMMARY_SOURCE_FIELDS: string[] = [
+  'call_id',
   'agent_id',
   'agent_name',
   'call_type',
@@ -62,7 +80,7 @@ export async function loadSopAdherenceData(): Promise<SopAdherenceData> {
   const sopOnlyCallIds = getSopOnlyCallList(sopRows);
 
   const callLevelSummary = sopRows.map(
-    (row) => pickColumns(row, SOP_CALL_LEVEL_SUMMARY_COLUMNS) as unknown as SopDrilldownRow,
+    (row) => pickColumns(row, SOP_CALL_LEVEL_SUMMARY_SOURCE_FIELDS) as unknown as SopDrilldownRow,
   );
 
   return {

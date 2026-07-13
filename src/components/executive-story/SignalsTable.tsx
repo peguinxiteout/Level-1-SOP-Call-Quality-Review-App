@@ -1,11 +1,13 @@
 import type { ExecutiveSignalRow } from '../../lib/data/executiveStoryData';
 import DataTable, { type DataTableColumn } from './DataTable';
 
+// Width tiers: sm = short area pill; lg = free-text insight description.
 const columns: DataTableColumn<ExecutiveSignalRow>[] = [
   {
     key: 'area',
     header: 'Area',
     accessor: (row) => row.area,
+    width: 'sm',
     render: (row) => (
       <span className="inline-block rounded-full bg-accent/20 px-2 py-0.5 text-xs font-semibold whitespace-nowrap text-highlight">
         {row.area}
@@ -16,6 +18,7 @@ const columns: DataTableColumn<ExecutiveSignalRow>[] = [
     key: 'insight',
     header: 'Insight',
     accessor: (row) => row.insight,
+    width: 'lg',
     render: (row) => row.insight,
   },
 ];

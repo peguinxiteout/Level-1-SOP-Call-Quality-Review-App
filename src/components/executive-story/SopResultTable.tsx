@@ -11,15 +11,25 @@ const STATUS_TONE_MAP: Record<string, StatusTone> = {
   'Not Applicable': 'neutral',
 };
 
+/**
+ * Width tiers:
+ *  - xs: item_id, llm_confidence (short IDs/scores).
+ *  - sm: category, sub_category (short taxonomy labels), status (badge -
+ *    "Missed / Not Evidenced" is the longest label, still fits in sm/md but
+ *    given room via md below since it's the widest pill used anywhere).
+ *  - lg: item_text, expected_agent_utterance, actual_context, llm_reason -
+ *    all genuinely free-text and variable-length.
+ */
 const columns: DataTableColumn<SopItemRow>[] = [
-  { key: 'item_id', header: 'Item ID', accessor: (r) => r.item_id, render: (r) => formatCell(r.item_id) },
-  { key: 'category', header: 'Category', accessor: (r) => r.category, render: (r) => formatCell(r.category) },
-  { key: 'sub_category', header: 'Sub-Category', accessor: (r) => r.sub_category, render: (r) => formatCell(r.sub_category) },
-  { key: 'item_text', header: 'SOP', accessor: (r) => r.item_text, render: (r) => formatCell(r.item_text) },
+  { key: 'item_id', header: 'Item ID', accessor: (r) => r.item_id, width: 'xs', render: (r) => formatCell(r.item_id) },
+  { key: 'category', header: 'Category', accessor: (r) => r.category, width: 'sm', render: (r) => formatCell(r.category) },
+  { key: 'sub_category', header: 'Sub-Category', accessor: (r) => r.sub_category, width: 'sm', render: (r) => formatCell(r.sub_category) },
+  { key: 'item_text', header: 'SOP', accessor: (r) => r.item_text, width: 'lg', render: (r) => formatCell(r.item_text) },
   {
     key: 'expected_agent_utterance',
     header: 'Expected Agent Text From SOP',
     accessor: (r) => String(r.expected_agent_utterance ?? ''),
+    width: 'lg',
     render: (r) => formatCell(r.expected_agent_utterance),
   },
   {
@@ -27,23 +37,25 @@ const columns: DataTableColumn<SopItemRow>[] = [
     header: 'Actual Context',
     accessor: (r) => computeActualContext(r),
     render: (r) => formatCell(computeActualContext(r)),
-    wide: true,
+    width: 'lg',
   },
   {
     key: 'status',
     header: 'Status',
     accessor: (r) => r.status,
+    width: 'md',
     render: (r) => {
       const text = formatCell(r.status);
       if (text === '—') return text;
       return <StatusPill tone={STATUS_TONE_MAP[text] ?? 'neutral'} label={text} />;
     },
   },
-  { key: 'llm_reason', header: 'LLM Reason', accessor: (r) => String(r.llm_reason ?? ''), render: (r) => formatCell(r.llm_reason), wide: true },
+  { key: 'llm_reason', header: 'LLM Reason', accessor: (r) => String(r.llm_reason ?? ''), render: (r) => formatCell(r.llm_reason), width: 'lg' },
   {
     key: 'llm_confidence',
     header: 'LLM Confidence',
     accessor: (r) => Number(r.llm_confidence),
+    width: 'xs',
     render: (r) => formatCell(r.llm_confidence),
   },
 ];
