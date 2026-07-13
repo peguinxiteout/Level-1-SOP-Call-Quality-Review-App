@@ -4,7 +4,6 @@ import PageContainer from "../layout/PageContainer";
 import StatusPill from "../components/executive-story/StatusPill";
 import TabGroup from "../components/executive-story/TabGroup";
 import TileGrid, { type Tile } from "../components/executive-story/TileGrid";
-import TranscriptView from "../components/executive-story/TranscriptView";
 import { toneForBand, type StatusTone } from "../lib/ui/status";
 import RowsToShowSelect, {
   sliceRows,
@@ -383,53 +382,55 @@ function HoverScrollTable({
   rowKey: (row: CsvRow, index: number) => string;
   emptyMessage?: string;
 }) {
+  if (!rows.length) {
+    return (
+      <div className="rounded-xl border border-white/60 bg-surface p-4 text-sm text-text-muted">
+        {emptyMessage}
+      </div>
+    );
+  }
+
   return (
     <div className="rounded-2xl border border-accent-secondary/40 bg-surface p-5">
-      {!rows.length ? (
-        <div className="rounded-xl border border-white/40 bg-black p-4 text-sm text-text-muted">
-          {emptyMessage}
-        </div>
-      ) : (
-        <div className="agent-table-scroll max-h-[360px] overflow-auto rounded-xl border border-white/60 bg-black">
-          <table className="min-w-max border-collapse text-left text-sm">
-            <thead className="sticky top-0 z-10 bg-surface text-text-primary">
-              <tr className="border-b-2 border-white/80">
+      <div className="agent-table-scroll max-h-[360px] overflow-auto rounded-xl border border-white/60">
+        <table className="min-w-max border-collapse text-left text-sm">
+          <thead className="sticky top-0 z-10 bg-surface text-text-primary">
+            <tr className="border-b-2 border-white/80">
+              {columns.map((column) => (
+                <th
+                  key={column.key}
+                  className="whitespace-normal break-words border border-white/40 px-3 py-3 align-top font-semibold leading-snug"
+                  style={{
+                    minWidth: column.minWidth ?? "130px",
+                    maxWidth: "190px",
+                  }}
+                >
+                  {column.header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody>
+            {rows.map((row, index) => (
+              <tr key={rowKey(row, index)} className="bg-black">
                 {columns.map((column) => (
-                  <th
+                  <td
                     key={column.key}
-                    className="whitespace-normal break-words border border-white/40 px-3 py-3 align-top font-semibold leading-snug"
+                    className="whitespace-pre-line break-words border border-white/35 px-3 py-3 align-top text-text-primary"
                     style={{
                       minWidth: column.minWidth ?? "130px",
-                      maxWidth: "190px",
+                      maxWidth: "220px",
                     }}
                   >
-                    {column.header}
-                  </th>
+                    {column.render(row)}
+                  </td>
                 ))}
               </tr>
-            </thead>
-
-            <tbody>
-              {rows.map((row, index) => (
-                <tr key={rowKey(row, index)} className="bg-black">
-                  {columns.map((column) => (
-                    <td
-                      key={column.key}
-                      className="whitespace-pre-line break-words border border-white/35 px-3 py-3 align-top text-text-primary"
-                      style={{
-                        minWidth: column.minWidth ?? "130px",
-                        maxWidth: "220px",
-                      }}
-                    >
-                      {column.render(row)}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
@@ -588,6 +589,111 @@ const AGENT_SUMMARY_COLUMNS: TableColumn<CsvRow>[] = [
   },
 ];
 
+function getTranscriptRoleLabel(row: CsvRow): string {
+  const role = String(row.role || "").trim();
+  return role && role.toLowerCase() !== "na" ? role : "Unknown";
+}
+
+function getTranscriptSpeakerCode(row: CsvRow): string {
+  return String(row.speaker || "").trim() || "SPEAKER_UNKNOWN";
+}
+
+function formatTranscriptTimestamp(row: CsvRow): string {
+  const start =
+    row.start_time_sec || row.start_time || row.start || row.start_sec || "";
+
+  const end = row.end_time_sec || row.end_time || row.end || row.end_sec || "";
+
+  const startNumber = Number(start);
+  const endNumber = Number(end);
+
+  if (!Number.isFinite(startNumber)) {
+    return "";
+  }
+
+  if (!Number.isFinite(endNumber)) {
+    return `${startNumber.toFixed(1)}s`;
+  }
+
+  return `${startNumber.toFixed(1)}–${endNumber.toFixed(1)}s`;
+}
+
+function isAgentTranscriptTurn(row: CsvRow): boolean {
+  const role = String(row.role || "")
+    .trim()
+    .toLowerCase();
+
+  return role === "agent";
+}
+
+function getTranscriptText(row: CsvRow): string {
+  return (
+    row.utterance ||
+    row.text ||
+    row.transcript ||
+    row.content ||
+    row.message ||
+    row.sentence ||
+    ""
+  );
+}
+
+function TranscriptView({ rows }: { rows: CsvRow[] }) {
+  if (!rows.length) {
+    return (
+      <div className="rounded-xl border border-white/60 bg-black p-4 text-sm text-text-muted">
+        Transcript turns not available.
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-text-muted">
+        Showing all {rows.length} transcript turns for this call.
+      </p>
+
+      <div className="agent-table-scroll flex max-h-[32rem] flex-col gap-4 overflow-auto rounded-xl border border-white/70 bg-black px-6 py-5">
+        {rows.map((row, index) => {
+          const isAgent = isAgentTranscriptTurn(row);
+          const roleLabel = getTranscriptRoleLabel(row);
+          const speakerCode = getTranscriptSpeakerCode(row);
+          const timestamp = formatTranscriptTimestamp(row);
+          const utterance = getTranscriptText(row) || "NA";
+          const turnId = row.turn_id || String(index + 1);
+
+          return (
+            <div
+              key={`${turnId}-${index}`}
+              className={`flex w-full ${isAgent ? "justify-start pr-[22%]" : "justify-end pl-[22%]"}`}
+            >
+              <div
+                className={`max-w-[620px] rounded-lg border px-3 py-2 shadow-sm ${
+                  isAgent
+                    ? "border-violet-500/70 bg-[#241f63]"
+                    : "border-blue-500/70 bg-[#17326d]"
+                }`}
+              >
+                <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-text-muted">
+                  <span className="font-semibold text-text-primary">
+                    {roleLabel}
+                  </span>
+                  <span>{speakerCode}</span>
+                  {timestamp ? <span>{timestamp}</span> : null}
+                </div>
+
+                <p className="whitespace-normal break-words text-sm leading-relaxed text-text-primary">
+                  {utterance}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function DetailTabs({
   selectedCallId,
   qualityTurnRows,
@@ -617,9 +723,11 @@ function DetailTabs({
             label: "Turn-Level Flow",
             available: qualityTurnRows.length > 0,
             content: qualityTurnRows.length ? (
-              <div className="w-full max-h-[420px] overflow-auto [&>div]:overflow-visible">
-                <DataTable columns={buildGenericColumns(qualityTurnRows)} rows={qualityTurnRows} rowKey={(_row, index) => String(index)} />
-              </div>
+              <HoverScrollTable
+                columns={buildGenericColumns(qualityTurnRows)}
+                rows={qualityTurnRows}
+                rowKey={(_row, index) => String(index)}
+              />
             ) : (
               <p className="p-4 text-sm text-text-muted">
                 Turn-level agent performance details not available.
@@ -638,13 +746,11 @@ function DetailTabs({
                 </h2>
 
                 {negativeTurnRows.length ? (
-                  <div className="w-full max-h-[300px] overflow-auto [&>div]:overflow-visible">
-                    <DataTable
-                      columns={buildGenericColumns(negativeTurnRows)}
-                      rows={negativeTurnRows}
-                      rowKey={(_row, index) => String(index)}
-                    />
-                  </div>
+                  <HoverScrollTable
+                    columns={buildGenericColumns(negativeTurnRows)}
+                    rows={negativeTurnRows}
+                    rowKey={(_row, index) => String(index)}
+                  />
                 ) : (
                   <p className="rounded-lg border border-status-good/30 bg-status-good/10 p-3 text-sm text-status-good">
                     No customer experience concerns detected.
@@ -656,13 +762,11 @@ function DetailTabs({
                 </h2>
 
                 {sentimentTurnRows.length ? (
-                  <div className="w-full max-h-[420px] overflow-auto [&>div]:overflow-visible">
-                    <DataTable
-                      columns={buildGenericColumns(sentimentTurnRows)}
-                      rows={sentimentTurnRows}
-                      rowKey={(_row, index) => String(index)}
-                    />
-                  </div>
+                  <HoverScrollTable
+                    columns={buildGenericColumns(sentimentTurnRows)}
+                    rows={sentimentTurnRows}
+                    rowKey={(_row, index) => String(index)}
+                  />
                 ) : null}
               </div>
             ),
@@ -671,7 +775,7 @@ function DetailTabs({
             key: "transcript",
             label: "Transcript",
             available: transcriptRows.length > 0,
-            content: <TranscriptView turns={transcriptRows} />,
+            content: <TranscriptView rows={transcriptRows} />,
           },
         ]}
       />
