@@ -787,6 +787,7 @@ export interface PriorityCallRow extends AttentionFields {
   attention_score: number;
   call_id?: string;
   agent_id?: string;
+  agent_name?: string;
   call_type?: string;
   sop_checklist_coverage_incl_review_pct?: number | string;
   agent_talktime_pct?: number | string;
@@ -823,11 +824,14 @@ const QUALITY_MERGE_COLUMNS = [
  * recommended_action is computed but never added to `preferred`/`display_cols`
  * there). computePriorityCalls below always includes attention_score,
  * priority_level, attention_reason AND recommended_action regardless, since
- * the ported function's contract calls for all four explicitly.
+ * the ported function's contract calls for all four explicitly. "agent_name"
+ * is also a React-app-only addition (not in app.py's list) so the priority
+ * table can render the same merged Agent (name + id) cell used elsewhere.
  */
 const PRIORITY_DISPLAY_COLUMNS = [
   "call_id",
   "agent_id",
+  "agent_name",
   "call_type",
   "sop_checklist_coverage_incl_review_pct",
   "attention_reason",

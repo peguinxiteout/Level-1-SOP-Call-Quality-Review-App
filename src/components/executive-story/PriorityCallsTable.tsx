@@ -14,20 +14,29 @@ function bandedPctCell(pct: unknown, band: unknown) {
   );
 }
 
+function agentCell(row: PriorityCallRow) {
+  return (
+    <div>
+      <div className="text-text-primary">{formatCell(row.agent_name)}</div>
+      <div className="text-xs text-text-primary">{formatCell(row.agent_id)}</div>
+    </div>
+  );
+}
+
 /**
  * Width tiers:
- *  - xs: call_id, agent_id, priority_level (badge), concern_flag (badge),
+ *  - xs: call_id, priority_level (badge), concern_flag (badge),
  *    audio_metrics (Yes/No), status (short word).
- *  - sm: call_type (short label), and the three pct+band combo cells
- *    (agent_talktime/silence/talkover) and sop_coverage, which pair a
- *    percentage with a short status pill.
+ *  - sm: agent (name+id 2-line cell), call_type (short label), and the
+ *    three pct+band combo cells (agent_talktime/silence/talkover) and
+ *    sop_coverage, which pair a percentage with a short status pill.
  *  - md: attention_reason (free-text explanation - variable length but
  *    usually short, so the 720px lg tier left mostly empty space; wraps
  *    across a few lines for the rare multi-reason case instead).
  */
 const columns: DataTableColumn<PriorityCallRow>[] = [
   { key: 'call_id', header: 'Call ID', accessor: (r) => r.call_id, width: 'xs', render: (r) => formatCell(r.call_id) },
-  { key: 'agent_id', header: 'Agent ID', accessor: (r) => r.agent_id, width: 'xs', render: (r) => formatCell(r.agent_id) },
+  { key: 'agent', header: 'Agent', accessor: (r) => r.agent_name, width: 'sm', render: agentCell },
   { key: 'call_type', header: 'Call Type', accessor: (r) => r.call_type, width: 'sm', render: (r) => formatCell(r.call_type) },
   {
     key: 'sop_coverage',
