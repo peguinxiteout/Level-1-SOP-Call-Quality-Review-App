@@ -40,10 +40,10 @@ export default function DataTable<T>({ columns, rows, rowKey, emptyMessage = 'No
   }
 
   return (
-    <div className="scroll-hover overflow-x-auto rounded-lg border-2 border-white/40">
+    <div className="scroll-hover max-h-80 overflow-auto rounded-lg border-2 border-white/40">
       <table className="w-full border-collapse text-left text-sm">
-        <thead>
-          <tr className="bg-accent-secondary/20">
+        <thead className="sticky top-0 z-10 bg-accent-secondary">
+          <tr>
             {columns.map((column) => (
               <th
                 key={column.key}

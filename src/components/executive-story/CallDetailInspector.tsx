@@ -83,24 +83,18 @@ export default function CallDetailInspector({ callId, showAgentPerformance = tru
             key: 'sop-result',
             label: 'SOP Result',
             available: data.sopItems.length > 0,
-            content: (
-              <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                <SopResultTable rows={data.sopItems} />
-              </div>
-            ),
+            content: <SopResultTable rows={data.sopItems} />,
           },
           {
             key: 'retrieval-evidence',
             label: 'Retrieval Evidence',
             available: data.retrievalEvidence.length > 0,
             content: (
-              <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                <GenericInspectorTable
-                  rows={data.retrievalEvidence}
-                  labelMap={RETRIEVAL_EVIDENCE_LABELS}
-                  excludeKeys={['output_version', 'output_generated_at']}
-                />
-              </div>
+              <GenericInspectorTable
+                rows={data.retrievalEvidence}
+                labelMap={RETRIEVAL_EVIDENCE_LABELS}
+                excludeKeys={['output_version', 'output_generated_at']}
+              />
             ),
           },
           {

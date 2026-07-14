@@ -39,9 +39,7 @@ export default function SopAdherenceMetrics() {
             <div className="flex flex-col gap-4">
               <RowsToShowSelect value={rowsToShow} onChange={setRowsToShow} />
               <TableCard>
-                <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                  <SopDrilldownTable rows={visibleCallLevelSummary} columns={SOP_CALL_LEVEL_SUMMARY_COLUMNS} />
-                </div>
+                <SopDrilldownTable rows={visibleCallLevelSummary} columns={SOP_CALL_LEVEL_SUMMARY_COLUMNS} />
               </TableCard>
             </div>
           </Section>
@@ -49,21 +47,15 @@ export default function SopAdherenceMetrics() {
           <Section title="Aggregate SOP Area Patterns">
             <div className="flex flex-col gap-4">
               <Accordion title="SOP Area Adherence">
-                <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                  <SopAreaAdherenceTable rows={data.sopAreaFull} />
-                </div>
+                <SopAreaAdherenceTable rows={data.sopAreaFull} />
               </Accordion>
 
               <Accordion title="Recurring SOP Non-Adherence">
-                <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                  <RecurringNonAdherenceTable rows={data.frequentNonAdherenceFull} />
-                </div>
+                <RecurringNonAdherenceTable rows={data.frequentNonAdherenceFull} />
               </Accordion>
 
               <Accordion title="Calls With Lowest SOP Sequence Adherence">
-                <div className="w-full max-h-80 overflow-auto scroll-hover [&>div]:overflow-visible">
-                  <SequenceAdherenceTable rows={data.sequenceAdherenceDetail} />
-                </div>
+                <SequenceAdherenceTable rows={data.sequenceAdherenceDetail} />
               </Accordion>
             </div>
           </Section>
